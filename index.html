@@ -10,39 +10,40 @@
 <body class="w-full min-w-[350px] bg">
 
 <!-- encabezado -->
+<header class="w-full fixed">
+    <nav class="px-8 encabezado flex justify-between items-center h-20 bg-white/80 relative">
 
-<header class=" px-8 encabezado flex justify-between items-center h-20 bg-black/50 relative">
+        <img class="logo not-xs:w-40 xs:w-50" src="/recursos_fotos/Logo1.png" alt="">
 
-    <img class="logo not-xs:w-40 xs:w-50" src="/recursos_fotos/Logo1.png" alt="">
+            <!-- menu de moviles -->
+            <ul id="menu-movil" class="nav-list absolute end-0 p-1 mt-[182px] w-full bg-black/50 flex flex-col justify-center items-center cursor-pointer hidden xs:hidden">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Quienes</a></li> 
+                <li><a href="#">Ellos</a></li>
+            </ul> 
 
-        <!-- menu de moviles -->
-        <ul id="menu-movil" class="nav-list absolute end-0 p-1 mt-[182px] w-full bg-black/50 flex flex-col justify-center items-center cursor-pointer hidden xs:hidden">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Quienes</a></li> 
-            <li><a href="#">Ellos</a></li>
-        </ul> 
+            <ul>
+            
+            <!-- Menu de pc -->
+            <ul class="nav-list gap-6 flex-row justify-center  items-center cursor-pointer hidden xs:flex text-primary text-[20px] font-bold" id="navList ">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Quienes</a></li>
+                <li><a href="#">Ellos</a></li>
+            </ul>
+            </ul>
 
-        <ul>
-        
-        <!-- Menu de pc -->
-        <ul class="nav-list gap-6 flex-row justify-center  items-center cursor-pointer hidden xs:flex text-primary text-[20px] font-bold" id="navList ">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Quienes</a></li>
-            <li><a href="#">Ellos</a></li>
-        </ul>
-        </ul>
+            <!-- Boton -->
+            <button id="boton-movil" class="menu-btn w-9 cursor-pointer block xs:hidden">
+            <img src="/recursos_fotos/menu.png" alt="">
+            </button>
 
-        <!-- Boton -->
-        <button id="boton-movil" class="menu-btn w-9 cursor-pointer block xs:hidden">
-          <img src="/recursos_fotos/menu.png" alt="">
-        </button>
-
+    </nav>
 </header>
 
-<nav class="inicio text-primary xs:text-secondary font-bold text-2xl">
-     holaaaa
+<nav class="inicio font-bold text-2xl">
+     <img class="w-full min-h-screen object-cover object-center" src="/recursos_fotos/fondo1.webp" alt="">
 </nav>
 
 
