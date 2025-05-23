@@ -24,6 +24,7 @@
 
     /* Tamaños de pantalla */
     --breakpoint-xs: 798px;
+    --breakpoint-tmx: 1100px;
 
     /* Colores */
     --color-primary: #004977;
