@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="/src/output.css">
 </head>
 
-<body class="bg-gray-700 w-full min-w-[350px]  font-family-nixie font-extrabold">
+<body class="bg-gray-700 w-full min-w-[350px] font-family-nixie">
 
 <!-- encabezado -->
-<header class="w-full z-50 shadow-lg z-[9999]">
+<header class="w-full  shadow-lg z-[9999]">
   <nav class="h-20 bg-white flex justify-between">
-  <div class="flex justify-between items-center w-full mx-10 max-w-[1100px] lg:mx-auto">
+  <div class="flex justify-between items-center w-full mx-10 tmx:mx-auto tmx:w-[1100px] ">
     <img class="logo not-xs:w-40 xs:w-50" src="/recursos_fotos/Logo1.png" alt="">
 
     <!-- menú móvil con transición -->
     <ul id="menu-movil"
         class="gap-3 nav-list absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center
         max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90">
-      <li class="px-8 cursor-pointer group"><a class="group-hover:text-secondary group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Inicio</a></li>
-      <li class="px-8 cursor-pointer group"><a class="group-hover:text-secondary group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Nosotros</a></li>
-      <li class="px-8 cursor-pointer group"><a class="group-hover:text-secondary group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Quienes</a></li> 
-      <li class="px-8 cursor-pointer group"><a class="group-hover:text-secondary group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Ellos</a></li>
+      <li class="px-8 group"><a class="group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Inicio</a></li>
+      <li class="px-8 group"><a class="group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Nosotros</a></li>
+      <li class="px-8 group"><a class="group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Quienes</a></li> 
+      <li class="px-8 group"><a class="group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Ellos</a></li>
     </ul>
 
     <!-- menú de PC -->
-    <ul class="nav-list gap-6 flex-row justify-center items-center cursor-pointer hidden xs:flex text-gray-900 text-[20px] font-bold">
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="#">Quienes</a></li>
-      <li><a href="#">Ellos</a></li>
+    <ul class="nav-list gap-6 flex-row justify-center items-center cursor-pointer hidden xs:flex text-gray-900 text-[20px]">
+      <li><a class="py-1.5 px-3 font-black transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Inici </strong></a></li>
+      <li><a class="py-1.5 px-3 font-bold transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Nosot </strong></a></li>
+      <li><a class="py-1.5 px-3 font-bold transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Quien </strong></a></li>
+      <li><a class="py-1.5 px-3 font-bold transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Ellos </strong></a></li>
     </ul>
 
     <!-- botón menú móvil -->
@@ -71,8 +71,30 @@
 
   </div>
 
+  <section id="contenido" class="h-40 w-full bg-white ">
+    <div class="h-full w-[95%] flex justify-center items-center mx-auto ">
+      <div class="w-full h-full flex justify-center items-center max-w-[1100px] gap-5 lg:gap-8  xs:flex-row flex-col z-20">
+        <div class="relative xs:w-1/3 w-11/12 bg-amber-950 h-full border-t-gray-900 border-t-4">
+          <svg class="absolute w-10 h-10 p-2 xs:w-18 xs:h-18 xs:p-3 xs:-top-4 right-[45%] xs:right-[34%] lg:right-[39%] bg-amber-50">
+            <use xlink:href="./assets/icons8-menú.svg#icon-izquierda"></use>
+          </svg>
+        </div>
+        <div class="relative xs:w-1/3 w-11/12 bg-amber-200 h-full border-t-gray-900 border-t-4">
+          <svg class="absolute w-10 h-10 p-2 xs:w-18 xs:h-18 xs:p-3 xs:-top-4 right-[45%] xs:right-[34%] lg:right-[39%] bg-amber-50">
+            <use xlink:href="./assets/icons8-menú.svg#icon-izquierda"></use>
+          </svg>
+        </div>
+        <div class="relative xs:w-1/3 w-11/12 bg-amber-500 h-full border-t-gray-900 border-t-4">
+          <svg class="absolute w-10 h-10 p-2 xs:w-18 xs:h-18 xs:p-3 xs:-top-4 right-[45%] xs:right-[34%] lg:right-[39%] bg-amber-50">
+            <use xlink:href="./assets/icons8-menú.svg#icon-izquierda"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <script src="/Archivos/script.js"></script>
 <script>mostrar();</script>
-</body>
+</body> 
 
 </html>

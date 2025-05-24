@@ -10,11 +10,13 @@
 
 @font-face {
     font-family: 'Nixie';
-    src: url(/assets/NixieOne-Regular.woff2) format('woff2');
-    font-weight: normal;
+    src: url(/assets/NixieOne.woff2) format('woff2');
+    src: url(/assets/NixieOne.woff) format('woff');
+    font-weight: 100 900;; /* font-black */
     font-style: normal;
     font-display: swap;
 }
+
 
 @theme {
 
