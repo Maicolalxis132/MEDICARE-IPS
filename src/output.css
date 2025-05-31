@@ -8,12 +8,10 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
-    --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
-    --color-indigo-600: oklch(51.1% 0.262 276.966);
     --color-slate-300: oklch(86.9% 0.022 252.894);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
@@ -42,6 +40,7 @@
     --tracking-wider: 0.05em;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --radius-4xl: 2rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -413,9 +412,6 @@
   .w-13 {
     width: calc(var(--spacing) * 13);
   }
-  .w-\[11\/12\] {
-    width: 11/12;
-  }
   .w-\[31\.5\%\] {
     width: 31.5%;
   }
@@ -424,9 +420,6 @@
   }
   .w-\[95\%\] {
     width: 95%;
-  }
-  .w-\[f\] {
-    width: f;
   }
   .w-auto {
     width: auto;
@@ -559,6 +552,10 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
+  .rounded-b-2xl {
+    border-bottom-right-radius: var(--radius-2xl);
+    border-bottom-left-radius: var(--radius-2xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -652,9 +649,6 @@
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
@@ -663,12 +657,6 @@
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
-  }
-  .p-12 {
-    padding: calc(var(--spacing) * 12);
-  }
-  .p-16 {
-    padding: calc(var(--spacing) * 16);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -712,14 +700,8 @@
   .pb-3 {
     padding-bottom: calc(var(--spacing) * 3);
   }
-  .pb-6 {
-    padding-bottom: calc(var(--spacing) * 6);
-  }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
-  }
-  .pb-10 {
-    padding-bottom: calc(var(--spacing) * 10);
   }
   .pb-13 {
     padding-bottom: calc(var(--spacing) * 13);
@@ -1203,11 +1185,6 @@
   .xs\:h-52 {
     @media (width >= 798px) {
       height: calc(var(--spacing) * 52);
-    }
-  }
-  .xs\:h-56 {
-    @media (width >= 798px) {
-      height: calc(var(--spacing) * 56);
     }
   }
   .xs\:h-auto {
