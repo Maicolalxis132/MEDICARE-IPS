@@ -1083,6 +1083,11 @@
       margin-top: calc(var(--spacing) * 5);
     }
   }
+  .xs\:mb-20 {
+    @media (width >= 798px) {
+      margin-bottom: calc(var(--spacing) * 20);
+    }
+  }
   .xs\:block {
     @media (width >= 798px) {
       display: block;
