@@ -47,22 +47,3 @@ setInterval(() => {
   showSlide();
 }, 3000); // 3000 milisegundos = 3 segundos
 
-  const card = document.getElementById("menu-card");
-  const icon = document.getElementById("menu-icon");
-  const content = document.getElementById("menu-content");
-
-  let menuVisible = false;
-
-  function toggleMenu() {
-    // Solo aplica en xs: (798px o más)
-    if (window.innerWidth >= 798) {
-      menuVisible = !menuVisible;
-      content.style.transform = menuVisible ? "scaleY(1)" : "scaleY(0)";
-    }
-  }
-
-  card.addEventListener("click", toggleMenu);
-  icon.addEventListener("click", (e) => {
-    e.stopPropagation(); // evita doble disparo
-    toggleMenu();
-  });
