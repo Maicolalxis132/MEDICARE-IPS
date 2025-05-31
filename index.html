@@ -6,19 +6,20 @@
     <title>MEDICARE IPS</title>
     <link rel="icon" href="/recursos_fotos/favicon.ico" >
     <link rel="stylesheet" href="/src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-700 w-full min-w-[350px] font-family-nixie">
+<body class="bg-white w-full min-w-[350px] ">
 
 <!-- encabezado -->
-<header class="w-full  shadow-lg z-[9999]">
+<header class="w-full  shadow-lg z-[9999] mb-6">
   <nav class="h-20 bg-white flex justify-between">
   <div class="flex justify-between items-center w-full mx-10 tmx:mx-auto tmx:w-[1100px] ">
     <img class="logo not-xs:w-40 xs:w-50" src="/recursos_fotos/Logo1.png" alt="">
 
     <!-- menú móvil con transición -->
     <ul id="menu-movil"
-        class="gap-3 nav-list absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center
+        class="gap-3 absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center
         max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90">
       <li class="px-8 group"><a class="group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Inicio</a></li>
       <li class="px-8 group"><a class="group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[18px] transition-all duration-100 " href="#">Nosotros</a></li>
@@ -27,11 +28,11 @@
     </ul>
 
     <!-- menú de PC -->
-    <ul class="nav-list gap-6 flex-row justify-center items-center cursor-pointer hidden xs:flex text-gray-900 text-[20px]">
-      <li><a class="py-1.5 px-3 font-black transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Inici </strong></a></li>
-      <li><a class="py-1.5 px-3 font-bold transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Nosot </strong></a></li>
-      <li><a class="py-1.5 px-3 font-bold transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Quien </strong></a></li>
-      <li><a class="py-1.5 px-3 font-bold transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Ellos </strong></a></li>
+    <ul class="nav-list gap-6 flex-row justify-center items-center cursor-pointer hidden xs:flex text-neutral-800 text-[20px]">
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Inici </strong></a></li>
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Nosot </strong></a></li>
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Quien </strong></a></li>
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Ellos </strong></a></li>
     </ul>
 
     <!-- botón menú móvil -->
@@ -48,11 +49,12 @@
 
 <div class="relative w-full flex justify-center items-center z-10">
 
-    <div id="carousel" class="overflow-hidden rounded-lg shadow-lg ">
-      <div class="flex transition-transform duration-500 w-[100vw] max-w-[100vh]" style="transform: translateX(0%)">
+    <div id="carousel" class="overflow-hidden rounded-lg shadow-lg mb-7">
+      <div class="flex transition-transform duration-500 max-w-[800px]" style="transform: translateX(0%)">
         <img src="/recursos_fotos/inasistencia.jpg" class="w-full flex-shrink-0"/> 
         <img src="/recursos_fotos/numerodario.jpg" class="w-full flex-shrink-0"/>
         <img src="/recursos_fotos/taller.jpg" class="w-full flex-shrink-0"/>
+        <img src="/recursos_fotos/fondo1.webp" class="w-full flex-shrink-0"/>
       </div>
     </div>
 
@@ -69,31 +71,287 @@
       </svg>
     </button>
 
-  </div>
+</div>
 
-  <section id="contenido" class="h-40 w-full bg-white ">
-    <div class="h-full w-[95%] flex justify-center items-center mx-auto ">
-      <div class="w-full h-full flex justify-center items-center max-w-[1100px] gap-5 lg:gap-8  xs:flex-row flex-col z-20">
-        <div class="relative xs:w-1/3 w-11/12 bg-amber-950 h-full border-t-gray-900 border-t-4">
-          <svg class="absolute w-10 h-10 p-2 xs:w-18 xs:h-18 xs:p-3 xs:-top-4 right-[45%] xs:right-[34%] lg:right-[39%] bg-amber-50">
-            <use xlink:href="./assets/icons8-menú.svg#icon-izquierda"></use>
+<!-- Secciones -->
+<section id="contenido" class="h-auto xs:h-auto pb-13 pt-6 w-full bg-stone-200">
+    <div class="w-[95%] p-16 flex justify-center items-center mx-auto">
+      <div class="w-full h-full flex justify-center items-center max-w-[1100px] gap-70 mt-50 xs:mt-5 xs:gap-8 xs:flex-row flex-col z-20">
+
+
+
+        <div data-aos="fade-down" data-aos-duration="500" class="relative group xs:w-1/3 w-11/12 not-xs:max-w-[340px] xs:h-52 h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg xs:hover:shadow-[0_10px_30px_rgba(0,0,0,0.25)] transition-all duration-300 bg-white">
+          <svg class="absolute z-50 w-13 h-13 hidden xs:block xs:group-hover:hidden group-hover:transition-all duration-300 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 -top-51 xs:-top-10 right-[40%] xs:right-[31%] lg:right-[38%] bg-amber-50">
+            <use xlink:href="./assets/icons8-menú.svg#resultados"></use>
           </svg>
+          <div class="flex flex-col items-center mt-10 mx-2 gap-4 border-t-primary">
+            <span class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
+              CITAS MEDICAS
+            </span>
+            <span class="text-neutral-900 w-full text-center">
+              Solicita tu cita medica
+            </span>
+          </div>
+
+          <div class="absolute bottom-[95%] left-1/2 transform -translate-x-1/2 mb-2
+              bg-white text-black text-sm px-2 py-2 origin-bottom xs:scale-y-0 group-hover:scale-y-100 transition-transform duration-300 ease-out w-full text-center border-t-4 border-t-primary shadow-[0_-10px_30px_rgba(0,0,0,0.25)]">
+              <svg class="absolute z-50 w-13 h-13 group-hover:transition-all duration-400 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 -top-7 xs:-top-10 xs:group-hover:-top-10 right-[40%] xs:right-[31%] lg:right-[38%] bg-amber-50">
+                <use xlink:href="./assets/icons8-menú.svg#resultados"></use>
+              </svg>
+              <img class="mb-6" src="/recursos_fotos/citas.jpg" alt="">
+              <a class="p-2 border-2 rounded-xl text-[13px] border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200 relative" href="#">
+                Acceso
+              <div class="absolute -top-2 -right-1 ">
+                <span class="relative flex h-4 w-4">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
+                  <span class="relative inline-flex h-4 w-4 rounded-full bg-secondary group-hover:border-2 border-white"></span>
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="relative xs:w-1/3 w-11/12 bg-amber-200 h-full border-t-gray-900 border-t-4">
-          <svg class="absolute w-10 h-10 p-2 xs:w-18 xs:h-18 xs:p-3 xs:-top-4 right-[45%] xs:right-[34%] lg:right-[39%] bg-amber-50">
-            <use xlink:href="./assets/icons8-menú.svg#icon-izquierda"></use>
+
+
+
+        <div data-aos="fade-down" data-aos-duration="500" class="relative group xs:w-1/3 w-11/12 not-xs:max-w-[340px] xs:h-52 h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg xs:hover:shadow-[0_10px_30px_rgba(0,0,0,0.25)] transition-all duration-300 bg-white">
+          <svg class="absolute z-50 w-13 h-13 hidden xs:block xs:group-hover:hidden group-hover:transition-all duration-300 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 -top-51 xs:-top-10 right-[40%] xs:right-[31%] lg:right-[38%] bg-amber-50">
+            <use xlink:href="./assets/icons8-menú.svg#citas"></use>
           </svg>
+          <div class="flex flex-col items-center mt-10 mx-2 gap-4 border-t-primary">
+            <span class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
+              LABORATORIOS CLINICOS
+            </span>
+            <span class="text-neutral-900 w-full text-center">
+              Ingresa aqui para descargar tus resultados.
+            </span>
+          </div>
+
+          <div class="absolute bottom-[95%] left-1/2 transform -translate-x-1/2 mb-2
+              bg-white text-black text-sm px-3 py-2
+              origin-bottom xs:scale-y-0 group-hover:scale-y-100
+              transition-transform duration-300 ease-out w-full text-center border-t-4 border-t-primary shadow-[0_-10px_30px_rgba(0,0,0,0.25)]">
+              <svg class="absolute z-50 w-13 h-13 group-hover:transition-all duration-400 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 -top-7 xs:-top-10 xs:group-hover:-top-10 right-[40%] xs:right-[31%] lg:right-[38%] bg-amber-50">
+                <use xlink:href="./assets/icons8-menú.svg#citas"></use>
+              </svg>
+              <img class="mt-6" src="/recursos_fotos/examenes.jpg" alt="">
+              <a class="p-2 border-2 rounded-xl text-[13px] border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200 relative" href="#">
+                Acceso
+              <div class="absolute -top-2 -right-1 ">
+                <span class="relative flex h-4 w-4">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
+                  <span class="relative inline-flex h-4 w-4 rounded-full bg-secondary group-hover:border-2 border-white"></span>
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="relative xs:w-1/3 w-11/12 bg-amber-500 h-full border-t-gray-900 border-t-4">
-          <svg class="absolute w-10 h-10 p-2 xs:w-18 xs:h-18 xs:p-3 xs:-top-4 right-[45%] xs:right-[34%] lg:right-[39%] bg-amber-50">
-            <use xlink:href="./assets/icons8-menú.svg#icon-izquierda"></use>
+
+
+
+        <div data-aos="fade-down" data-aos-duration="500" class="relative group xs:w-1/3 w-11/12 not-xs:max-w-[340px] xs:h-52 h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg xs:hover:shadow-[0_10px_30px_rgba(0,0,0,0.25)] transition-all duration-300 bg-white">
+          <svg class="absolute z-50 w-13 h-13 hidden xs:block xs:group-hover:hidden group-hover:transition-all duration-300 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 -top-51 xs:-top-10 right-[40%] xs:right-[31%] lg:right-[38%] bg-amber-50">
+            <use xlink:href="./assets/icons8-menú.svg#intranet"></use>
           </svg>
+          <div class="flex flex-col items-center mt-10 mx-2 gap-4 border-t-primary">
+            <span class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
+              INTRANET
+            </span>
+            <span class="text-neutral-900 w-full text-center">
+              El acceso a esta zona es exclusivo para empleados de la IPS.
+            </span>
+          </div>
+
+          <div class="absolute bottom-[95%] left-1/2 transform -translate-x-1/2 mb-2
+              bg-white text-black text-sm px-3 py-2
+              origin-bottom xs:scale-y-0 group-hover:scale-y-100
+              transition-transform duration-300 ease-out w-full text-center border-t-4 border-t-primary shadow-[0_-10px_30px_rgba(0,0,0,0.25)]">
+              <svg class="absolute z-50 w-13 h-13 group-hover:transition-all duration-400 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 -top-7 xs:-top-10 xs:group-hover:-top-10 right-[40%] xs:right-[31%] lg:right-[38%] bg-amber-50">
+                <use xlink:href="./assets/icons8-menú.svg#intranet"></use>
+              </svg>
+              <img class="mt-6" src="/recursos_fotos/intranet.jpg" alt="">
+              <a class="p-2 border-2 rounded-xl text-[13px] border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200 relative" href="#">
+                Acceso
+              <div class="absolute -top-2 -right-1 ">
+                <span class="relative flex h-4 w-4">
+                  <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
+                  <span class="relative inline-flex h-4 w-4 rounded-full bg-secondary group-hover:border-2 border-white"></span>
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
+
+<!-- grid -->
+<section class="w-full py-10">
+    <div class="max-w-[1100px] tmx:mx-auto mx-8 pt-4">
+      <div class="w-full e01:h-12 h-18 relative m-auto flex justify-center border-b-2 border-primary">
+        <div class="border-b-2 border-secondary w-auto e01:h-12 h-18 -top-0 absolute text-center px-3"> 
+        <h1 class="text-2xl  text-balance font-bold text-gray-900 h-full">Bienvenido a MEDICARE IPS</h1>
+        </div>
+      </div>
+
+      <p class="text-[18px] text-gray-700 text-center mt-4">
+        Garantizamos y mejoramos continuamente la calidad científica, humana, tecnológica y la oportunidad de nuestros servicios y así ofrecer una atención integral en búsqueda de un mejoramiento continuo, brindando al usuario y a su familia una información clara, que genera confianza y seguridad, disponiendo además de una infraestructura adecuada para ser competitivos, y generar un impacto altamente positivo en la comunidad.  
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+        <div data-aos="fade-down" data-aos-duration="2000" class="hidden sm:block sm:row-span-3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img src="/recursos_fotos/Muñeco.png" alt="">
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="600" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/ambulancia.svg" alt="">
+            <h2 class="text-xl font-semibold">MEDICINA GENERAL</h2>
+          </div>
+          <p class="text-gray-700">Comprende la anamnesis y el examen físico caudal para evaluar el estado de salud del paciente.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="800" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/diente.svg" alt="">
+            <h2 class="text-xl font-semibold">ODONTOLOGIA</h2>
+          </div>
+          <p class="text-gray-700">Nuestro personal ayuda al paciente a identificar factores de riesgo y tener consciencia de sus hábitos orales.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="1000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/odontologia.svg" alt="">
+            <h2 class="text-xl font-semibold">ESPECIALIDADES ODONTOLOGICAS</h2>
+          </div>
+          <p class="text-gray-700">Integración y evaluación del estado de salud oral, diagnóstico y tratamiento, educación, prevención.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="1200" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/deteccion.svg" alt="">
+            <h2 class="text-xl font-semibold">PROG. DE DETECCIÓN TEMPRANA</h2>
+          </div>
+          <p class="text-gray-700">Son medidos y evaluados constantemente con el fin de verificar su impacto sobre la población de usuarios.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="1400" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/nutricion.svg" alt="">
+            <h2 class="text-xl font-semibold">CONSULTA NUTRICIÓN</h2>
+          </div>
+          <p class="text-gray-700">Contribuir al mejoramiento de la salud de las personas, a través prevención y atención alimentaria nutricional.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="1600" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/especialidad.svg" alt="">
+            <h2 class="text-xl font-semibold">ESPECIALIDADES MEDICAS</h2>
+          </div>
+          <p class="text-gray-700">Disponemos de un grupo de médicos generales y especialistas altamente capacitados para la atención de nuestros usuarios.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="1800" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/enfermeria.svg" alt="">
+            <h2 class="text-xl font-semibold">ENFERMERIA</h2>
+          </div>
+          <p class="text-gray-700">Son cuidados autónomos y en colaboración, que se prestan a las personas, familias, grupos y comunidades, enfermos o sanos.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="2000" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/psicologia.svg" alt="">
+            <h2 class="text-xl font-semibold">CONSULTA PSICOLOGIA</h2>
+          </div>
+          <p class="text-gray-700">Disponemos de un personal altamente capacitado para atender todas sus afectaciones físicas y psicológicas.</p>
+        </div>
+
+        <div data-aos="fade-down" data-aos-duration="2200" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4 mb-4">
+            <img class="w-12 h-12 bg-slate-300 py-1 px-2.5 rounded-lg border-2 border-primary" src="/assets/iconos/laboratorio.svg" alt="">
+            <h2 class="text-xl font-semibold">LABORATORIO CLINICO</h2>
+          </div>
+          <p class="text-gray-700">Se cuenta con Laboratorio Clínico propio, moderno, con equipo nuevo y tecnología actualizada ofreciendo calidad.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+
+<footer>
+  <div class="w-full bg-gray-900 py-4 tracking-wider">
+    <div class="flex flex-row flex-wrap text-white max-w-[1100px] mx-5 xs:mx-auto justify-center items-center">
+      <div class="w-full e01:w-1/2 xs:w-1/3 min-h-[325px] p-4">
+        <p class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500">GALERA DE IMAGENES</p>
+        <div class="flex flex-col justify-center items-center gap-1.5 my-3">
+          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Adulto Mayor</p>
+          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Cancer de Cuello</p>
+          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Jornada Niños</p>
+          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Salud Mujer</p>
+          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Laboratirui Clinico</p>
+        </div>
+      </div>
+
+      <div class="w-full e01:w-1/2 xs:w-1/3 min-h-[325px] p-4 flex flex-col">
+
+        <div class="w-[93%]  pb-3 relative flex justify-start border-b-2 border-stone-500 mb-2">
+        <div class=" border-blue-500 h-full w-full z-10"> 
+        <h1 class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500">CONTACTANOS</h1>
+        </div>
+      </div>
+
+      <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
+        <img class="w-10 h-10 p-2 text bg-blue-600 group-hover:bg-blue-500 rounded-full" src="/assets/iconos/ubicacion.svg" alt="">
+        <p class="my-3">Cl. 12 #5-31, La Dorada, Caldas</p></div>
+
+      <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
+        <img class="w-10 h-10 p-2 text bg-blue-600 group-hover:bg-blue-500 rounded-full" src="/assets/iconos/telefono.svg" alt="">
+        <p class="my-3">+(606) 8370056</p></div>
+
+      <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
+        <img class="w-10 h-10 p-2 text bg-blue-600 group-hover:bg-blue-500 rounded-full" src="/assets/iconos/whatsapp.svg" alt="">
+        <p class="my-3">+57 321 2701208</p></div>
+
+      </div>
+
+
+      <div class="w-full e01:w-1/2 xs:w-1/3 min-h-[325px] min-w-[314px] p-4 flex flex-col justify-start">
+        <h2 class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500 mb-3">OPINIONES</h2>
+        <form id="formularioContacto" class="space-y-4 max-w-md mx-auto">
+
+          <input type="text" name="nombre" placeholder="NOMBRE" class="border-2 border-blue-600 shadow shadow-white p-1 w-[31.5%] text-[14px]" required>
+
+          <input type="email" name="email" placeholder="CORREO ELECTRONICO" class="border-2 border-blue-600 shadow shadow-white p-1 w-2/3 text-[14px] " required>
+
+          <textarea name="mensaje" placeholder="MENSAJE" class="border-2 border-blue-600 shadow shadow-white p-1 w-full  text-[14px] h-31" required></textarea>
+
+          <button type="submit" class="bg-blue-600 hover:bg-blue-500 transition-all text-white px-4 py-2 rounded">Enviar</button>
+
+          <p id="mensajeConfirmacion" class="text-green-600 mt-2 hidden">¡Mensaje enviado con éxito!</p>
+          </form>
+      </div>
+      </div>
+  </div>
+
+  <div class="w-full bg-gray-800 text-white text-center py-4">
+    <p class="text-sm">© 2025 MEDICARE IPS. Todos los derechos reservados.</p>
+    <p class="text-xs">Desarrollado por MIchael Grajales</p>
+  </div>
+</footer>
+
+
+
+
+
+
 
 <script src="/Archivos/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>mostrar();</script>
 </body> 
 

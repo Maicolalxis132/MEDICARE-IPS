@@ -12,7 +12,7 @@
     font-family: 'Nixie';
     src: url(/assets/NixieOne.woff2) format('woff2');
     src: url(/assets/NixieOne.woff) format('woff');
-    font-weight: 100 900;; /* font-black */
+    font-weight: 100 900; /* font-black */
     font-style: normal;
     font-display: swap;
 }
@@ -26,7 +26,8 @@
 
     /* Tamaños de pantalla */
     --breakpoint-xs: 798px;
-    --breakpoint-tmx: 1100px;
+    --breakpoint-tmx: 1180px;
+    --breakpoint-e01: 420px;
 
     /* Colores */
     --color-primary: #004977;
