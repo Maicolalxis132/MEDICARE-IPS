@@ -31,5 +31,10 @@
 
     /* Colores */
     --color-primary: #004977;
+    --color-primary-heavy: #0a3856;
+    --color-primary-light: #0f5886;
     --color-secondary: #015321;
+    --color-secondary-heavy: #073c1c;
+    --color-secondary-light: #0b5e2c;
+
 }

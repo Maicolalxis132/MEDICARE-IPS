@@ -9,10 +9,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="bg-white w-full min-w-[350px] ">
+<body class="relative bg-white w-full min-w-[350px] ">
 
 <!-- encabezado -->
-<header class="w-full  shadow-lg z-[9999]">
+<header class="w-full  shadow-lg z-[9999] sticky top-0 left-0">
   <nav class="h-20 bg-white flex justify-between">
   <div class="flex justify-between items-center w-full mx-10 tmx:mx-auto tmx:w-[1100px] ">
     <img class="logo not-xs:w-40 xs:w-50" src="./recursos_fotos/Logo1.png" alt="">
@@ -88,11 +88,11 @@
               </button>
             </div>
             <div class="flex flex-col items-center mt-10 mx-2 gap-4 border-t-primary">
-              <span class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
-                CITAS MEDICAS
+              <span id="card1title" class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
+                ...
               </span>
-              <span class="text-neutral-900 w-full text-center">
-                Solicita tus cita medica por este medio, de forma rapida y sencilla.
+              <span id="card1parrafo" class="text-neutral-900 w-full text-center">
+                ...
               </span>
             </div>
 
@@ -128,11 +128,11 @@
               </button>
             </div>
             <div class="flex flex-col items-center mt-10 mx-2 gap-4 border-t-primary">
-              <span class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
-                LABORATORIOS CLINICOS
+              <span id="card2title" class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
+                ...
               </span>
-              <span class="text-neutral-900 w-full text-center">
-                Ingresa aqui para descargar todos tus resultados de examenes.
+              <span id="card2parrafo" class="text-neutral-900 w-full text-center">
+                ...
               </span>
             </div>
 
@@ -169,11 +169,11 @@
               </button>
             </div>
             <div class="flex flex-col items-center mt-10 mx-2 gap-4 border-t-primary">
-              <span class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
-                INTRANET
+              <span id="card3title" class="text-neutral-900 text-[22px] w-full text-center font-bold group-hover:text-primary transition-all duration-300">
+                ...
               </span>
-              <span class="text-neutral-900 w-full text-center">
-                El acceso a esta zona es exclusivo para empleados de la IPS.
+              <span id="card3parrafo" class="text-neutral-900 w-full text-center">
+                ...
               </span>
             </div>
 
@@ -207,12 +207,12 @@
     <div class="max-w-[1100px] tmx:mx-auto mx-8 pt-4">
       <div class="w-full e01:h-12 h-18 relative m-auto flex justify-center border-b-2 border-primary">
         <div class="border-b-2 border-secondary w-auto e01:h-12 h-18 -top-0 absolute text-center px-3"> 
-        <h1 class="text-2xl  text-balance font-bold text-gray-900 h-full">Bienvenido a MEDICARE IPS</h1>
+        <h1 id="titlegrid" class="text-2xl  text-balance font-bold text-gray-900 h-full">...</h1>
         </div>
       </div>
 
-      <p class="text-[18px] text-gray-700 text-center mt-4">
-        Garantizamos y mejoramos continuamente la calidad científica, humana, tecnológica y la oportunidad de nuestros servicios y así ofrecer una atención integral en búsqueda de un mejoramiento continuo, brindando al usuario y a su familia una información clara, que genera confianza y seguridad, disponiendo además de una infraestructura adecuada para ser competitivos, y generar un impacto altamente positivo en la comunidad.  
+      <p id="parrafogrid" class="text-[18px] text-gray-700 text-center mt-4">
+        ...
       </p>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
@@ -304,32 +304,32 @@
       <div class="w-full e01:w-1/2 xs:w-1/3 min-h-[325px] p-4">
         <p class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500">GALERA DE IMAGENES</p>
         <div class="flex flex-col justify-center items-center gap-1.5 my-3">
-          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Adulto Mayor</p>
-          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Cancer de Cuello</p>
-          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Jornada Niños</p>
-          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Salud Mujer</p>
-          <p class="transition-all text-sm p-1.5 w-full text-blue-500 font-bold tracking-wider hover:text-blue-400 hover:text-[16px] hover:bg-black/10 cursor-pointer">Laboratirui Clinico</p>
+          <p class="transition-all text-sm p-1.5 w-full text-primary-light font-bold tracking-wider hover:text-secondary-light hover:text-[16px] hover:bg-black/10 cursor-pointer">Adulto Mayor</p>
+          <p class="transition-all text-sm p-1.5 w-full text-primary-light font-bold tracking-wider hover:text-secondary-light hover:text-[16px] hover:bg-black/10 cursor-pointer">Cancer de Cuello</p>
+          <p class="transition-all text-sm p-1.5 w-full text-primary-light font-bold tracking-wider hover:text-secondary-light hover:text-[16px] hover:bg-black/10 cursor-pointer">Jornada Niños</p>
+          <p class="transition-all text-sm p-1.5 w-full text-primary-light font-bold tracking-wider hover:text-secondary-light hover:text-[16px] hover:bg-black/10 cursor-pointer">Salud Mujer</p>
+          <p class="transition-all text-sm p-1.5 w-full text-primary-light font-bold tracking-wider hover:text-secondary-light hover:text-[16px] hover:bg-black/10 cursor-pointer">Laboratirui Clinico</p>
         </div>
       </div>
 
       <div class="w-full e01:w-1/2 xs:w-1/3 min-h-[325px] p-4 flex flex-col">
 
         <div class="w-[93%]  pb-3 relative flex justify-start border-b-2 border-stone-500 mb-2">
-        <div class=" border-blue-500 h-full w-full z-10"> 
+        <div class=" border-primary-light h-full w-full z-10"> 
         <h1 class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500">CONTACTANOS</h1>
         </div>
       </div>
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
-        <img class="w-10 h-10 p-2 text bg-blue-600 group-hover:bg-blue-500 rounded-full" src="./assets/iconos/ubicacion.svg" alt="">
+        <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/ubicacion.svg" alt="">
         <p class="my-3">Cl. 12 #5-31, La Dorada, Caldas</p></div>
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
-        <img class="w-10 h-10 p-2 text bg-blue-600 group-hover:bg-blue-500 rounded-full" src="./assets/iconos/telefono.svg" alt="">
+        <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/telefono.svg" alt="">
         <p class="my-3">+(606) 8370056</p></div>
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
-        <img class="w-10 h-10 p-2 text bg-blue-600 group-hover:bg-blue-500 rounded-full" src="./assets/iconos/whatsapp.svg" alt="">
+        <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/whatsapp.svg" alt="">
         <p class="my-3">+57 321 2701208</p></div>
 
       </div>
@@ -339,13 +339,13 @@
         <h2 class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500 mb-3">OPINIONES</h2>
         <form id="formularioContacto" class="space-y-4 max-w-md mx-auto">
 
-          <input type="text" name="nombre" placeholder="NOMBRE" class="border-2 border-blue-600 shadow shadow-white p-1 w-[31.5%] text-[14px]" required>
+          <input type="text" name="nombre" placeholder="NOMBRE" class="border-2 border-primary-light hover:border-secondary-light shadow shadow-white p-1 w-[31.5%] text-[14px]" required>
 
-          <input type="email" name="email" placeholder="CORREO ELECTRONICO" class="border-2 border-blue-600 shadow shadow-white p-1 w-2/3 text-[14px] " required>
+          <input type="email" name="email" placeholder="CORREO ELECTRONICO" class="border-2 border-primary-light hover:border-secondary-light shadow shadow-white p-1 w-2/3 text-[14px] " required>
 
-          <textarea name="mensaje" placeholder="MENSAJE" class="border-2 border-blue-600 shadow shadow-white p-1 w-full  text-[14px] h-31" required></textarea>
+          <textarea name="mensaje" placeholder="MENSAJE" class="border-2 border-primary-light hover:border-secondary-light shadow shadow-white p-1 w-full  text-[14px] h-31" required></textarea>
 
-          <button type="submit" class="bg-blue-600 hover:bg-blue-500 transition-all text-white px-4 py-2 rounded">Enviar</button>
+          <button type="submit" class="bg-primary-light hover:bg-secondary-light transition-all text-white px-4 py-2 rounded cursor-pointer">Enviar</button>
 
           <p id="mensajeConfirmacion" class="text-green-600 mt-2 hidden">¡Mensaje enviado con éxito!</p>
           </form>
@@ -366,6 +366,7 @@
 
 
 <script src="./Archivos/script.js"></script>
+<script src="./Archivos/scriptjson.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
