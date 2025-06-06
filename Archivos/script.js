@@ -22,23 +22,54 @@ const boton = document.getElementById('boton-movil');
 // CARRUSEL DE FOTOS
 // Este código es para el carrusel de fotos
 
-   const slider = document.querySelector("#carousel > div");
-    const totalSlides = slider.children.length;
-    let index = 0;
+    document.addEventListener('DOMContentLoaded', function () {
+  // CARRUSEL DE FOTOS
+  const slider = document.querySelector("#carousel > div");
+  if (!slider) return;
 
-    function showSlide() {
-      slider.style.transform = `translateX(-${index * 100}%)`;
-    }
+  const totalSlides = slider.children.length;
+  let index = 0;
+  let autoplayInterval;
 
-    document.getElementById("prev").addEventListener("click", () => {
-      index = (index - 1 + totalSlides) % totalSlides;
-      showSlide();
-    });
+  function showSlide() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-    document.getElementById("next").addEventListener("click", () => {
-      index = (index + 1) % totalSlides;
-      showSlide();
-    });
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide();
+  }
+
+  function startAutoplay() {
+    autoplayInterval = setInterval(nextSlide, 5000); // cambia cada 5 segundos
+  }
+
+  function stopAutoplay() {
+    clearInterval(autoplayInterval);
+  }
+
+  document.getElementById("prev").addEventListener("click", () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide();
+    stopAutoplay();
+    startAutoplay(); // reinicia autoplay al usar botones
+  });
+
+  document.getElementById("next").addEventListener("click", () => {
+    nextSlide();
+    stopAutoplay();
+    startAutoplay();
+  });
+
+  // Pausar autoplay al pasar el mouse por encima del carrusel
+  const carouselContainer = document.querySelector("#carousel");
+  carouselContainer.addEventListener("mouseenter", stopAutoplay);
+  carouselContainer.addEventListener("mouseleave", startAutoplay);
+
+  // Iniciar autoplay al cargar
+  startAutoplay();
+});
+
 
 // ANIMACIÓN DE BOTONES
 

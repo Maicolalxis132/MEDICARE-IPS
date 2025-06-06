@@ -8,10 +8,38 @@
 
     "card3title": "INTRANET",
     "card3parrafo":"El acceso a esta zona es exclusivo para empleados de la IPS.",
+    
 
     "titlegrid": "Bienvenido a MEDICARE IPS",
-    "parrafogrid": "Garantizamos y mejoramos continuamente la calidad científica, humana, tecnológica y la oportunidad de nuestros servicios y así ofrecer una atención integral en búsqueda de un mejoramiento continuo, brindando al usuario y a su familia una información clara, que genera confianza y seguridad, disponiendo además de una infraestructura adecuada para ser competitivos, y generar un impacto altamente positivo en la comunidad."
+    "parrafogrid": "Garantizamos y mejoramos continuamente la calidad científica, humana, tecnológica y la oportunidad de nuestros servicios y así ofrecer una atención integral en búsqueda de un mejoramiento continuo, brindando al usuario y a su familia una información clara, que genera confianza y seguridad, disponiendo además de una infraestructura adecuada para ser competitivos, y generar un impacto altamente positivo en la comunidad.",
 
+    "especialidadtitle1": "MEDICINA GENERAL",
+    "especialidadparrafo1": "Comprende la anamnesis y el examen físico caudal para evaluar el estado de salud del paciente.",
+
+    "especialidadtitle2": "ODONTOLOGIA",
+    "especialidadparrafo2": "Nuestro personal ayuda al paciente a identificar factores de riesgo y tener consciencia de sus hábitos orales.",
+
+    "especialidadtitle3": "ESPECIALIDADES ODONTOLOGICAS",
+    "especialidadparrafo3": "Integración y evaluación del estado de salud oral, diagnóstico y tratamiento, educación, prevención.",
+
+    "especialidadtitle4": "PROG. DE DETECCIÓN TEMPRANA",
+    "especialidadparrafo4": "Son medidos y evaluados constantemente con el fin de verificar su impacto sobre la población de usuarios.",
+
+    "especialidadtitle5": "CONSULTA NUTRICIÓN",
+    "especialidadparrafo5": "Contribuir al mejoramiento de la salud de las personas, a través prevención y atención alimentaria nutricional.",
+
+    "especialidadtitle6": "ESPECIALIDADES MEDICAS",
+    "especialidadparrafo6": "Disponemos de un grupo de médicos generales y especialistas altamente capacitados para la atención de nuestros usuarios.",
+
+    "especialidadtitle7": "ENFERMERIA",
+    "especialidadparrafo7": "Son cuidados autónomos y en colaboración, que se prestan a las personas, familias, grupos y comunidades, enfermos o sanos.",
+
+    "especialidadtitle8": "CONSULTA PSICOLOGIA",
+    "especialidadparrafo8": "Disponemos de un personal altamente capacitado para atender todas sus afectaciones físicas y psicológicas." ,
+
+    "especialidadtitle9": "LABORATORIO CLINICO",
+    "especialidadparrafo9": "Se cuenta con Laboratorio Clínico propio, moderno, con equipo nuevo y tecnología actualizada ofreciendo calidad."
+    
 
 
 }
