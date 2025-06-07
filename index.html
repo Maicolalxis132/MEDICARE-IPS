@@ -50,11 +50,8 @@
 <div class="relative w-full flex justify-center items-center z-10 bg-stone-200">
 
     <div id="carousel" class="overflow-hidden rounded-lg shadow-lg my-7">
-      <div class="flex transition-transform duration-500 max-w-[800px]" style="transform: translateX(0%)">
-        <img src="./recursos_fotos/inasistencia.jpg" class="w-full flex-shrink-0"/> 
-        <img src="./recursos_fotos/numerodario.jpg" class="w-full flex-shrink-0"/>
-        <img src="./recursos_fotos/taller.jpg" class="w-full flex-shrink-0"/>
-        <img src="./recursos_fotos/fondo1.webp" class="w-full flex-shrink-0"/>
+      <div id="contenedor" class="flex transition-transform duration-500 max-w-[800px]" style="transform: translateX(0%)">
+        <!-- para añadir mas imagenes debe de añadirlas a la carpeta de recursos_fotos, para despues colocar la ruta de la imgane en el json "fotos" -->
       </div>
     </div>
 
@@ -297,8 +294,8 @@
     </div>
 </section>
 
-
 <footer>
+  
   <div class="w-full bg-gray-900 py-4 tracking-wider">
     <div class="flex flex-row flex-wrap text-white max-w-[1100px] mx-5 xs:mx-auto justify-center items-center">
       <div class="w-full e01:w-1/2 xs:w-1/3 min-h-[325px] p-4">
@@ -322,15 +319,15 @@
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
         <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/ubicacion.svg" alt="">
-        <a href="https://maps.app.goo.gl/wiqmfhgq7dGxUNFi7" target="_blank"><p id="direccion" class="my-3">Cl. 12 #5-31, La Dorada, Caldas</p></div></a>
+        <a id="hrefdireccion" href="..." target="_blank"><p id="direccion" class="my-3">...</p></a></div>
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
-        <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/telefono.svg" alt="">
-        <a href="mailto:Contacto@medicareips.com.co" target="_blank"><p id="correo" class="my-3">Contacto@medicareips.com.co</p></div></a>
+        <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/Email.svg" alt=""> 
+        <a id="hrefcorreo" href="..." target="_blank"><p id="correo" class="my-3">...</p></a></div>
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
         <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/whatsapp.svg" alt="">
-        <a href="https://wa.link/0186ur" target="_blank"><p id="whatsapp" class="my-3">+57 321 2701208</p></div></a>
+        <a id="hrefwhatsapp" href="..." target="_blank"><p id="whatsapp" class="my-3">...</p></a></div>
 
       </div>
 
@@ -352,6 +349,11 @@
       </div>
       </div>
   </div>
+
+  <div class="w-full bg-gray-900 pb-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1985.888453182104!2d-74.665232!3d5.4507987!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40dea1f5b88021%3A0xaeb31d4e33d20b74!2sMedicare%20IPS!5e0!3m2!1ses-419!2sco!4v1749313456200!5m2!1ses-419!2sco" class="w-full h-90 max-w-[1100px] m-auto "  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
 
   <div class="w-full bg-gray-800 text-white text-center py-4">
     <p class="text-sm">© 2025 MEDICARE IPS. Todos los derechos reservados.</p>

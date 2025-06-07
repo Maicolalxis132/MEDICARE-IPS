@@ -22,14 +22,43 @@ const boton = document.getElementById('boton-movil');
 // CARRUSEL DE FOTOS
 // Este código es para el carrusel de fotos
 
-    document.addEventListener('DOMContentLoaded', function () {
-  // CARRUSEL DE FOTOS
+  document.addEventListener('DOMContentLoaded', function () {
   const slider = document.querySelector("#carousel > div");
+  const carouselContainer = document.querySelector("#carousel");
+
   if (!slider) return;
 
-  const totalSlides = slider.children.length;
   let index = 0;
   let autoplayInterval;
+  let totalSlides = 0;
+
+  // 1. Cargar imágenes desde JSON
+  fetch('./Archivos/json/index.json')
+    .then(res => res.json())
+    .then(data => {
+      const fotos = data.fotos;
+
+      // Limpiar contenido anterior
+      slider.innerHTML = "";
+
+      // Insertar imágenes dinámicamente
+      fotos.forEach(url => {
+        const img = document.createElement('img');
+        img.src = url;
+        img.className = "w-full flex-shrink-0";
+        slider.appendChild(img);
+      });
+
+      // Actualizar número de slides
+      totalSlides = fotos.length;
+
+      // Mostrar primera imagen
+      showSlide();
+
+      // Iniciar autoplay
+      startAutoplay();
+    })
+    .catch(err => console.error("Error al cargar las imágenes:", err));
 
   function showSlide() {
     slider.style.transform = `translateX(-${index * 100}%)`;
@@ -40,19 +69,24 @@ const boton = document.getElementById('boton-movil');
     showSlide();
   }
 
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide();
+  }
+
   function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 5000); // cambia cada 5 segundos
+    autoplayInterval = setInterval(nextSlide, 5000);
   }
 
   function stopAutoplay() {
     clearInterval(autoplayInterval);
   }
 
+  // 2. Eventos de botones
   document.getElementById("prev").addEventListener("click", () => {
-    index = (index - 1 + totalSlides) % totalSlides;
-    showSlide();
+    prevSlide();
     stopAutoplay();
-    startAutoplay(); // reinicia autoplay al usar botones
+    startAutoplay();
   });
 
   document.getElementById("next").addEventListener("click", () => {
@@ -61,15 +95,10 @@ const boton = document.getElementById('boton-movil');
     startAutoplay();
   });
 
-  // Pausar autoplay al pasar el mouse por encima del carrusel
-  const carouselContainer = document.querySelector("#carousel");
+  // 3. Pausar al pasar el mouse
   carouselContainer.addEventListener("mouseenter", stopAutoplay);
   carouselContainer.addEventListener("mouseleave", startAutoplay);
-
-  // Iniciar autoplay al cargar
-  startAutoplay();
 });
-
 
 // ANIMACIÓN DE BOTONES
 

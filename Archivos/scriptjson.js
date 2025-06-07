@@ -1,6 +1,7 @@
 fetch('./Archivos/json/index.json')
 .then(doc => doc.json())
 .then(datos => {
+
     document.getElementById('card1title').textContent = datos.card1title;
     document.getElementById('card1parrafo').textContent = datos.card1parrafo;
 
@@ -40,5 +41,16 @@ fetch('./Archivos/json/index.json')
 
     document.getElementById('especialidadtitle9').textContent = datos.especialidadtitle9;
     document.getElementById('especialidadparrafo9').textContent = datos.especialidadparrafo9;
+
+
+    document.getElementById('hrefdireccion').href = datos.hrefdireccion;
+    document.getElementById('direccion').textContent = datos.direccion;
+
+    document.getElementById('hrefcorreo').href = datos.hrefcorreo;
+    document.getElementById('correo').textContent = datos.correo;
+
+    document.getElementById('hrefwhatsapp').href = datos.hrefwhatsapp;
+    document.getElementById('whatsapp').textContent = datos.whatsapp;
+
 })
     

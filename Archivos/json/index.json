@@ -1,4 +1,12 @@
 {
+    "fotos" : [
+        "./recursos_fotos/inasistencia.jpg",
+        "./recursos_fotos/numerodario.jpg",
+        "./recursos_fotos/taller.jpg",
+        "./recursos_fotos/fondo1.webp"
+    ],
+ 
+
 
     "card1title": "CITAS MEDICAS",
     "card1parrafo":"Solicita tus cita medica por este medio, de forma rapida y sencilla.",
@@ -38,8 +46,16 @@
     "especialidadparrafo8": "Disponemos de un personal altamente capacitado para atender todas sus afectaciones físicas y psicológicas." ,
 
     "especialidadtitle9": "LABORATORIO CLINICO",
-    "especialidadparrafo9": "Se cuenta con Laboratorio Clínico propio, moderno, con equipo nuevo y tecnología actualizada ofreciendo calidad."
-    
+    "especialidadparrafo9": "Se cuenta con Laboratorio Clínico propio, moderno, con equipo nuevo y tecnología actualizada ofreciendo calidad.",
 
+
+    "hrefdireccion" : "https://maps.app.goo.gl/wiqmfhgq7dGxUNFi7",
+    "direccion" : "Cl. 12 #5-31, La Dorada, Caldas",
+
+    "hrefcorreo" : "mailto:Contacto@medicareips.com.co",
+    "correo" : "Contacto@medicareips.com.co",
+
+    "hrefwhatsapp" : "https://wa.link/0186ur",
+    "whatsapp" : "+57 321 2701208"
 
 }
