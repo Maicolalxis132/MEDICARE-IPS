@@ -18,6 +18,38 @@ const boton = document.getElementById('boton-movil');
     }
   });
 
+// CAMBIO DE IMAGENES EN EL BOTON
+
+const use = document.querySelector('#svgbotones use');
+const svg = document.getElementById('svgbotones');
+// const boton = document.getElementById('boton-movil');
+
+let mostrarimg = true;
+
+boton.addEventListener('click', () => {
+  //animacion al presionar el boton
+  svg.classList.add('scale-200', 'text-secondary');
+
+  setTimeout(() => { 
+    // cambiar entre imagenes
+    const nuevoIcon = mostrarimg ? './assets/iconos/cerrar.svg' : './assets/iconos/icons8-menú.svg#icon-menu'; 
+
+    use.setAttribute('href', nuevoIcon);
+    mostrarimg = !mostrarimg;
+
+  // Quitar animacion para permitir la siguiente animacion
+    svg.classList.remove('scale-200', 'text-secondary');
+  },);
+});
+ 
+
+
+
+
+
+
+
+
 
 // CARRUSEL DE FOTOS
 // Este código es para el carrusel de fotos
@@ -111,6 +143,8 @@ const boton = document.getElementById('boton-movil');
     }, 200);
   }
 
+
+
 // Solo para el primer cuadro de CITAS MEDICAS
 document.addEventListener('DOMContentLoaded', function () {
   // Selecciona solo el primer card (CITAS MEDICAS)
@@ -181,6 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 });
+
 
 
 // Enlace

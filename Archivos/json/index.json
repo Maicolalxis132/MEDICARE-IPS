@@ -55,7 +55,10 @@
     "hrefcorreo" : "mailto:Contacto@medicareips.com.co",
     "correo" : "Contacto@medicareips.com.co",
 
-    "hrefwhatsapp" : "https://wa.link/0186ur",
-    "whatsapp" : "+57 321 2701208"
+    "hrefwhatsapp" : "https://walink.co/c82aaa",
+    "whatsapp" : "+57 321 2701208",
+
+    "botondario" : "https://walink.co/c82aaa"
+
 
 }
