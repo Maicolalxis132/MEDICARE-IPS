@@ -52,6 +52,10 @@ fetch('./Archivos/json/index.json')
     document.getElementById('hrefwhatsapp').href = datos.hrefwhatsapp;
     document.getElementById('whatsapp').textContent = datos.whatsapp;
 
+    document.getElementById('hreffacebook').href = datos.hreffacebook;
+    document.getElementById('hrefinstagram').href = datos.hrefinstagram;
+    document.getElementById('hrefx').href = datos.hrefx;
+
     document.getElementById('botondario').href = datos.botondario;
 
 })
