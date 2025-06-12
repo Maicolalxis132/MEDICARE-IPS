@@ -37,4 +37,55 @@
     --color-secondary-heavy: #073c1c;
     --color-secondary-light: #0b5e2c;
 
+
+    /* Animaciones */
+    --animate-wiggle: wiggle 2s ease-in-out infinite;
+    
+    @keyframes wiggle {
+        0%,
+        100% {
+        transform: rotate(3deg);
+        text-shadow: 0px 0px 10px #004977;
+        }
+        50% {
+        transform: rotate(-3deg);
+        text-shadow: 0px 0px 5px #004977;
+        }
+    }
+
+    --animate-wiggle1: wiggle1 2s ease-in-out infinite;
+    
+    @keyframes wiggle1 {
+        0%,
+        100% {
+        transform: rotate(-3deg);
+        text-shadow: 0px 0px 10px #015321;
+        }
+        50% {
+        transform: rotate(3deg);
+        text-shadow: 0px 0px 5px #015321;
+        }
+    }
+
+    --animate-wiggle2: wiggle2 5s ease-in-out infinite;
+    
+    @keyframes wiggle2 {
+        0%{
+            scale: 1;
+        }
+        25%{
+            scale:1.2;
+        }
+        50% {
+            scale: 1;
+        }
+        75%{
+            scale:1.2;
+        }
+        100% {
+            scale: 1;
+        }
+    }
+    
+    
 }

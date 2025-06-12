@@ -294,16 +294,25 @@
 </section>
 
 <!--PAGAR-->
-<section class="w-full py-10 bg-stone-200">
+<section class="w-full py-5 pb-20 bg-stone-200">
   <div class="max-w-[1100px] tmx:mx-auto mx-8 py-4 flex">
-    <div class="w-[70%] flex flex-wrap">
-      <p class="text-9xl font-semibold text-gray-900">TOCA ESTE</p> 
-      <p class="text-9xl font-semibold text-secondary text-shadow-lg shadow-secondary-heavy">BOTON</p> 
-      <p class="text-9xl font-semibold text-gray-900">PARA REALIZAR TUS PAGOS</p> 
+    <div class="w-[70%] flex flex-wrap gap-1 items-center">
+      <p class="text-8xl font-semibold text-gray-900 mr-6">TOCA EL</p> 
+      <p class="text-8xl font-semibold text-secondary text-shadow-lg animate-wiggle1">BOTON</p> 
+      <p class="text-8xl font-semibold text-gray-900">PARA REALIZAR</p>
+      <p class="text-8xl font-semibold text-gray-900 mr-6">TUS</p>
+      <p class="text-8xl font-semibold text-primary animate-wiggle">PAGOS</p> 
+ 
     </div>
-    <div class="w-[30%] flex justify-center items-center">
-      <img class="w-60 h-60" src="./recursos_fotos/DARIO.jpeg" alt="Pagar">
-
+    <div class="w-[30%] flex justify-center items-center"> 
+      <a href="">
+        <button class="rounded-full border-4 cursor-pointer border-gray-900 bg-white shadow-lg hover:shadow-xl transition-all duration-300 p-5 hover:scale-110 active:scale-100 hover:animate-none animate-wiggle2">
+          <svg class="w-20 h-20 text-gray-900 transition-all duration-300 ease">
+            <use xlink:href="./assets/iconos/dolar.svg"></use>
+          </svg>
+        </button> 
+      </a>
+      
     </div>
     
   </div>
