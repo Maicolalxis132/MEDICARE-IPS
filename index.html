@@ -295,26 +295,29 @@
 
 <!--PAGAR-->
 <section class="w-full py-5 pb-20 bg-stone-200">
-  <div class="max-w-[1100px] tmx:mx-auto mx-8 py-4 flex">
-    <div class="w-[70%] flex flex-wrap gap-1 items-center">
-      <p class="text-8xl font-semibold text-gray-900 mr-6">TOCA EL</p> 
-      <p class="text-8xl font-semibold text-secondary text-shadow-lg animate-wiggle1">BOTON</p> 
-      <p class="text-8xl font-semibold text-gray-900">PARA REALIZAR</p>
-      <p class="text-8xl font-semibold text-gray-900 mr-6">TUS</p>
-      <p class="text-8xl font-semibold text-primary animate-wiggle">PAGOS</p> 
+  <div class="max-w-[1100px] tmx:mx-auto mx-8 py-4 flex sm:flex-row flex-col gap-10 sm:gap-0 justify-center">
+
+    <div class="sm:w-[70%] w-full flex flex-wrap gap-1 sm:justify-start justify-center items-center">
+      <p class="xs:text-8xl text-5xl font-semibold text-gray-900 sm:mr-6 mr-1">TOCA EL</p> 
+      <p class="xs:text-8xl text-5xl font-semibold text-secondary text-shadow-lg animate-wiggle1">BOTON</p> 
+      <p class="xs:text-8xl text-center sm:text-start text-5xl font-semibold text-gray-900">PARA REALIZAR</p>
+      <p class="xs:text-8xl text-5xl font-semibold text-gray-900 mr-6">TUS</p>
+      <p class="xs:text-8xl text-5xl font-semibold text-primary animate-wiggle">PAGOS</p> 
  
-    </div>
-    <div class="w-[30%] flex justify-center items-center"> 
-      <a href="">
-        <button class="rounded-full border-4 cursor-pointer border-gray-900 bg-white shadow-lg hover:shadow-xl transition-all duration-300 p-5 hover:scale-110 active:scale-100 hover:animate-none animate-wiggle2">
-          <svg class="w-20 h-20 text-gray-900 transition-all duration-300 ease">
-            <use xlink:href="./assets/iconos/dolar.svg"></use>
-          </svg>
+    </div> 
+
+    <div class="sm:w-[30%] w-full flex justify-center items-center"> 
+      
+        <button class="rounded-full border-4 cursor-pointer border-gray-900 bg-white shadow-lg hover:shadow-xl transition-all duration-300 xs:p-5 p-2 hover:scale-110 active:scale-100 hover:animate-none animate-wiggle2 text-gray-900">
+          <a class="flex flex-col sm:flex-row justify-center  items-center gap-1.5 p-3" href="">
+            <svg class="xs:w-20 xs:h-20 h-14 w-14 transition-all duration-300 ease">
+              <use xlink:href="./assets/iconos/dolar.svg"></use>
+            </svg>
+            <p class="font-bold xs:text-3xl text-2xl pr-0">PAGOS</p>
+          </a>
         </button> 
-      </a>
       
     </div>
-    
   </div>
 </section>
 
@@ -356,7 +359,7 @@
         </a>
       </div>
 
-      <div class="py-1 flex flex-row items-center gap-2.5 hover:text-blue-400 hover:bg-black/10 hover:rounded-2xl">
+      <div class="py-1 flex flex-row items-center sm:gap-2.5 gap-1 hover:text-blue-400 hover:bg-black/10 hover:rounded-2xl">
  
         <div class="p-2 group hover:bg-black/5 hover:rounded-2xl">
           <a id="hreffacebook" href="..." target="_blank">
@@ -376,7 +379,7 @@
           </a>  
         </div>
  
-        <p class="ml-3 ">Otras</p>
+        <p class="ml-3 sm:block hidden">Otras</p>
         
       </div>
 
