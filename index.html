@@ -12,7 +12,7 @@
 <body class="relative bg-white w-full min-w-[350px] ">
 
 <!-- encabezado -->
-<header class="w-full  shadow-lg z-[9999] sticky top-0 left-0">
+<header id="main-header" class="w-full  shadow-lg z-[9999] sticky top-0 left-0 transition-all duration-400 ease-in-out">
   <nav class="h-20 bg-white flex justify-between">
   <div class="flex justify-between items-center w-full mx-10 tmx:mx-auto tmx:w-[1100px] ">
     <img class="logo not-xs:w-40 xs:w-50" src="./recursos_fotos/Logo1.png" alt="">
@@ -29,10 +29,10 @@
 
     <!-- menú de PC -->
     <ul class="nav-list gap-6 flex-row justify-center items-center cursor-pointer hidden xs:flex text-neutral-800 text-[20px]">
-      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Inici </strong></a></li>
-      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Nosot </strong></a></li>
-      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Quien </strong></a></li>
-      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#"><strong>Ellos </strong></a></li>
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#info"><strong>Info</strong></a></li>
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#contenido"><strong>Ayudas</strong></a></li>
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#especialidad"><strong>Especialidades</strong></a></li>
+      <li><a class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full" href="#pagos"><strong>Pagos</strong></a></li>
     </ul>
 
     <!-- botón menú móvil -->
@@ -46,7 +46,7 @@
 </header>
 
 <!-- CARRUSEL DE FOTOS -->
-<div class="relative w-full flex justify-center items-center z-10 bg-stone-200">
+<div id="info" class="relative w-full flex justify-center items-center z-10 bg-stone-200">
 
     <div id="carousel" class="overflow-hidden rounded-lg shadow-lg my-7">
       <div id="contenedor" class="flex transition-transform duration-500 max-w-[800px]" style="transform: translateX(0%)">
@@ -199,7 +199,7 @@
 </section>
 
 <!-- grid -->
-<section class="w-full py-10 bg-stone-200">
+<section id="especialidad" class="w-full py-10 bg-stone-200">
     <div class="max-w-[1100px] tmx:mx-auto mx-8 pt-4">
       <div class="w-full e01:h-12 h-18 relative m-auto flex justify-center border-b-2 border-primary">
         <div class="border-b-2 border-secondary w-auto e01:h-12 h-18 -top-0 absolute text-center px-3"> 
@@ -213,7 +213,7 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
 
-        <div data-aos="fade-down" data-aos-duration="2000" class="hidden sm:block sm:row-span-3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl  transition-shadow duration-300">
+        <div data-aos="fade-down" data-aos-duration="2000" class="hidden sm:flex sm:row-span-3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl  transition-shadow duration-300  justify-center items-center">
           <img src="./recursos_fotos/Muñeco.png" alt="">
         </div>
 
@@ -294,7 +294,7 @@
 </section>
 
 <!--PAGAR-->
-<section class="w-full py-5 pb-20 bg-stone-200">
+<section id="pagos" class="w-full py-5 pb-20 bg-stone-200">
   <div class="max-w-[1100px] tmx:mx-auto mx-8 py-4 flex sm:flex-row flex-col gap-10 sm:gap-0 justify-center">
 
     <div class="sm:w-[70%] w-full flex flex-wrap gap-1 sm:justify-start justify-center items-center">
@@ -321,7 +321,7 @@
   </div>
 </section>
 
-<footer>
+<footer id="footer">
   
   <div class="w-full bg-gray-900 py-4 tracking-wider">
     <div class="flex flex-row flex-wrap text-white max-w-[1100px] mx-5 xs:mx-auto justify-center items-center">

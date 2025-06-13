@@ -1,3 +1,21 @@
+// HEADER QUE SE ESCONDA Y QUE APAREZCA
+let lastScrollTop = 0;
+const header = document.getElementById('main-header');
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Bajando: ocultar el header
+    header.style.top = "-100px";
+  } else {
+    // Subiendo: mostrar el header
+    header.style.top = "0";
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
 
 // MENU DESPLEGABLE
 // Este código es para el menú desplegable en dispositivos móviles
@@ -22,8 +40,6 @@ const boton = document.getElementById('boton-movil');
 
 const use = document.querySelector('#svgbotones use');
 const svg = document.getElementById('svgbotones');
-// const boton = document.getElementById('boton-movil');
-
 let mostrarimg = true;
 
 boton.addEventListener('click', () => {
@@ -42,12 +58,6 @@ boton.addEventListener('click', () => {
   },);
 });
  
-
-
-
-
-
-
 
 
 
