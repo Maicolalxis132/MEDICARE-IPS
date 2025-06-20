@@ -42,28 +42,43 @@ boton.addEventListener('click', () => {
 // Mini menus con infos
 
   const btninfo = document.getElementById('btn-info');
-  const menuinfo = document.getElementById('menu-info');
-  let infoabierto = false;
+const menuinfo = document.getElementById('menu-info');
+let infoabierto = false;
 
-  btninfo.addEventListener('click', () => {
-    infoabierto = !infoabierto;
+btninfo.addEventListener('click', (e) => {
+  e.stopPropagation(); // Evita que el clic se propague al documento
+  infoabierto = !infoabierto;
 
-    if(infoabierto){
-      menuinfo.classList.remove('hidden')
-      setTimeout(()=> {
+  if (infoabierto) {
+    menuinfo.classList.remove('hidden');
+    setTimeout(() => {
       menuinfo.classList.remove('max-h-0', 'opacity-0');
       menuinfo.classList.add('max-h-[300px]', 'opacity-100');
       btninfo.classList.add('bg-primary', 'rounded-full', 'text-white', 'py-1');
-      }, 100);
-    } else {
-      menuinfo.classList.add('max-h-0', 'opacity-0');
-      menuinfo.classList.remove('max-h-[300px]', 'opacity-100');
-      btninfo.classList.remove('bg-primary', 'rounded-full', 'text-white');
-      setTimeout(()=> {
-        menuinfo.classList.add('hidden')
-      },300);
-    }
-  });
+    }, 100);
+  } else {
+    cerrarMenu();
+  }
+});
+
+// ▶️Escucha clics en todo el documento
+document.addEventListener('click', (e) => {
+  // Si el clic no fue en el botón ni en el menú
+  if (infoabierto && !menuinfo.contains(e.target) && !btninfo.contains(e.target)) {
+    cerrarMenu();
+  }
+});
+
+function cerrarMenu() {
+  infoabierto = false;
+  menuinfo.classList.add('max-h-0', 'opacity-0');
+  menuinfo.classList.remove('max-h-[300px]', 'opacity-100');
+  btninfo.classList.remove('bg-primary', 'rounded-full', 'text-white');
+  setTimeout(() => {
+    menuinfo.classList.add('hidden');
+  }, 300);
+}
+
 
 
 

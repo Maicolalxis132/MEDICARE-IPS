@@ -58,6 +58,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary: #004977;
+    --color-primary-heavy: #0a3856;
     --color-primary-light: #0f5886;
     --color-secondary: #015321;
     --color-secondary-light: #0b5e2c;
@@ -287,6 +288,15 @@
   .top-\[60px\] {
     top: 60px;
   }
+  .top-\[62px\] {
+    top: 62px;
+  }
+  .top-\[64px\] {
+    top: 64px;
+  }
+  .top-\[65px\] {
+    top: 65px;
+  }
   .top-\[78px\] {
     top: 78px;
   }
@@ -470,6 +480,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -532,6 +545,9 @@
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
   }
   .w-9 {
     width: calc(var(--spacing) * 9);
@@ -795,6 +811,9 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-primary-heavy {
+    background-color: var(--color-primary-heavy);
+  }
   .bg-primary-light {
     background-color: var(--color-primary-light);
   }
@@ -866,6 +885,9 @@
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -1015,6 +1037,9 @@
   .text-secondary {
     color: var(--color-secondary);
   }
+  .text-transparent {
+    color: transparent;
+  }
   .text-white {
     color: var(--color-white);
   }
@@ -1048,6 +1073,16 @@
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-black {
+    --tw-shadow-color: #000;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
+    }
   }
   .shadow-white {
     --tw-shadow-color: #fff;
