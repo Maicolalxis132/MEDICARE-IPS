@@ -1,28 +1,9 @@
-// HEADER QUE SE ESCONDA Y QUE APAREZCA
-let lastScrollTop = 0;
-const header = document.getElementById('main-header');
-
-window.addEventListener("scroll", function () {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollTop > lastScrollTop) {
-    // Bajando: ocultar el header
-    header.style.top = "-100px";
-  } else {
-    // Subiendo: mostrar el header
-    header.style.top = "0";
-  }
-
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
-
-
 // MENU DESPLEGABLE
 // Este código es para el menú desplegable en dispositivos móviles
 
 const boton = document.getElementById('boton-movil');
-  const menu = document.getElementById('menu-movil');
-  let abierto = false;
+const menu = document.getElementById('menu-movil');
+let abierto = false;
 
   boton.addEventListener('click', () => {
     abierto = !abierto;
@@ -58,6 +39,33 @@ boton.addEventListener('click', () => {
   },);
 });
  
+// Mini menus con infos
+
+  const btninfo = document.getElementById('btn-info');
+  const menuinfo = document.getElementById('menu-info');
+  let infoabierto = false;
+
+  btninfo.addEventListener('click', () => {
+    infoabierto = !infoabierto;
+
+    if(infoabierto){
+      menuinfo.classList.remove('hidden')
+      setTimeout(()=> {
+      menuinfo.classList.remove('max-h-0', 'opacity-0');
+      menuinfo.classList.add('max-h-[300px]', 'opacity-100');
+      btninfo.classList.add('bg-primary', 'rounded-full', 'text-white', 'py-1');
+      }, 100);
+    } else {
+      menuinfo.classList.add('max-h-0', 'opacity-0');
+      menuinfo.classList.remove('max-h-[300px]', 'opacity-100');
+      btninfo.classList.remove('bg-primary', 'rounded-full', 'text-white');
+      setTimeout(()=> {
+        menuinfo.classList.add('hidden')
+      },300);
+    }
+  });
+
+
 
 
 
