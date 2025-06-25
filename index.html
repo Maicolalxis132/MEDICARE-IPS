@@ -18,9 +18,7 @@
     <img class="logo not-xs:w-40 xs:w-50" src="./recursos_fotos/Logo1.png" alt="">
 
     <!-- menú móvil con transición -->
-    <ul id="menu-movil"
-        class="gap-3 absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center
-        max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90">
+    <ul id="menu-movil" class="gap-3 absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90">
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#info">Info</a></li>
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#contenido">Ayudas</a></li>
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#especialidad">Especialidades</a></li> 
@@ -31,13 +29,13 @@
     <ul class="nav-list gap-6 flex-row justify-center items-center hidden xs:flex text-neutral-800 text-[20px]">
 
       <div class="rounded-full relative flex justify-center">
-        <button id="btn-info"><p class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full cursor-pointer"><strong>Info</strong></p></button>
-        <div id="menu-info" class="absolute bg-primary top-[65px] flex flex-col text-white transition-all duration-300 max-h-0 opacity-0 hidden">
-          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5"><a href="./html/info.html">Mision</a></li>
-          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5"><a href="./html/info.html">Vision</a></li>
-          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5"><a href="">Quienes Somos</a></li>
-          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5"><a href="./html/info.html">Equipo</a></li>
-          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 pb-3"><a href="./html/info.html">Derechos de Salud</a></li>
+        <button id="btn-info"><p class="py-1.5 px-3 font-light transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full cursor-pointer"><strong>Nosotros</strong></p></button>
+        <div id="menu-info" class="absolute bg-primary/98 top-[65px] text-white transition-all duration-300 max-h-0 opacity-0 hidden rounded-b-lg">
+          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all"><a href="./html/info.html">Mision</a></li>
+          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all"><a href="./html/info.html">Vision</a></li>
+          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 transition-all"><a href="">Quienes Somos</a></li>
+          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all"><a href="./html/info.html">Equipo</a></li>
+          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 pb-3 transition-all"><a href="./html/info.html">Derechos de Salud</a></li>
         </div>
       </div>
       
@@ -52,6 +50,8 @@
         <use xlink:href="./assets/iconos/icons8-menú.svg#icon-menu"></use>
       </svg>
     </button>
+    
+
     </div>
   </nav>
 </header>
@@ -337,7 +337,9 @@
 
       <div class="p-0.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
         <a id="hrefwhatsapp" class="flex flex-row items-center gap-2.5" href="..." target="_blank">
-        <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/whatsapp.svg" alt="">
+        <svg class="w-10 h-10 p-2 bg-primary-light group-hover:bg-secondary-light rounded-full text-transparent">
+          <use xlink:href="./assets/iconos/whatsapp.svg"></use>
+        </svg>
         <p id="whatsapp" class="my-3">...</p>
         </a>
       </div>
@@ -414,7 +416,9 @@
 <script src="./Archivos/scriptjson.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    once: true
+  });
 </script>
 <script>mostrar();</script>
 

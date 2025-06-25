@@ -41,7 +41,7 @@ boton.addEventListener('click', () => {
  
 // Mini menus con infos
 
-  const btninfo = document.getElementById('btn-info');
+const btninfo = document.getElementById('btn-info');
 const menuinfo = document.getElementById('menu-info');
 let infoabierto = false;
 

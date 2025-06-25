@@ -29,14 +29,20 @@
     --breakpoint-tmx: 1180px;
     --breakpoint-e01: 420px;
 
+
+    /* Tamaños de fuentes */
+    --font-size-text: 1.125rem; /* 18px */
+
     /* Colores */
+    --color-title: #111827;
+    --color-text: #374151;
     --color-primary: #004977;
     --color-primary-heavy: #0a3856;
     --color-primary-light: #0f5886;
     --color-secondary: #015321;
     --color-secondary-heavy: #073c1c;
     --color-secondary-light: #0b5e2c;
-
+    --color-accent: #fbbf24;
 
     /* Animaciones */
     --animate-wiggle: wiggle 2s ease-in-out infinite;
