@@ -18,8 +18,8 @@
     <!-- menú móvil con transición -->
     <ul id="menu-movil"
         class="gap-3 absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center
-        max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90">
-      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#info">Info</a></li>
+        max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-b-1 border-gray-400 z-90">
+      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="../index.html">Incio</a></li>
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#contenido">Ayudas</a></li>
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#especialidad">Especialidades</a></li> 
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#pagos">Pagos</a></li>
@@ -46,15 +46,18 @@
 
     <!-- botón menú móvil -->
     <button id="boton-movil" class="menu-btn w-9 cursor-pointer block xs:hidden">
-      <svg id="svgbotones" class="w-10 h-10 text-primary  transition-all duration-300 ease">
+      <svg class="svgMenu w-10 h-10 text-primary transition-all duration-300 ease">
         <use xlink:href="../assets/iconos/icons8-menú.svg#icon-menu"></use>
+      </svg>
+      <svg class="svgCerrar w-10 h-10 text-primary transition-all duration-300 ease hidden">
+        <use xlink:href="../assets/iconos/cerrar.svg"></use>
       </svg>
     </button>
     </div>
   </nav>
 </header>
 
-<div class="fixed bottom-0 bg-[url('/recursos_fotos/entrada.jpeg')] bg-cover h-[95vh] w-full -z-50">
+<div class="fixed bottom-0 bg-[url('../recursos_fotos/entrada.jpeg')] bg-cover h-[95vh] w-full -z-50">
     <div class=" bg-stone-200/80 h-full w-full flex items-center justify-center">
     </div>
 </div>
@@ -88,11 +91,11 @@
     <div class="max-w-[1100px] tmx:m-auto mx-8 h-full py-16 flex justify-center items-center flex-col gap-10"> 
       <h2 class="text-title text-3xl font-medium">VALORES</h2> 
       <div class="w-full flex flex-row justify-around  gap-8">
-        <ul class="xs:w-9/12 w-full h-full flex flex-col justify-center">
+        <ul data-aos="fade-up-right" data-aos-duration="1800" class="xs:w-9/12 w-full h-full flex flex-col justify-center">
           <li class="cuadros shadow-md" data-dropdown>
-            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
-              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Trabajo en Equipo</p>
-              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+            <button class="btn-dropdown h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores sm:text-2xl text-lg text-primary transition-all duration-700 ease-in-out text-start ">Trabajo en Equipo</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6  text-primary  transition-all duration-300 ease">
                 <!-- añadir rotate-90 -->
                 <use xlink:href="../assets/iconos/abrir.svg"></use>
               </svg>
@@ -103,9 +106,9 @@
             </div>
           </li>
           <li class="cuadros shadow-md" data-dropdown>
-            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
-              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Honestidad</p>
-              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+            <button class="btn-dropdown h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores sm:text-2xl text-lg text-primary transition-all duration-700 ease-in-out text-start ">Honestidad</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6  text-primary  transition-all duration-300 ease">
                 <!-- añadir rotate-90 -->
                 <use xlink:href="../assets/iconos/abrir.svg"></use>
               </svg>
@@ -116,9 +119,9 @@
             </div>
           </li>
           <li class=" cuadros shadow-md" data-dropdown>
-            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
-              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Respeto por las Personas</p>
-              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+            <button class="btn-dropdown h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores sm:text-2xl text-lg text-primary transition-all duration-700 ease-in-out text-start ">Respeto por las Personas</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6  text-primary  transition-all duration-300 ease">
                 <!-- añadir rotate-90 -->
                 <use xlink:href="../assets/iconos/abrir.svg"></use>
               </svg>
@@ -129,9 +132,9 @@
             </div>
           </li>
           <li class=" cuadros shadow-md" data-dropdown>
-            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
-              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Excelencia en el Servicio</p>
-              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+            <button class="btn-dropdown h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores sm:text-2xl text-lg text-primary transition-all duration-700 ease-in-out text-start ">Excelencia en el Servicio</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6  text-primary  transition-all duration-300 ease">
                 <!-- añadir rotate-90 -->
                 <use xlink:href="../assets/iconos/abrir.svg"></use>
               </svg>
@@ -142,9 +145,9 @@
             </div>
           </li>
           <li class=" cuadros shadow-md" data-dropdown>
-            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
-              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Alto Desempeño</p>
-              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+            <button class="btn-dropdown h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores sm:text-2xl text-lg text-primary transition-all duration-700 ease-in-out text-start ">Alto Desempeño</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6  text-primary  transition-all duration-300 ease">
                 <!-- añadir rotate-90 -->
                 <use xlink:href="../assets/iconos/abrir.svg"></use>
               </svg>
@@ -155,9 +158,9 @@
             </div>
           </li>
           <li class=" cuadros shadow-md" data-dropdown>
-            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
-              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Cumplimiento de Compromisos</p>
-              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+            <button class="btn-dropdown h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores sm:text-2xl text-lg text-primary transition-all duration-700 ease-in-out text-start">Cumplimiento de Compromisos</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6  text-primary  transition-all duration-300 ease">
                 <!-- añadir rotate-90 -->
                 <use xlink:href="../assets/iconos/abrir.svg"></use>
               </svg>
@@ -168,9 +171,9 @@
             </div>
           </li>
           <li class=" cuadros shadow-md" data-dropdown>
-            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
-              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Actitud Positiva</p>
-              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+            <button class="btn-dropdown h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores sm:text-2xl text-lg text-primary transition-all duration-700 ease-in-out text-start ">Actitud Positiva</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6  text-primary  transition-all duration-300 ease">
                 <!-- añadir rotate-90 -->
                 <use xlink:href="../assets/iconos/abrir.svg"></use>
               </svg>
@@ -181,7 +184,7 @@
             </div>
           </li>
         </ul>
-        <img src="../recursos_fotos/Muñeco.png" alt="" class="w-3/12 m-auto hidden xs:block">
+        <img data-aos="fade-up-left" data-aos-duration="1800" src="../recursos_fotos/Muñeco.png" alt="" class="w-3/12 m-auto hidden xs:block">
       </div>
     </div>
   </div>

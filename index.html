@@ -19,7 +19,7 @@
 
     <!-- menú móvil con transición -->
     <ul id="menu-movil" class="gap-3 absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90">
-      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#info">Info</a></li>
+      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="./html/info.html">Info</a></li>
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#contenido">Ayudas</a></li>
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#especialidad">Especialidades</a></li> 
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#pagos">Pagos</a></li>
@@ -46,8 +46,11 @@
 
     <!-- botón menú móvil -->
     <button id="boton-movil" class="menu-btn w-9 cursor-pointer block xs:hidden">
-      <svg id="svgbotones" class="w-10 h-10 text-primary  transition-all duration-300 ease">
+      <svg class="svgMenu w-10 h-10 text-primary transition-all duration-300 ease">
         <use xlink:href="./assets/iconos/icons8-menú.svg#icon-menu"></use>
+      </svg>
+      <svg class="svgCerrar w-10 h-10 text-primary transition-all duration-300 ease hidden">
+        <use xlink:href="./assets/iconos/cerrar.svg"></use>
       </svg>
     </button>
     

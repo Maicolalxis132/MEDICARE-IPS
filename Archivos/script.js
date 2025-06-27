@@ -3,41 +3,32 @@
 
 const boton = document.getElementById('boton-movil');
 const menu = document.getElementById('menu-movil');
+const svgMenu = boton.querySelector('.svgMenu');
+const svgCerrar = boton.querySelector('.svgCerrar');
+
 let abierto = false;
 
-  boton.addEventListener('click', () => {
-    abierto = !abierto;
+boton.addEventListener('click', () => {
+  abierto = !abierto;
 
-    if (abierto) {
-      menu.classList.remove('max-h-0', 'opacity-0');
-      menu.classList.add('max-h-[300px]', 'opacity-100');
-    } else {
-      menu.classList.add('max-h-0', 'opacity-0');
-      menu.classList.remove('max-h-[300px]', 'opacity-100');
-    }
-  });
+  if (abierto) {
+    menu.classList.remove('max-h-0', 'opacity-0');
+    menu.classList.add('max-h-[300px]', 'opacity-100');
+    svgMenu.classList.add('hidden');
+    svgCerrar.classList.remove('hidden');
+
+  } else {
+    menu.classList.add('max-h-0', 'opacity-0');
+    menu.classList.remove('max-h-[300px]', 'opacity-100');
+    svgMenu.classList.remove('hidden');
+    svgCerrar.classList.add('hidden');
+    
+  }
+});
+
 
 // CAMBIO DE IMAGENES EN EL BOTON
 
-const use = document.querySelector('#svgbotones use');
-const svg = document.getElementById('svgbotones');
-let mostrarimg = true;
-
-boton.addEventListener('click', () => {
-  //animacion al presionar el boton
-  svg.classList.add('scale-200', 'text-secondary');
-
-  setTimeout(() => { 
-    // cambiar entre imagenes
-    const nuevoIcon = mostrarimg ? './assets/iconos/cerrar.svg' : './assets/iconos/icons8-menú.svg#icon-menu'; 
-
-    use.setAttribute('href', nuevoIcon);
-    mostrarimg = !mostrarimg;
-
-  // Quitar animacion para permitir la siguiente animacion
-    svg.classList.remove('scale-200', 'text-secondary');
-  },);
-});
  
 // Mini menus con infos
 
