@@ -69,7 +69,7 @@
 </section>  
 
 <section id="vision-mision" class="w-full flex justify-center items-center relative min-h-[85vh] bg-gray-900">
-    <div class="max-w-[1100px] py-16 flex justify-center items-center flex-col gap-15"> 
+    <div class="max-w-[1100px] tmx:m-auto mx-8 py-16 flex justify-center items-center flex-col gap-15"> 
       <div data-aos="fade-right" data-aos-duration="1800" class="grid grid-cols-4 w-full gap-5">
         <h2 class="text-end pb-5 text-3xl text-balance font-bold col-span-4 text-primary-light shadow-2xs shadow-primary-light ">MISION</h2> 
         <p class="col-span-4 text-[18px] text-stone-400 text-end">Mantener saludables a nuestros usuarios satisfaciendo sus necesidades básicas de
@@ -84,18 +84,104 @@
   </div> 
 </section>
 
-<section id="valores" class="w-full min-h-[85vh]">
-    <div class="max-w-[1100px] m-auto h-full py-16 flex justify-center items-center flex-col gap-10"> 
-      <h2 class="text-title text-3xl">VALORES</h2> 
-      <div class="w-full flex flex-row gap-8 h-full">
-        <ul class="w-9/12 bg-accent m-auto">
-          <li>s</li>
-          <li>dsg</li>
-          <li>dgs</li>
-          <li>gsd</li>
-          <li>gds</li>
+<section id="valores" class="w-full min-h-[85vh] bg-stone-200">
+    <div class="max-w-[1100px] tmx:m-auto mx-8 h-full py-16 flex justify-center items-center flex-col gap-10"> 
+      <h2 class="text-title text-3xl font-medium">VALORES</h2> 
+      <div class="w-full flex flex-row justify-around  gap-8">
+        <ul class="xs:w-9/12 w-full h-full flex flex-col justify-center">
+          <li class="cuadros shadow-md" data-dropdown>
+            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Trabajo en Equipo</p>
+              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+              <!-- agregar p-7 max-h-full -->
+              <p class="text-lg text-text text-color-text p-7">Somos un grupo interdisciplinario comprometidos en el bienestar y salud de nuestros usuarios y somos mutuamente responsables por los resultados</p>
+            </div>
+          </li>
+          <li class="cuadros shadow-md" data-dropdown>
+            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Honestidad</p>
+              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+              <!-- agregar p-7 max-h-full -->
+              <p class="text-lg text-text text-color-text p-7">Actuamos dentro de los más rigurosos principios éticos y legales.</p>
+            </div>
+          </li>
+          <li class=" cuadros shadow-md" data-dropdown>
+            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Respeto por las Personas</p>
+              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+              <!-- agregar p-7 max-h-full -->
+              <p class="text-lg text-text text-color-text p-7">Damos un trato digno a las personas y valoramos sus diferencias.</p>
+            </div>
+          </li>
+          <li class=" cuadros shadow-md" data-dropdown>
+            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Excelencia en el Servicio</p>
+              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+              <!-- agregar p-7 max-h-full -->
+              <p class="text-lg text-text text-color-text p-7">Prestamos los servicios con calidad y ética profesional para satisfacer y superar las expectativas de nuestros usuarios logrando tranquilidad, confianza y fidelidad.</p>
+            </div>
+          </li>
+          <li class=" cuadros shadow-md" data-dropdown>
+            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Alto Desempeño</p>
+              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+              <!-- agregar p-7 max-h-full -->
+              <p class="text-lg text-text text-color-text p-7">Superamos continuamente nuestras metas y optimizamos el uso de recursos, para crear valor.</p>
+            </div>
+          </li>
+          <li class=" cuadros shadow-md" data-dropdown>
+            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Cumplimiento de Compromisos</p>
+              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+              <!-- agregar p-7 max-h-full -->
+              <p class="text-lg text-text text-color-text p-7">Somos conscientes y responsables por el cumplimiento de los resultados esperados, por la satisfacción de usuario y los compromisos adquiridos con nuestros colaboradores y clientes.</p>
+            </div>
+          </li>
+          <li class=" cuadros shadow-md" data-dropdown>
+            <button class="btn-dropdown h-full w-full p-7 flex flex-row justify-between items-center cursor-pointer border-b-2 border-primary-light  transition-all duration-300 ease">
+              <p class="titlevalores text-2xl text-primary transition-all duration-700 ease-in-out">Actitud Positiva</p>
+              <svg class="svgvalores w-10 h-10 text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
+              <!-- agregar p-7 max-h-full -->
+              <p class="text-lg text-text text-color-text p-7">Disfrutamos y amamos lo que hacemos y estamos en una búsqueda permanente de posibilidades y de mejoramiento continuo.</p>
+            </div>
+          </li>
         </ul>
-        <img src="../recursos_fotos/Muñeco.png" alt="" class="w-3/12 m-auto">
+        <img src="../recursos_fotos/Muñeco.png" alt="" class="w-3/12 m-auto hidden xs:block">
       </div>
     </div>
   </div>
@@ -104,7 +190,7 @@
 
 
 
-<script src="/Archivos/script.js"></script>
+<script src="../Archivos/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({

@@ -286,3 +286,22 @@ enlaces1.addEventListener('click', function (e) {
   }, 200);
 });
 });
+
+document.querySelectorAll('[data-dropdown]').forEach(dropdown => {
+    const button = dropdown.querySelector('.btn-dropdown');
+    const menu = dropdown.querySelector('.dropdown-menu');
+    const title = dropdown.querySelector('.titlevalores');
+    const icon = dropdown.querySelector('.svgvalores');
+
+    button.addEventListener('click', (e) => {
+      e.stopPropagation(); // evita que se dispare otro handler
+      icon.classList.toggle('rotate-90');
+      icon.classList.toggle('text-primary');
+      icon.classList.toggle('text-secondary');
+      title.classList.toggle('text-primary');
+      title.classList.toggle('text-secondary');
+      menu.classList.toggle('max-h-0');
+      menu.classList.toggle('max-h-100');
+      button.classList.toggle('border-secondary-light');
+    });
+  });
