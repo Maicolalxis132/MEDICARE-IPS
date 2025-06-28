@@ -22,7 +22,6 @@ boton.addEventListener('click', () => {
     menu.classList.remove('max-h-[300px]', 'opacity-100');
     svgMenu.classList.remove('hidden');
     svgCerrar.classList.add('hidden');
-    
   }
 });
 
