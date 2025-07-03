@@ -20,9 +20,9 @@
     <!-- menú móvil con transición -->
     <ul id="menu-movil" class="gap-3 absolute end-0 top-[78px] py-3 w-full bg-white/90 text-primary flex flex-col justify-center items-center max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90">
       <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="./html/info.html">Info</a></li>
-      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#contenido">Ayudas</a></li>
-      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#especialidad">Especialidades</a></li> 
-      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="#pagos">Pagos</a></li>
+      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="">Ayudas</a></li>
+      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="">Especialidades</a></li> 
+      <li class="px-8 group"><a class="enlace1 group-hover:text-secondary cursor-pointer group-hover:border-b-2 group-border-b-secondary group-hover:text-[16px] transition-all duration-100 " href="">Pagos</a></li>
     </ul>
 
     <!-- menú de PC -->
@@ -33,7 +33,7 @@
         <div id="menu-info" class="absolute bg-primary/98 top-[65px] text-white transition-all duration-300 max-h-0 opacity-0 hidden rounded-b-lg">
           <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all"><a href="./html/info.html">Mision</a></li>
           <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all"><a href="./html/info.html">Vision</a></li>
-          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 transition-all"><a href="">Quienes Somos</a></li>
+          <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 transition-all"><a href="./html/info.html">Quienes Somos</a></li>
           <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all"><a href="./html/info.html">Equipo</a></li>
           <li class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 pb-3 transition-all"><a href="./html/info.html">Derechos de Salud</a></li>
         </div>
@@ -331,15 +331,17 @@
       </div>
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
+        <a id="hrefdireccion" href="..." target="_blank" class="flex gap-4 ">
         <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/ubicacion.svg" alt="">
-        <a id="hrefdireccion" href="..." target="_blank"><p id="direccion" class="my-3">...</p></a></div>
+        <p id="direccion" class="my-3">...</p></a></div>
 
       <div class="p-0.5 flex flex-row items-center gap-2.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
+        <a id="hrefcorreo" href="..." target="_blank" class="flex gap-4 ">
         <img class="w-10 h-10 p-2 text bg-primary-light group-hover:bg-secondary-light rounded-full" src="./assets/iconos/Email.svg" alt=""> 
-        <a id="hrefcorreo" href="..." target="_blank"><p id="correo" class="my-3">...</p></a></div>
+        <p id="correo" class="my-3">...</p></a></div>
 
       <div class="p-0.5 group hover:text-blue-400 hover:text-[16px] hover:bg-black/10 hover:rounded-4xl pl-2">
-        <a id="hrefwhatsapp" class="flex flex-row items-center gap-2.5" href="..." target="_blank">
+        <a id="hrefwhatsapp" class="flex flex-row items-center gap-2.5" href="..." target="_blank" class="flex gap-4 ">
         <svg class="w-10 h-10 p-2 bg-primary-light group-hover:bg-secondary-light rounded-full text-transparent">
           <use xlink:href="./assets/iconos/whatsapp.svg"></use>
         </svg>
