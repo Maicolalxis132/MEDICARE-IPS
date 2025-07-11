@@ -234,7 +234,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function animar(elemento) {
+// ANIMACIÓN DE BOTONES
+
+     function animar(elemento) {
     // esto modifica el botón directamente
     elemento.classList.add('scale-50', 'shadow',);
 
@@ -243,8 +245,12 @@ function animar(elemento) {
     }, 200);
   }
 
+
+
+
 // Solo para el primer cuadro de CITAS MEDICAS
   document.addEventListener('DOMContentLoaded', function () {
+  // Selecciona solo el primer card (CITAS MEDICAS)
   const cardCitas = document.querySelector('.card');
   if (!cardCitas) return;
 
@@ -312,6 +318,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 });
+
+
 
 
 
