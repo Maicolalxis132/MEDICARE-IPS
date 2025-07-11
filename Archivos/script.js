@@ -74,6 +74,9 @@ function cerrarMenu() {
 document.addEventListener('DOMContentLoaded', function () {
   const slider = document.querySelector("#carousel > div");
   const carouselContainer = document.querySelector("#carousel");
+  const toggleAudioBtn = document.getElementById("toggle-audio");
+  const iconoSonido = document.getElementById("icon-sonido");
+  const iconoSilencio = document.getElementById("icon-silencio");
 
   if (!slider) return;
 
@@ -81,23 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
   let autoplayInterval;
   let totalSlides = 0;
   let videoManualmentePausado = false;
-  let videoSilenciado = false; // ✅ Estado del mute
+  let videoSilenciado = false;
 
-  // Cargar desde JSON
   fetch('./Archivos/json/index.json')
     .then(res => res.json())
     .then(data => {
       const fotos = data.fotos;
-
       slider.innerHTML = "";
 
       fotos.forEach(url => {
         const isVideo = url.endsWith('.mp4') || url.endsWith('.webm');
-
-        const media = isVideo
-          ? document.createElement('video')
-          : document.createElement('img');
-
+        const media = isVideo ? document.createElement('video') : document.createElement('img');
         media.src = url;
         media.className = "w-full max-h-[650px] h-auto flex-shrink-0 object-contain";
 
@@ -123,7 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
       });
 
       totalSlides = fotos.length;
-
       showSlide();
       startAutoplay();
     })
@@ -160,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentSlide = slider.children[index];
       const isVideo = currentSlide.tagName === "VIDEO";
 
-      actualizarBotonAudio(); // ✅ actualiza ícono según mute
+      actualizarBotonAudio();
 
       if (isVideo) {
         currentSlide.muted = videoSilenciado;
@@ -183,7 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         currentSlide.addEventListener("ended", esperarFin);
-
       } else {
         autoplayInterval = setTimeout(() => {
           nextSlide();
@@ -195,7 +190,6 @@ document.addEventListener('DOMContentLoaded', function () {
     handleSlide();
   }
 
-  // Botones de navegación
   document.getElementById("prev").addEventListener("click", () => {
     prevSlide();
     startAutoplay();
@@ -206,7 +200,6 @@ document.addEventListener('DOMContentLoaded', function () {
     startAutoplay();
   });
 
-  // ANIMACIÓN DE BOTONES
   function animar(elemento) {
     elemento.classList.add('scale-50', 'shadow');
     setTimeout(() => {
@@ -214,22 +207,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 200);
   }
 
-  // 🔊 BOTÓN DE AUDIO CON SVG PERSONALIZADO
-  const toggleAudioBtn = document.getElementById("toggle-audio");
-
   function actualizarBotonAudio() {
     const current = slider.children[index];
     if (current && current.tagName === "VIDEO") {
       toggleAudioBtn.classList.remove("hidden");
-      toggleAudioBtn.innerHTML = videoSilenciado
-        ? `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-             d="M15.5 8.43A4.985 4.985 0 0 1 17 12c0 1.126-.5 2.5-1.5 3.5m2.864-9.864A8.972 8.972 0 0 1 21 12c0 2.023-.5 4.5-2.5 6M7.8 7.5l2.56-2.133a1 1 0 0 1 1.64.768V12m0 4.5v1.365a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m1-4 14 14"/>
-           </svg>`
-        : `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-             d="M15.5 8.43A4.985 4.985 0 0 1 17 12a4.984 4.984 0 0 1-1.43 3.5m2.794 2.864A8.972 8.972 0 0 0 21 12a8.972 8.972 0 0 0-2.636-6.364M12 6.135v11.73a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l4.36-3.633a1 1 0 0 1 1.64.768Z"/>
-           </svg>`;
+
+      if (videoSilenciado) {
+        iconoSonido.classList.add("hidden");
+        iconoSilencio.classList.remove("hidden");
+      } else {
+        iconoSonido.classList.remove("hidden");
+        iconoSilencio.classList.add("hidden");
+      }
+
     } else {
       toggleAudioBtn.classList.add("hidden");
     }
@@ -241,23 +231,10 @@ document.addEventListener('DOMContentLoaded', function () {
       videoSilenciado = !videoSilenciado;
       current.muted = videoSilenciado;
       current.volume = videoSilenciado ? 0 : 1;
-
-      toggleAudioBtn.innerHTML = videoSilenciado
-        ? `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-             d="M15.5 8.43A4.985 4.985 0 0 1 17 12c0 1.126-.5 2.5-1.5 3.5m2.864-9.864A8.972 8.972 0 0 1 21 12c0 2.023-.5 4.5-2.5 6M7.8 7.5l2.56-2.133a1 1 0 0 1 1.64.768V12m0 4.5v1.365a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m1-4 14 14"/>
-           </svg>`
-        : `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-             d="M15.5 8.43A4.985 4.985 0 0 1 17 12a4.984 4.984 0 0 1-1.43 3.5m2.794 2.864A8.972 8.972 0 0 0 21 12a8.972 8.972 0 0 0-2.636-6.364M12 6.135v11.73a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l4.36-3.633a1 1 0 0 1 1.64.768Z"/>
-           </svg>`;
+      actualizarBotonAudio();
     }
   });
 });
-
-
-
-
 
 // Solo para el primer cuadro de CITAS MEDICAS
   document.addEventListener('DOMContentLoaded', function () {
