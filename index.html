@@ -70,10 +70,19 @@
 <div id="info" class="relative w-full flex items-start justify-center z-10 bg-stone-200">
     <!-- Carrusel -->
   <div id="carousel" class="overflow-hidden rounded-lg relative max-h-[650px] w-full">
-    <div id="contenedor" class="flex transition-transform duration-500" style="transform: translateX(0%)">
-        <!-- imagens se deben agregar a la carpeta recursos_fotos y despues agragar la ruta en el json -->
-    </div>
+  <div id="contenedor" class="flex transition-transform duration-500" style="transform: translateX(0%)">
+    <!-- imagens se deben agregar a la carpeta recursos_fotos y despues agragar la ruta en el json -->
   </div>
+
+  <!-- Botón de audio -->
+    <button id="toggle-audio"
+      class="hidden absolute bottom-4 left-4 z-50 p-1.5 bg-white text-xl rounded-full border-2 border-primary shadow transition">
+      <svg class="text-primary w-6 h-6 border-4 border-primary rounded-full">
+        <use xlink:href="./assets/iconos/icons8-menú.svg#sonido"></use>
+      </svg>
+    </button>
+  </div>
+
         <!-- Botón siguiente (derecha) -->
       <button id="next" class="z-10 absolute top-1/2 right-2 xs:right-5 transform -translate-y-1/2">
         <svg class="radius-full w-10 h-10 p-1 xs:w-14 xs:h-14 bg-white text-primary hover:scale-110 active:border-white active:bg-primary active:text-white transition-all duration-300 ease rounded-full opacity-70 hover:opacity-100 lg:opacity-100 border-4 border-primary">

@@ -70,12 +70,8 @@ function cerrarMenu() {
 }
 
 
-
-
-
-
 /// CARRUSEL DE FOTOS Y VIDEOS
-  document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   const slider = document.querySelector("#carousel > div");
   const carouselContainer = document.querySelector("#carousel");
 
@@ -84,6 +80,8 @@ function cerrarMenu() {
   let index = 0;
   let autoplayInterval;
   let totalSlides = 0;
+  let videoManualmentePausado = false;
+  let videoSilenciado = false; // ✅ Estado del mute
 
   // Cargar desde JSON
   fetch('./Archivos/json/index.json')
@@ -106,16 +104,16 @@ function cerrarMenu() {
         if (isVideo) {
           media.setAttribute("playsinline", "");
           media.setAttribute("preload", "auto");
+          media.muted = videoSilenciado;
+          media.volume = videoSilenciado ? 0 : 1;
+          media.defaultMuted = videoSilenciado;
 
-          media.muted = false;
-          media.volume = 1;
-          media.defaultMuted = false;
-
-          // 👉 Pausar o reanudar con clic
           media.addEventListener('click', () => {
             if (media.paused) {
+              videoManualmentePausado = false;
               media.play();
             } else {
+              videoManualmentePausado = true;
               media.pause();
             }
           });
@@ -135,12 +133,22 @@ function cerrarMenu() {
     slider.style.transform = `translateX(-${index * 100}%)`;
   }
 
+  function pausarVideoActual() {
+    const current = slider.children[index];
+    if (current && current.tagName === "VIDEO") {
+      current.pause();
+      current.currentTime = 0;
+    }
+  }
+
   function nextSlide() {
+    pausarVideoActual();
     index = (index + 1) % totalSlides;
     showSlide();
   }
 
   function prevSlide() {
+    pausarVideoActual();
     index = (index - 1 + totalSlides) % totalSlides;
     showSlide();
   }
@@ -152,21 +160,26 @@ function cerrarMenu() {
       const currentSlide = slider.children[index];
       const isVideo = currentSlide.tagName === "VIDEO";
 
-      // Si es video: reproducirlo con sonido
-      if (isVideo) {
-        currentSlide.muted = false;
-        currentSlide.volume = 1;
-        currentSlide.defaultMuted = false;
+      actualizarBotonAudio(); // ✅ actualiza ícono según mute
 
-        currentSlide.currentTime = 0;
-        currentSlide.play().catch(err => {
-          console.warn("El navegador bloqueó el autoplay del video:", err);
-        });
+      if (isVideo) {
+        currentSlide.muted = videoSilenciado;
+        currentSlide.volume = videoSilenciado ? 0 : 1;
+        currentSlide.defaultMuted = videoSilenciado;
+
+        if ((currentSlide.currentTime === 0 || currentSlide.ended) && !videoManualmentePausado) {
+          currentSlide.currentTime = 0;
+          currentSlide.play().catch(err => {
+            console.warn("Error al reproducir video:", err);
+          });
+        }
 
         const esperarFin = () => {
-          currentSlide.removeEventListener("ended", esperarFin);
-          nextSlide();
-          handleSlide();
+          if (!videoManualmentePausado) {
+            currentSlide.removeEventListener("ended", esperarFin);
+            nextSlide();
+            handleSlide();
+          }
         };
 
         currentSlide.addEventListener("ended", esperarFin);
@@ -182,7 +195,7 @@ function cerrarMenu() {
     handleSlide();
   }
 
-  // Botones
+  // Botones de navegación
   document.getElementById("prev").addEventListener("click", () => {
     prevSlide();
     startAutoplay();
@@ -193,24 +206,61 @@ function cerrarMenu() {
     startAutoplay();
   });
 
-  carouselContainer.addEventListener("mouseenter", () => clearTimeout(autoplayInterval));
-  carouselContainer.addEventListener("mouseleave", startAutoplay);
+  // ANIMACIÓN DE BOTONES
+  function animar(elemento) {
+    elemento.classList.add('scale-50', 'shadow');
+    setTimeout(() => {
+      elemento.classList.remove('scale-50', 'shadow');
+    }, 200);
+  }
+
+  // 🔊 BOTÓN DE AUDIO CON SVG PERSONALIZADO
+  const toggleAudioBtn = document.getElementById("toggle-audio");
+
+  function actualizarBotonAudio() {
+    const current = slider.children[index];
+    if (current && current.tagName === "VIDEO") {
+      toggleAudioBtn.classList.remove("hidden");
+      toggleAudioBtn.innerHTML = videoSilenciado
+        ? `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+             d="M15.5 8.43A4.985 4.985 0 0 1 17 12c0 1.126-.5 2.5-1.5 3.5m2.864-9.864A8.972 8.972 0 0 1 21 12c0 2.023-.5 4.5-2.5 6M7.8 7.5l2.56-2.133a1 1 0 0 1 1.64.768V12m0 4.5v1.365a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m1-4 14 14"/>
+           </svg>`
+        : `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+             d="M15.5 8.43A4.985 4.985 0 0 1 17 12a4.984 4.984 0 0 1-1.43 3.5m2.794 2.864A8.972 8.972 0 0 0 21 12a8.972 8.972 0 0 0-2.636-6.364M12 6.135v11.73a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l4.36-3.633a1 1 0 0 1 1.64.768Z"/>
+           </svg>`;
+    } else {
+      toggleAudioBtn.classList.add("hidden");
+    }
+  }
+
+  toggleAudioBtn.addEventListener("click", () => {
+    const current = slider.children[index];
+    if (current && current.tagName === "VIDEO") {
+      videoSilenciado = !videoSilenciado;
+      current.muted = videoSilenciado;
+      current.volume = videoSilenciado ? 0 : 1;
+
+      toggleAudioBtn.innerHTML = videoSilenciado
+        ? `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+             d="M15.5 8.43A4.985 4.985 0 0 1 17 12c0 1.126-.5 2.5-1.5 3.5m2.864-9.864A8.972 8.972 0 0 1 21 12c0 2.023-.5 4.5-2.5 6M7.8 7.5l2.56-2.133a1 1 0 0 1 1.64.768V12m0 4.5v1.365a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m1-4 14 14"/>
+           </svg>`
+        : `<svg class="w-6 h-6 text-primary dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+             d="M15.5 8.43A4.985 4.985 0 0 1 17 12a4.984 4.984 0 0 1-1.43 3.5m2.794 2.864A8.972 8.972 0 0 0 21 12a8.972 8.972 0 0 0-2.636-6.364M12 6.135v11.73a1 1 0 0 1-1.64.768L6 15H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h2l4.36-3.633a1 1 0 0 1 1.64.768Z"/>
+           </svg>`;
+    }
+  });
 });
 
-// ANIMACIÓN DE BOTONES
-function animar(elemento) {
-  elemento.classList.add('scale-50', 'shadow');
-  setTimeout(() => {
-    elemento.classList.remove('scale-50', 'shadow');
-  }, 200);
-}
 
 
 
 
 // Solo para el primer cuadro de CITAS MEDICAS
   document.addEventListener('DOMContentLoaded', function () {
-  // Selecciona solo el primer card (CITAS MEDICAS)
   const cardCitas = document.querySelector('.card');
   if (!cardCitas) return;
 
