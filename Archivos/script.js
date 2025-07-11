@@ -75,114 +75,135 @@ function cerrarMenu() {
 
 
 /// CARRUSEL DE FOTOS Y VIDEOS
-    document.addEventListener('DOMContentLoaded', function () {
-      const slider = document.querySelector("#carousel > div");
-      const carouselContainer = document.querySelector("#carousel");
+  document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector("#carousel > div");
+  const carouselContainer = document.querySelector("#carousel");
 
-      if (!slider) return;
+  if (!slider) return;
 
-      let index = 0;
-      let autoplayInterval;
-      let totalSlides = 0;
+  let index = 0;
+  let autoplayInterval;
+  let totalSlides = 0;
 
-      // Cargar desde JSON
-      fetch('./Archivos/json/index.json')
-        .then(res => res.json())
-        .then(data => {
-          const fotos = data.fotos;
+  // Cargar desde JSON
+  fetch('./Archivos/json/index.json')
+    .then(res => res.json())
+    .then(data => {
+      const fotos = data.fotos;
 
-          slider.innerHTML = "";
+      slider.innerHTML = "";
 
-          fotos.forEach(url => {
-            const isVideo = url.endsWith('.mp4') || url.endsWith('.webm');
+      fotos.forEach(url => {
+        const isVideo = url.endsWith('.mp4') || url.endsWith('.webm');
 
-            const media = isVideo
-              ? document.createElement('video')
-              : document.createElement('img');
+        const media = isVideo
+          ? document.createElement('video')
+          : document.createElement('img');
 
-            media.src = url;
-            media.className = "w-full max-w-[800px] h-auto flex-shrink-0 object-contain";
+        media.src = url;
+        media.className = "w-full max-h-[650px] h-auto flex-shrink-0 object-contain";
 
-            if (isVideo) {
-              media.setAttribute("controls", "");
-              media.setAttribute("playsinline", "");
+        if (isVideo) {
+          media.setAttribute("playsinline", "");
+          media.setAttribute("preload", "auto");
+
+          media.muted = false;
+          media.volume = 1;
+          media.defaultMuted = false;
+
+          // 👉 Pausar o reanudar con clic
+          media.addEventListener('click', () => {
+            if (media.paused) {
+              media.play();
+            } else {
+              media.pause();
             }
-
-            slider.appendChild(media);
           });
-
-          totalSlides = fotos.length;
-
-          showSlide();
-          startAutoplay();
-        })
-        .catch(err => console.error("Error al cargar las imágenes:", err));
-
-      function showSlide() {
-        slider.style.transform = `translateX(-${index * 100}%)`;
-      }
-
-      function nextSlide() {
-        index = (index + 1) % totalSlides;
-        showSlide();
-      }
-
-      function prevSlide() {
-        index = (index - 1 + totalSlides) % totalSlides;
-        showSlide();
-      }
-
-      function startAutoplay() {
-        clearTimeout(autoplayInterval);
-
-        function handleSlide() {
-          const currentSlide = slider.children[index];
-          const isVideo = currentSlide.tagName === "VIDEO";
-
-          if (isVideo) {
-            const esperarFin = () => {
-              currentSlide.removeEventListener("ended", esperarFin);
-              nextSlide();
-              handleSlide();
-            };
-
-            currentSlide.addEventListener("ended", esperarFin);
-          } else {
-            autoplayInterval = setTimeout(() => {
-              nextSlide();
-              handleSlide();
-            }, 5000);
-          }
         }
 
-        handleSlide();
+        slider.appendChild(media);
+      });
+
+      totalSlides = fotos.length;
+
+      showSlide();
+      startAutoplay();
+    })
+    .catch(err => console.error("Error al cargar las imágenes:", err));
+
+  function showSlide() {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % totalSlides;
+    showSlide();
+  }
+
+  function prevSlide() {
+    index = (index - 1 + totalSlides) % totalSlides;
+    showSlide();
+  }
+
+  function startAutoplay() {
+    clearTimeout(autoplayInterval);
+
+    function handleSlide() {
+      const currentSlide = slider.children[index];
+      const isVideo = currentSlide.tagName === "VIDEO";
+
+      // Si es video: reproducirlo con sonido
+      if (isVideo) {
+        currentSlide.muted = false;
+        currentSlide.volume = 1;
+        currentSlide.defaultMuted = false;
+
+        currentSlide.currentTime = 0;
+        currentSlide.play().catch(err => {
+          console.warn("El navegador bloqueó el autoplay del video:", err);
+        });
+
+        const esperarFin = () => {
+          currentSlide.removeEventListener("ended", esperarFin);
+          nextSlide();
+          handleSlide();
+        };
+
+        currentSlide.addEventListener("ended", esperarFin);
+
+      } else {
+        autoplayInterval = setTimeout(() => {
+          nextSlide();
+          handleSlide();
+        }, 5000);
       }
+    }
 
-      // Botones
-      document.getElementById("prev").addEventListener("click", () => {
-        prevSlide();
-        startAutoplay();
-      });
+    handleSlide();
+  }
 
-      document.getElementById("next").addEventListener("click", () => {
-        nextSlide();
-        startAutoplay();
-      });
+  // Botones
+  document.getElementById("prev").addEventListener("click", () => {
+    prevSlide();
+    startAutoplay();
+  });
 
-      carouselContainer.addEventListener("mouseenter", () => clearTimeout(autoplayInterval));
-      carouselContainer.addEventListener("mouseleave", startAutoplay);
-    });
+  document.getElementById("next").addEventListener("click", () => {
+    nextSlide();
+    startAutoplay();
+  });
+
+  carouselContainer.addEventListener("mouseenter", () => clearTimeout(autoplayInterval));
+  carouselContainer.addEventListener("mouseleave", startAutoplay);
+});
 
 // ANIMACIÓN DE BOTONES
-
-     function animar(elemento) {
-    // esto modifica el botón directamente
-    elemento.classList.add('scale-50', 'shadow',);
-
-    setTimeout(() => {
-      elemento.classList.remove('scale-50', 'shadow',);
-    }, 200);
-  }
+function animar(elemento) {
+  elemento.classList.add('scale-50', 'shadow');
+  setTimeout(() => {
+    elemento.classList.remove('scale-50', 'shadow');
+  }, 200);
+}
 
 
 
