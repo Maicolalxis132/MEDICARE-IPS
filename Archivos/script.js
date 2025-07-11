@@ -28,9 +28,6 @@ boton.addEventListener('click', () => {
 
 // CAMBIO DE IMAGENES EN EL BOTON
 
- 
-// Mini menus con infos
-
 const btninfo = document.getElementById('btn-info');
 const menuinfo = document.getElementById('menu-info');
 let infoabierto = false;
@@ -207,6 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 200);
   }
 
+  // ✅ Solo esta parte fue modificada (botón de audio)
   function actualizarBotonAudio() {
     const current = slider.children[index];
     if (current && current.tagName === "VIDEO") {
@@ -235,6 +233,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+function animar(elemento) {
+    // esto modifica el botón directamente
+    elemento.classList.add('scale-50', 'shadow',);
+
+    setTimeout(() => {
+      elemento.classList.remove('scale-50', 'shadow',);
+    }, 200);
+  }
 
 // Solo para el primer cuadro de CITAS MEDICAS
   document.addEventListener('DOMContentLoaded', function () {
