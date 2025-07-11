@@ -3,7 +3,8 @@
         "./recursos_fotos/inasistencia.jpg",
         "./recursos_fotos/numerodario.jpg",
         "./recursos_fotos/taller.jpg",
-        "./recursos_fotos/fondo1.webp"
+        "./recursos_fotos/info2.jpeg",
+        "./recursos_fotos/medicarevideo.mp4"
     ],
  
 
@@ -14,8 +15,8 @@
     "card2title": "LABORATORIOS CLINICOS",
     "card2parrafo":"Ingresa aqui para descargar todos tus resultados de examenes.",
 
-    "card3title": "INTRANET",
-    "card3parrafo":"El acceso a esta zona es exclusivo para empleados de la IPS.",
+    "card3title": "TALLER INASISTENCIA",
+    "card3parrafo":"Paga aqui tus multas por faltar a citas medicas.",
     
 
     "titlegrid": "Bienvenido a MEDICARE IPS",
@@ -58,9 +59,8 @@
     "hrefwhatsapp" : "https://walink.co/c82aaa",
     "whatsapp" : "+57 321 2701208",
 
-    "hreffacebook" : "https://walink.co/c82aaa",
-    "hrefinstagram" : "https://walink.co/c82aaa",
-    "hrefx" : "https://walink.co/c82aaa",
+    "hreffacebook" : "https://www.facebook.com/medicareipssas",
+    "facebook" : "Facebook",
 
     "botondario" : "https://walink.co/c82aaa"
 

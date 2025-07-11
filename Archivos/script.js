@@ -74,86 +74,104 @@ function cerrarMenu() {
 
 
 
-// CARRUSEL DE FOTOS
-// Este código es para el carrusel de fotos
+/// CARRUSEL DE FOTOS Y VIDEOS
+    document.addEventListener('DOMContentLoaded', function () {
+      const slider = document.querySelector("#carousel > div");
+      const carouselContainer = document.querySelector("#carousel");
 
-  document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.querySelector("#carousel > div");
-  const carouselContainer = document.querySelector("#carousel");
+      if (!slider) return;
 
-  if (!slider) return;
+      let index = 0;
+      let autoplayInterval;
+      let totalSlides = 0;
 
-  let index = 0;
-  let autoplayInterval;
-  let totalSlides = 0;
+      // Cargar desde JSON
+      fetch('./Archivos/json/index.json')
+        .then(res => res.json())
+        .then(data => {
+          const fotos = data.fotos;
 
-  // 1. Cargar imágenes desde JSON
-  fetch('./Archivos/json/index.json')
-    .then(res => res.json())
-    .then(data => {
-      const fotos = data.fotos;
+          slider.innerHTML = "";
 
-      // Limpiar contenido anterior
-      slider.innerHTML = "";
+          fotos.forEach(url => {
+            const isVideo = url.endsWith('.mp4') || url.endsWith('.webm');
 
-      // Insertar imágenes dinámicamente
-      fotos.forEach(url => {
-        const img = document.createElement('img');
-        img.src = url;
-        img.className = "w-full flex-shrink-0";
-        slider.appendChild(img);
+            const media = isVideo
+              ? document.createElement('video')
+              : document.createElement('img');
+
+            media.src = url;
+            media.className = "w-full max-w-[800px] h-auto flex-shrink-0 object-contain";
+
+            if (isVideo) {
+              media.setAttribute("controls", "");
+              media.setAttribute("playsinline", "");
+            }
+
+            slider.appendChild(media);
+          });
+
+          totalSlides = fotos.length;
+
+          showSlide();
+          startAutoplay();
+        })
+        .catch(err => console.error("Error al cargar las imágenes:", err));
+
+      function showSlide() {
+        slider.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % totalSlides;
+        showSlide();
+      }
+
+      function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        showSlide();
+      }
+
+      function startAutoplay() {
+        clearTimeout(autoplayInterval);
+
+        function handleSlide() {
+          const currentSlide = slider.children[index];
+          const isVideo = currentSlide.tagName === "VIDEO";
+
+          if (isVideo) {
+            const esperarFin = () => {
+              currentSlide.removeEventListener("ended", esperarFin);
+              nextSlide();
+              handleSlide();
+            };
+
+            currentSlide.addEventListener("ended", esperarFin);
+          } else {
+            autoplayInterval = setTimeout(() => {
+              nextSlide();
+              handleSlide();
+            }, 5000);
+          }
+        }
+
+        handleSlide();
+      }
+
+      // Botones
+      document.getElementById("prev").addEventListener("click", () => {
+        prevSlide();
+        startAutoplay();
       });
 
-      // Actualizar número de slides
-      totalSlides = fotos.length;
+      document.getElementById("next").addEventListener("click", () => {
+        nextSlide();
+        startAutoplay();
+      });
 
-      // Mostrar primera imagen
-      showSlide();
-
-      // Iniciar autoplay
-      startAutoplay();
-    })
-    .catch(err => console.error("Error al cargar las imágenes:", err));
-
-  function showSlide() {
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function nextSlide() {
-    index = (index + 1) % totalSlides;
-    showSlide();
-  }
-
-  function prevSlide() {
-    index = (index - 1 + totalSlides) % totalSlides;
-    showSlide();
-  }
-
-  function startAutoplay() {
-    autoplayInterval = setInterval(nextSlide, 5000);
-  }
-
-  function stopAutoplay() {
-    clearInterval(autoplayInterval);
-  }
-
-  // 2. Eventos de botones
-  document.getElementById("prev").addEventListener("click", () => {
-    prevSlide();
-    stopAutoplay();
-    startAutoplay();
-  });
-
-  document.getElementById("next").addEventListener("click", () => {
-    nextSlide();
-    stopAutoplay();
-    startAutoplay();
-  });
-
-  // 3. Pausar al pasar el mouse
-  carouselContainer.addEventListener("mouseenter", stopAutoplay);
-  carouselContainer.addEventListener("mouseleave", startAutoplay);
-});
+      carouselContainer.addEventListener("mouseenter", () => clearTimeout(autoplayInterval));
+      carouselContainer.addEventListener("mouseleave", startAutoplay);
+    });
 
 // ANIMACIÓN DE BOTONES
 
@@ -168,8 +186,9 @@ function cerrarMenu() {
 
 
 
+
 // Solo para el primer cuadro de CITAS MEDICAS
-document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
   // Selecciona solo el primer card (CITAS MEDICAS)
   const cardCitas = document.querySelector('.card');
   if (!cardCitas) return;
