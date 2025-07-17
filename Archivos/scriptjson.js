@@ -1,4 +1,4 @@
-fetch('./Archivos/json/index.json')
+fetch('../Archivos/json/index.json')
 .then(doc => doc.json())
 .then(datos => {
 
@@ -43,19 +43,19 @@ fetch('./Archivos/json/index.json')
     document.getElementById('especialidadparrafo9').textContent = datos.especialidadparrafo9;
 
 
-    document.getElementById('hrefdireccion').href = datos.hrefdireccion;
-    document.getElementById('direccion').textContent = datos.direccion;
+    document.querySelector('.hrefdireccion').href = datos.hrefdireccion;
+    document.querySelector('.direccion').textContent = datos.direccion;
 
-    document.getElementById('hrefcorreo').href = datos.hrefcorreo;
-    document.getElementById('correo').textContent = datos.correo;
+    document.querySelector('.hrefcorreo').href = datos.hrefcorreo;
+    document.querySelector('.correo').textContent = datos.correo;
 
-    document.getElementById('hrefwhatsapp').href = datos.hrefwhatsapp;
-    document.getElementById('whatsapp').textContent = datos.whatsapp;
+    document.querySelector('.hrefwhatsapp').href = datos.hrefwhatsapp;
+    document.querySelector('.whatsapp').textContent = datos.whatsapp;
 
-    document.getElementById('hreffacebook').href = datos.hreffacebook;
-    document.getElementById('facebook').textContent = datos.facebook;
+    document.querySelector('.hreffacebook').href = datos.hreffacebook;
+    document.querySelector('.facebook').textContent = datos.facebook;
 
-    document.getElementById('botondario').href = datos.botondario;
+    document.querySelector('.botondario').href = datos.botondario;
 
 })
     
