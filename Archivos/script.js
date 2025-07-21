@@ -1,6 +1,4 @@
 // MENU DESPLEGABLE
-// Este código es para el menú desplegable en dispositivos móviles
-
 const boton = document.getElementById('boton-movil');
 const menu = document.getElementById('menu-movil');
 const svgMenu = boton.querySelector('.svgMenu');
@@ -10,13 +8,11 @@ let abierto = false;
 
 boton.addEventListener('click', () => {
   abierto = !abierto;
-
   if (abierto) {
     menu.classList.remove('max-h-0', 'opacity-0');
     menu.classList.add('max-h-[300px]', 'opacity-100');
     svgMenu.classList.add('hidden');
     svgCerrar.classList.remove('hidden');
-
   } else {
     menu.classList.add('max-h-0', 'opacity-0');
     menu.classList.remove('max-h-[300px]', 'opacity-100');
@@ -25,15 +21,13 @@ boton.addEventListener('click', () => {
   }
 });
 
-
 // CAMBIO DE IMAGENES EN EL BOTON
-
 const btninfo = document.getElementById('btn-info');
 const menuinfo = document.getElementById('menu-info');
 let infoabierto = false;
 
 btninfo.addEventListener('click', (e) => {
-  e.stopPropagation(); // Evita que el clic se propague al documento
+  e.stopPropagation();
   infoabierto = !infoabierto;
 
   if (infoabierto) {
@@ -48,9 +42,7 @@ btninfo.addEventListener('click', (e) => {
   }
 });
 
-// ▶️Escucha clics en todo el documento
 document.addEventListener('click', (e) => {
-  // Si el clic no fue en el botón ni en el menú
   if (infoabierto && !menuinfo.contains(e.target) && !btninfo.contains(e.target)) {
     cerrarMenu();
   }
@@ -66,11 +58,10 @@ function cerrarMenu() {
   }, 300);
 }
 
-
-/// CARRUSEL DE FOTOS Y VIDEOS
+/// ✅ CARRUSEL DE FOTOS Y VIDEOS (PRINCIPAL - ID: carousel1)
 document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.querySelector("#carousel > div");
-  const carouselContainer = document.querySelector("#carousel");
+  const slider = document.querySelector("#carousel1 > div");
+  const carouselContainer = document.querySelector("#carousel1");
   const toggleAudioBtn = document.getElementById("toggle-audio");
   const iconoSonido = document.getElementById("icon-sonido");
   const iconoSilencio = document.getElementById("icon-silencio");
@@ -197,19 +188,10 @@ document.addEventListener('DOMContentLoaded', function () {
     startAutoplay();
   });
 
-  function animar(elemento) {
-    elemento.classList.add('scale-50', 'shadow');
-    setTimeout(() => {
-      elemento.classList.remove('scale-50', 'shadow');
-    }, 200);
-  }
-
-  // ✅ Solo esta parte fue modificada (botón de audio)
   function actualizarBotonAudio() {
     const current = slider.children[index];
     if (current && current.tagName === "VIDEO") {
       toggleAudioBtn.classList.remove("hidden");
-
       if (videoSilenciado) {
         iconoSonido.classList.add("hidden");
         iconoSilencio.classList.remove("hidden");
@@ -217,7 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
         iconoSonido.classList.remove("hidden");
         iconoSilencio.classList.add("hidden");
       }
-
     } else {
       toggleAudioBtn.classList.add("hidden");
     }
@@ -235,26 +216,17 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // ANIMACIÓN DE BOTONES
+function animar(elemento) {
+  elemento.classList.add('scale-50', 'shadow');
+  setTimeout(() => {
+    elemento.classList.remove('scale-50', 'shadow');
+  }, 200);
+}
 
-     function animar(elemento) {
-    // esto modifica el botón directamente
-    elemento.classList.add('scale-50', 'shadow',);
-
-    setTimeout(() => {
-      elemento.classList.remove('scale-50', 'shadow',);
-    }, 200);
-  }
-
-
-
-
-// Solo para el primer cuadro de CITAS MEDICAS
-  document.addEventListener('DOMContentLoaded', function () {
-  // Selecciona solo el primer card (CITAS MEDICAS)
+// CAJAS DE CITAS MÉDICAS (sin cambios)
+document.addEventListener('DOMContentLoaded', function () {
   const cardCitas = document.querySelector('.card');
   if (!cardCitas) return;
-
-  // Todos los botones dentro de ese card
   const botones = cardCitas.querySelectorAll('.boton1');
   const menu = cardCitas.querySelector('.menu1');
 
@@ -265,7 +237,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Opcional: cerrar el menú si se hace clic fuera
   document.addEventListener('click', function (e) {
     if (!cardCitas.contains(e.target)) {
       menu.classList.add('hiddenCard');
@@ -273,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Mostrar/ocultar el menú de CITAS MEDICAS al hacer clic en los botones
+// Mostrar/ocultar el menú de CITAS MEDICAS
 document.addEventListener('DOMContentLoaded', function () {
   const cards = document.querySelectorAll('.card');
 
@@ -284,127 +255,98 @@ document.addEventListener('DOMContentLoaded', function () {
     const botonCerrar = botones[1];
     const menu = card.querySelector('.menu1');
 
-  // Al hacer clic en el botón de abrir
-  botonAbrir.addEventListener('click', function (e) {
-    e.stopPropagation();
-    animar(this);
-    setTimeout(() => {
-      botonAbrir.classList.add('hidden');
-      botonCerrar.classList.remove('hidden');
-      menu.classList.remove('xs:scale-y-0');
-      menu.classList.add('xs:scale-y-100');
-    }, 200);
-  });
+    botonAbrir.addEventListener('click', function (e) {
+      e.stopPropagation();
+      animar(this);
+      setTimeout(() => {
+        botonAbrir.classList.add('hidden');
+        botonCerrar.classList.remove('hidden');
+        menu.classList.remove('xs:scale-y-0');
+        menu.classList.add('xs:scale-y-100');
+      }, 200);
+    });
 
-  // Al hacer clic en el botón de cerrar
-  botonCerrar.addEventListener('click', function (e) {
-    e.stopPropagation();
-    animar(this);
-    setTimeout(() => {
-      botonAbrir.classList.remove('hidden');
-      menu.classList.remove('xs:scale-y-100');
-      menu.classList.add('xs:scale-y-0');
-    }, 200);
-  });
+    botonCerrar.addEventListener('click', function (e) {
+      e.stopPropagation();
+      animar(this);
+      setTimeout(() => {
+        botonAbrir.classList.remove('hidden');
+        menu.classList.remove('xs:scale-y-100');
+        menu.classList.add('xs:scale-y-0');
+      }, 200);
+    });
 
-  // Cerrar el menú si se hace clic fuera
-  document.addEventListener('click', function (e) {
-    if (!cardCitas.contains(e.target)) {
-      menu.classList.remove('xs:scale-y-100');
-      menu.classList.add('xs:scale-y-0');
-      botonCerrar.classList.add('hidden');
-      botonAbrir.classList.remove('hidden');
-    }
+    document.addEventListener('click', function (e) {
+      if (!card.contains(e.target)) {
+        menu.classList.remove('xs:scale-y-100');
+        menu.classList.add('xs:scale-y-0');
+        botonCerrar.classList.add('hidden');
+        botonAbrir.classList.remove('hidden');
+      }
+    });
   });
 });
-});
 
-
-
-
-
-// Enlace
-
+// ENLACES
 document.querySelectorAll('.enlace').forEach(enlaces => {
-enlaces.addEventListener('click', function (e) {
-
-  e.preventDefault();
-
-  this.classList.add('bg-secondary', 'text-white');
-
-  setTimeout(() => {
-    this.classList.remove('bg-secondary', 'text-white');
-    window.location.href = this.href;
-
-  }, 200);
+  enlaces.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.add('bg-secondary', 'text-white');
+    setTimeout(() => {
+      this.classList.remove('bg-secondary', 'text-white');
+      window.location.href = this.href;
+    }, 200);
+  });
 });
-});
-
-
-// Enlace1
 
 document.querySelectorAll('.enlace1').forEach(enlaces1 => {
-enlaces1.addEventListener('click', function (e) {
-
-  e.preventDefault();
-
-  this.classList.add('text-secondary', 'border-b-2', 'border-secondary', 'text-[18px]');
-  this.classList.remove('group-hover:text-[16px]');
-
-  setTimeout(() => {
-    this.classList.remove('text-secondary', 'border-b-2', 'border-secondary', 'text-[18px]');
-    this.classList.add('group-hover:text-[16px]');
-    window.location.href = this.href;
-  }, 200);
-});
+  enlaces1.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.add('text-secondary', 'border-b-2', 'border-secondary', 'text-[18px]');
+    this.classList.remove('group-hover:text-[16px]');
+    setTimeout(() => {
+      this.classList.remove('text-secondary', 'border-b-2', 'border-secondary', 'text-[18px]');
+      this.classList.add('group-hover:text-[16px]');
+      window.location.href = this.href;
+    }, 200);
+  });
 });
 
 document.querySelectorAll('[data-dropdown]').forEach(dropdown => {
-    const button = dropdown.querySelector('.btn-dropdown');
-    const menu = dropdown.querySelector('.dropdown-menu');
-    const title = dropdown.querySelector('.titlevalores');
-    const icon = dropdown.querySelector('.svgvalores');
+  const button = dropdown.querySelector('.btn-dropdown');
+  const menu = dropdown.querySelector('.dropdown-menu');
+  const title = dropdown.querySelector('.titlevalores');
+  const icon = dropdown.querySelector('.svgvalores');
 
-    button.addEventListener('click', (e) => {
-      e.stopPropagation(); // evita que se dispare otro handler
-      icon.classList.toggle('rotate-90');
-      icon.classList.toggle('text-primary');
-      icon.classList.toggle('text-secondary');
-      title.classList.toggle('text-primary');
-      title.classList.toggle('text-secondary');
-      menu.classList.toggle('max-h-0');
-      menu.classList.toggle('max-h-100');
-      button.classList.toggle('border-secondary-light');
-    });
+  button.addEventListener('click', (e) => {
+    e.stopPropagation();
+    icon.classList.toggle('rotate-90');
+    icon.classList.toggle('text-primary');
+    icon.classList.toggle('text-secondary');
+    title.classList.toggle('text-primary');
+    title.classList.toggle('text-secondary');
+    menu.classList.toggle('max-h-0');
+    menu.classList.toggle('max-h-100');
+    button.classList.toggle('border-secondary-light');
   });
-
-//CArrusel de capacidad instalada
-
-document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.getElementById("carousel");
-  carousel.innerHTML += carousel.innerHTML; // ✅ duplicamos para efecto continuo
 });
 
-
+/// ✅ CARRUSELES AUTOMÁTICOS (Capacidad instalada)
 document.addEventListener("DOMContentLoaded", () => {
   function startCarousel(carousel, speed, reverse = false) {
     let offset = 0;
-
-    // Esperar a que las imágenes carguen para medir bien
-    const updateCardWidth = () => carousel.children[0].offsetWidth + 24; 
+    const updateCardWidth = () => carousel.children[0].offsetWidth + 24;
     let cardWidth = updateCardWidth();
 
     function move() {
       offset += reverse ? speed : -speed;
       carousel.style.transform = `translateX(${offset}px)`;
 
-      cardWidth = updateCardWidth(); // Recalcula por si algo cambia
-
+      cardWidth = updateCardWidth();
       if (!reverse && Math.abs(offset) >= cardWidth) {
         offset += cardWidth;
         carousel.appendChild(carousel.children[0]);
-      } 
-      else if (reverse && offset >= 0) {
+      } else if (reverse && offset >= 0) {
         offset -= cardWidth;
         carousel.prepend(carousel.lastElementChild);
       }
@@ -412,12 +354,11 @@ document.addEventListener("DOMContentLoaded", () => {
       requestAnimationFrame(move);
     }
 
-    // ✅ Inicia después de cargar imágenes
     if (document.readyState === "complete") move();
     else window.addEventListener("load", move);
   }
 
-  startCarousel(document.getElementById("carousel1"), 1, false);
-  startCarousel(document.getElementById("carousel2"), 1, true);
-  startCarousel(document.getElementById("carousel3"), 1, false);
+  startCarousel(document.getElementById("carousel2"), 0.5, false);
+  startCarousel(document.getElementById("carousel3"), 0.5, true);
+  startCarousel(document.getElementById("carousel4"), 0.5, false);
 });
