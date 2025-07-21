@@ -377,3 +377,47 @@ document.querySelectorAll('[data-dropdown]').forEach(dropdown => {
       button.classList.toggle('border-secondary-light');
     });
   });
+
+//CArrusel de capacidad instalada
+
+document.addEventListener("DOMContentLoaded", () => {
+  const carousel = document.getElementById("carousel");
+  carousel.innerHTML += carousel.innerHTML; // ✅ duplicamos para efecto continuo
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  function startCarousel(carousel, speed, reverse = false) {
+    let offset = 0;
+
+    // Esperar a que las imágenes carguen para medir bien
+    const updateCardWidth = () => carousel.children[0].offsetWidth + 24; 
+    let cardWidth = updateCardWidth();
+
+    function move() {
+      offset += reverse ? speed : -speed;
+      carousel.style.transform = `translateX(${offset}px)`;
+
+      cardWidth = updateCardWidth(); // Recalcula por si algo cambia
+
+      if (!reverse && Math.abs(offset) >= cardWidth) {
+        offset += cardWidth;
+        carousel.appendChild(carousel.children[0]);
+      } 
+      else if (reverse && offset >= 0) {
+        offset -= cardWidth;
+        carousel.prepend(carousel.lastElementChild);
+      }
+
+      requestAnimationFrame(move);
+    }
+
+    // ✅ Inicia después de cargar imágenes
+    if (document.readyState === "complete") move();
+    else window.addEventListener("load", move);
+  }
+
+  startCarousel(document.getElementById("carousel1"), 1, false);
+  startCarousel(document.getElementById("carousel2"), 1, true);
+  startCarousel(document.getElementById("carousel3"), 1, false);
+});

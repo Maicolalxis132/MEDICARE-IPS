@@ -1,4 +1,4 @@
-fetch('../Archivos/json/index.json')
+fetch('./Archivos/json/index.json')
 .then(doc => doc.json())
 .then(datos => {
 
@@ -59,3 +59,22 @@ fetch('../Archivos/json/index.json')
 
 })
     
+fetch('../Archivos/json/index.json')
+.then(doc => doc.json())
+.then(datos => {
+
+    document.querySelector('.hrefdireccion').href = datos.hrefdireccion;
+    document.querySelector('.direccion').textContent = datos.direccion;
+
+    document.querySelector('.hrefcorreo').href = datos.hrefcorreo;
+    document.querySelector('.correo').textContent = datos.correo;
+
+    document.querySelector('.hrefwhatsapp').href = datos.hrefwhatsapp;
+    document.querySelector('.whatsapp').textContent = datos.whatsapp;
+
+    document.querySelector('.hreffacebook').href = datos.hreffacebook;
+    document.querySelector('.facebook').textContent = datos.facebook;
+
+    document.querySelector('.botondario').href = datos.botondario;
+    
+})
