@@ -7,8 +7,6 @@
         "./recursos_fotos/medicarevideo.mp4"
     ],
  
-
-
     "card1title": "CITAS MEDICAS",
     "card1parrafo":"Solicita tus cita medica por este medio, de forma rapida y sencilla.",
 
@@ -63,6 +61,4 @@
     "facebook" : "Medicare Ips",
 
     "botondario" : "https://walink.co/c82aaa"
-
-
 }
