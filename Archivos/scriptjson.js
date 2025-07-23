@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 fetch('./Archivos/json/index.json')
 .then(doc => doc.json())
 .then(datos => {
@@ -81,3 +82,4 @@ fetch('../Archivos/json/info.json')
     document.querySelector('.botondario').href = datos.botondario;
     
 })
+});
