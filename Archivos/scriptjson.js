@@ -44,19 +44,19 @@ fetch('./Archivos/json/index.json')
     document.getElementById('especialidadparrafo9').textContent = datos.especialidadparrafo9;
 
 
-    document.querySelector('.hrefdireccion').href = datos.hrefdireccion;
-    document.querySelector('.direccion').textContent = datos.direccion;
+    document.querySelectorAll('.hrefdireccion').forEach(el => {el.href = datos.hrefdireccion; });
+    document.querySelectorAll('.direccion').forEach(el => {el.textContent = datos.direccion;});
 
-    document.querySelector('.hrefcorreo').href = datos.hrefcorreo;
-    document.querySelector('.correo').textContent = datos.correo;
+    document.querySelectorAll('.hrefcorreo').forEach(el => {el.href = datos.hrefcorreo;});
+    document.querySelectorAll('.correo').forEach(el => {el.textContent = datos.correo;});
+        
+    document.querySelectorAll('.hrefwhatsapp').forEach(el => {el.href = datos.hrefwhatsapp;});
+    document.querySelectorAll('.whatsapp').forEach(el => {el.textContent = datos.whatsapp;});
 
-    document.querySelector('.hrefwhatsapp').href = datos.hrefwhatsapp;
-    document.querySelector('.whatsapp').textContent = datos.whatsapp;
+    document.querySelectorAll('.hreffacebook').forEach(el => {el.href = datos.hreffacebook;});
+    document.querySelectorAll('.facebook').forEach(el => {el.textContent = datos.facebook;});
 
-    document.querySelector('.hreffacebook').href = datos.hreffacebook;
-    document.querySelector('.facebook').textContent = datos.facebook;
-
-    document.querySelector('.botondario').href = datos.botondario;
+    document.querySelectorAll('.botondario').forEach(el => {el.href = datos.botondario;});
 
 })
     
@@ -67,19 +67,18 @@ fetch('../Archivos/json/info.json')
     document.getElementById('quienessomostitle').textContent = datos.quienessomostitle;
     document.getElementById('quienessomosparrafo1').textContent = datos.quienessomosparrafo1;
 
-    document.querySelector('.hrefdireccion').href = datos.hrefdireccion;
-    document.querySelector('.direccion').textContent = datos.direccion;
+    document.querySelectorAll('.hrefdireccion').forEach(el => {el.href = datos.hrefdireccion; });
+    document.querySelectorAll('.direccion').forEach(el => {el.textContent = datos.direccion;});
 
-    document.querySelector('.hrefcorreo').href = datos.hrefcorreo;
-    document.querySelector('.correo').textContent = datos.correo;
+    document.querySelectorAll('.hrefcorreo').forEach(el => {el.href = datos.hrefcorreo;});
+    document.querySelectorAll('.correo').forEach(el => {el.textContent = datos.correo;});
+        
+    document.querySelectorAll('.hrefwhatsapp').forEach(el => {el.href = datos.hrefwhatsapp;});
+    document.querySelectorAll('.whatsapp').forEach(el => {el.textContent = datos.whatsapp;});
 
-    document.querySelector('.hrefwhatsapp').href = datos.hrefwhatsapp;
-    document.querySelector('.whatsapp').textContent = datos.whatsapp;
+    document.querySelectorAll('.hreffacebook').forEach(el => {el.href = datos.hreffacebook;});
+    document.querySelectorAll('.facebook').forEach(el => {el.textContent = datos.facebook;});
 
-    document.querySelector('.hreffacebook').href = datos.hreffacebook;
-    document.querySelector('.facebook').textContent = datos.facebook;
-
-    document.querySelector('.botondario').href = datos.botondario;
-    
+    document.querySelectorAll('.botondario').forEach(el => {el.href = datos.botondario;});
 })
 });
