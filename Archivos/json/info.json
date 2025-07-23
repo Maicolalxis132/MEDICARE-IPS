@@ -1,0 +1,81 @@
+{
+    "quienessomostitle": "¿QUIENES SOMOS?",
+    "quienessomosparrafo1": "Somos una Institución Prestadora de Servicios de Salud de primer Nivel de Atención que nace en el 2001, la cual a apartir de su fundación ofrece servicios de prevención de la enfermedad, promoción de la salud, tratamiento y control de los factores de riesgo del medio ambiente que influyen en la salud de su población; desde el año 2016 hemos aumentado los servicios habilitando especialidades médicas y odontológicas a fin de ofrecer un servicio integral a nuestros usuarios.",
+    "quienessomosparrafo2": "Contamos con un equipo multidisciplinario conformado por profesionales y técnicos competentes, con calidad y calidez humana respaldados con la tecnología e insumos necesarios para brindar atención integral, oportuna, segura y de calidad, siempre en miras de convertirnos en la Alternativa en salud Familiar.",
+
+
+    "misiontitle": "MISION",
+    "misionparrafo1": "Mantener saludables a nuestros usuarios satisfaciendo sus necesidades básicas de atención en salud con énfasis en la promoción y prevención, en servicios de primer nivel ambulatorio en el área de medicina general, odontología, enfermería y apoyo diagnóstico y terapéutico; convirtiéndonos en la mejor alternativa integral en servicios de salud familiar para la comunidad del municipio de la Dorada, mediante un selecto grupo de profesionales con una alta calidad humana y moderna tecnología.",
+    "misionparrafo2": "Estamos comprometidos en el mejoramiento continuo en la atención, en la seguridad del paciente y en la innovación a los cambios legales del sector salud y culturales de nuestra población, garantizando la sostenibilidad financiera.",
+
+    "visiontitle": "VISION",
+    "visionparrafo1": "Ser la IPS líder en la región, reconocida por mantener usuarios saludables y la excelente calidad en la atención integral. Liderando los procesos de cambio en el sector y siendo reconocidos por la satisfacción de las necesidades cambiantes de la población.",
+
+
+    "valores":"VALORES",
+
+    "valor1":"Trabajo en Equipo",
+    "valor1parrafo":"Somos un grupo interdisciplinario comprometidos en el bienestar y salud de nuestros usuarios y somos mutuamente responsables por los resultados",
+
+    "valor2":"Honestidad",
+    "valor2parrafo":"Actuamos dentro de los más rigurosos principios éticos y legales.",
+
+    "valor3":"Respeto por las Personas",
+    "valor3parrafo":"Damos un trato digno a las personas y valoramos sus diferencias.",
+
+    "valor4":"Excelencia en el Servicio",
+    "valor4parrafo":"Prestamos los servicios con calidad y ética profesional para satisfacer y superar las expectativas de nuestros usuarios logrando tranquilidad, confianza y fidelidad.",
+
+    "valor5":"Alto Desempeño",
+    "valor5parrafo":"Superamos continuamente nuestras metas y optimizamos el uso de recursos, para crear valor.",
+
+    "valor6":"Cumplimiento de Compromisos",
+    "valor6parrafo":"Somos conscientes y responsables por el cumplimiento de los resultados esperados, por la satisfacción de usuario y los compromisos adquiridos con nuestros colaboradores y clientes.",
+
+    "valor7":"Actitud Positiva",
+    "valor7parrafo":"Disfrutamos y amamos lo que hacemos y estamos en una búsqueda permanente de posibilidades y de mejoramiento continuo.",
+
+
+    "debertitle": "DEBERES DE LOS USUARIOS EN MEDICARE IPS",
+    "deberparrafo1": "Obligación moral que afecta a cada persona, según los principios éticos, de justicia y conciencia que demanda respetar y acatar las leyes de los derechos ajenos.",
+    "deberparrafo2": "El deber es una deuda contraída con respeto a un correspondiente Derecho, recibido o proclamado. Todo derecho crea un deber recíprocamente. Hace parte en su interpretación y aplicación, del principio de corresponsabilidad social.",
+
+    "deber1": "Cumplir con los periodos de cotización para poder acceder a los servicios de salud.",
+    "deber2": "El usuario debe pagar los copagos o cuotas moderadoras según corresponda.",
+    "deber3": "El incumplimiento a consultas médicas, obligara al usuario a la asistencia a un taller educativo para la asignación de una nueva cita médica. (artículo 55  ley 1438 ).",
+    "deber4": "El incumplimiento a consultas odontológicas, obligara al usuario a pagar a la institución el valor correspondiente.",
+    "deber5": "Debe cuidar de manera integral su salud, la de  su familia y la de su comunidad.",
+    "deber6": "Debe suministrar al equipo de salud información completa y detallada sobre su padecimiento, enfermedades pasadas, medicamentos que está tomando, alergias, hospitalizaciones o cirugías anteriores.",
+    "deber7": "Debe cumplir a cabalidad las órdenes médicas y el plan de tratamiento ordenado. No olvide que  usted es el responsable de su autocuidado.",
+    "deber8": "Debe aceptar las consecuencias y dejar constancia por escrito cuando rehúsa el tratamiento sugerido.",
+    "deber9": "Debe Cuidar las instalaciones y la dotación, hacer uso racional de los recursos y servicios. Además de  respetar la intimidad de los demás pacientes.",
+    "deber10": "Cumplir con los periodos de cotización para poder acceder a los servicios de salud.",
+    "deber11": "Debe tratar con respeto y cortesía al personal que le brinda atención.",
+    "deber12": "Debe cumplir con las normas y políticas para el ingreso: No se permite  el ingreso de armas o cualquier elemento que ponga en riesgo la seguridad de todos. Como tampoco el ingreso de animales, bebidas Alcohólicas, etc.",
+    "deber13": "Debe abstenerse de circular en áreas restringidas.",
+    "deber14": "Debe presentar documento de identidad, carné, órdenes y autorizaciones e informar nombre y apellidos completos del paciente y acompañante, así como la dirección y teléfono.",
+    "deber15": "Debe dirigirse a la oficina de atención al usuario  en caso de detectar anomalías con el fin de tomar los correctivos necesarios.",
+
+
+    "derechostitle": "DERECHOS DE LOS USUARIOS EN MEDICARE IPS",
+    "derechoparrafo1": "Derecho es la facultad que tiene cada persona para hacer, decidir, poseer o exigir algo libremente con la limitación que imponen los Derechos de los demás y el orden jurídico.",
+    "derechoparrafo2": "El derecho le permite a cada persona un amplio margen para desarrollar sus potenciales, encauzar su propia vida hacia el logro de sus ideales respetando las leyes comunes y el derecho de las demás personas, dentro de un marco de justicia y equidad.",
+
+    "derecho1": "El usuario tiene derecho a recibir una atención integral de sus problemas de salud, dentro de un funcionamiento eficiente de los recursos de salud disponibles.",
+    "derecho2": "El usuario tiene derecho al respeto a su personalidad, dignidad humana e intimidad, sin que pueda ser discriminado por razones de tipo social, económico, moral e ideológico.",
+    "derecho3": "El usuario tiene derecho a la confidencialidad de toda información con su proceso, incluso el secreto de su estancia en centros y establecimientos de salud donde haya estado con anterioridad",
+    "derecho4": "Tiene derecho a que todos los informes de la historia clínica sea tratados de forma confidencial y secreta, que, sólo con su autorización puedan ser conocidos.",
+    "derecho5": "El usuario tiene derecho a recibir información completa y continuada, verbal y escrita, de todo lo relativo a su proceso, incluyendo diagnósticos, alternativas de tratamiento, riesgos, pronósticos, la cual será facilitada en un lenguaje comprensible, y dejando claro que el usuario haya comprendido. En caso de que el paciente no quiera o pueda manifiestamente recibir dicha información, esta deberá propsecondaryrse a los familiares o personas legalmente responsables.",
+    "derecho6": "El usuario tiene derecho a libre determinación entre las opciones que le presente el médico responsable de su caso, siendo preciso su consentimiento expreso previo a cualquier actuación, excepto en los siguientes casos: Cuando el no seguir el tratamiento sea un problema para la salud pública, cuando por alguna circunstancia no esté capacitado para tomar decisiones, en cuyo caso el derecho corresponderá a susecondaryiares o personas legalmente responsables.",
+    "derecho7": "El usuario tendrá derecho a negarse al tratamiento, excepto en los casos señalados en el literal e, debiendo para ello solicitar y firmar la carta de negación a servicios de salud.",
+    "derecho8": "El usuario tiene derecho a que se le asigne un medico cuyo nombre deberá conocer y que será un interlocutor válido con el equipo asistencial. En caso de ausencia, otro Profesional del equipo asumirá la responsabilidad. ",
+    "derecho9": "El usuario tiene derecho a que quede constancia por escrito de todo su proceso; esta información y las pruebas realizadas constituyen la Historia Clínica.",
+    "derecho10": "El usuario tiene derecho al correcto funcionamiento de los servicios asistenciales, y aceptables de habitabilidad, higiene, seguridad y respeto a su intimidad.",
+    "derecho11": "El usuario tiene derecho a recibir cuanta información desee sobre los aspectos de las actividades asistenciales, que afecten su proceso y situaciones personales.",
+    "derecho12": "El usuario tiene derecho a conocer los procesos formales para presentar reclamaciones, quejas, sugerencias y en general, para comunicarse con la administración de la institución. Tiene derecho a recibir una respuesta.",
+    "derecho13": "Tiene derecho a recibir trato digno, con respeto por sus creencias y costumbres, así como opiniones personales sobre la enfermedad que sufre.",
+    "derecho14": "El usuario tiene derecho a negarse a recibir asistencia en salud, tras firmar el documento correspondiente, exceptuado los casos recogidos en el literal he expuesto anteriormente.",
+    "derecho15": "El usuario tiene derecho a que en MEDICARE IPS, se le brinde una atención con personal profesional calificado.",
+    "derecho16": "En MEDICARE IPS, el usuario tiene derecho a una atención integral en salud, recibiendo educación, información, fomento de la salud, prevención de la enfermedad, diagnóstico y apoyo en los procesos de rehabilitación."
+
+}

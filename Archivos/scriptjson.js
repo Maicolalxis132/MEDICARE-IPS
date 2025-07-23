@@ -59,9 +59,12 @@ fetch('./Archivos/json/index.json')
 
 })
     
-fetch('./Archivos/json/index.json')
+fetch('../Archivos/json/index.json')
 .then(doc => doc.json())
 .then(datos => {
+
+    document.getElementById('quienessomostitle').textContent = datos.quienessomostitle;
+    document.getElementById('quienessomosparrafo1').textContent = datos.quienessomosparrafo1;
 
     document.querySelector('.hrefdireccion').href = datos.hrefdireccion;
     document.querySelector('.direccion').textContent = datos.direccion;
