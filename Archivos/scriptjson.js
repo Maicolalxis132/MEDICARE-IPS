@@ -59,7 +59,7 @@ fetch('./Archivos/json/index.json')
 
 })
     
-fetch('./Archivos/json/index.json')
+fetch('../Archivos/json/info.json')
 .then(doc => doc.json())
 .then(datos => {
 
