@@ -118,6 +118,69 @@ fetch('../Archivos/json/info.json')
     document.getElementById('derecho15').textContent = datos.derecho15;
     document.getElementById('derecho16').textContent = datos.derecho16;
 
+    document.getElementById('capacidadtitle').textContent = datos.capacidadtitle;
+
+    document.getElementById('targetimg1').src = datos.targetimg1;
+    document.getElementById('targettitle1').textContent = datos.targettitle1;
+    document.getElementById('targettext1').textContent = datos.targettext1;
+    document.getElementById('targetimg2').src = datos.targetimg2;
+    document.getElementById('targettitle2').textContent = datos.targettitle2;
+    document.getElementById('targettext2').textContent = datos.targettext2;
+    document.getElementById('targetimg3').src = datos.targetimg3;
+    document.getElementById('targettitle3').textContent = datos.targettitle3;
+    document.getElementById('targettext3').textContent = datos.targettext3;
+    document.getElementById('targetimg4').src = datos.targetimg4;
+    document.getElementById('targettitle4').textContent = datos.targettitle4;
+    document.getElementById('targettext4').textContent = datos.targettext4;
+    document.getElementById('targetimg5').src = datos.targetimg5;
+    document.getElementById('targettitle5').textContent = datos.targettitle5;
+    document.getElementById('targettext5').textContent = datos.targettext5;
+    document.getElementById('targetimg6').src = datos.targetimg6;
+    document.getElementById('targettitle6').textContent = datos.targettitle6;
+    document.getElementById('targettext6').textContent = datos.targettext6;
+    document.getElementById('targetimg7').src = datos.targetimg7;
+    document.getElementById('targettitle7').textContent = datos.targettitle7;
+    document.getElementById('targettext7').textContent = datos.targettext7;
+    document.getElementById('targetimg8').src = datos.targetimg8;
+    document.getElementById('targettitle8').textContent = datos.targettitle8;
+    document.getElementById('targettext8').textContent = datos.targettext8;
+    document.getElementById('targetimg9').src = datos.targetimg9;
+    document.getElementById('targettitle9').textContent = datos.targettitle9;
+    document.getElementById('targettext9').textContent = datos.targettext9;
+    document.getElementById('targetimg10').src = datos.targetimg10;
+    document.getElementById('targettitle10').textContent = datos.targettitle10;
+    document.getElementById('targettext10').textContent = datos.targettext10;
+    document.getElementById('targetimg11').src = datos.targetimg11;
+    document.getElementById('targettitle11').textContent = datos.targettitle11;
+    document.getElementById('targettext11').textContent = datos.targettext11;
+    document.getElementById('targetimg12').src = datos.targetimg12;
+    document.getElementById('targettitle12').textContent = datos.targettitle12;
+    document.getElementById('targettext12').textContent = datos.targettext12;
+    document.getElementById('targetimg13').src = datos.targetimg13;
+    document.getElementById('targettitle13').textContent = datos.targettitle13;
+    document.getElementById('targettext13').textContent = datos.targettext13;
+    document.getElementById('targetimg14').src = datos.targetimg14;
+    document.getElementById('targettitle14').textContent = datos.targettitle14;
+    document.getElementById('targettext14').textContent = datos.targettext14;
+    document.getElementById('targetimg15').src = datos.targetimg15;
+    document.getElementById('targettitle15').textContent = datos.targettitle15;
+    document.getElementById('targettext15').textContent = datos.targettext15;
+    document.getElementById('targetimg16').src = datos.targetimg16;
+    document.getElementById('targettitle16').textContent = datos.targettitle16;
+    document.getElementById('targettext16').textContent = datos.targettext16;
+    document.getElementById('targetimg17').src = datos.targetimg17;
+    document.getElementById('targettitle17').textContent = datos.targettitle17;
+    document.getElementById('targettext17').textContent = datos.targettext17;
+    document.getElementById('targetimg18').src = datos.targetimg18;
+    document.getElementById('targettitle18').textContent = datos.targettitle18;
+    document.getElementById('targettext18').textContent = datos.targettext18;
+
+
+    
+
+
+    
+
 
 })
 

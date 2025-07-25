@@ -76,6 +76,80 @@
     "derecho13": "Tiene derecho a recibir trato digno, con respeto por sus creencias y costumbres, así como opiniones personales sobre la enfermedad que sufre.",
     "derecho14": "El usuario tiene derecho a negarse a recibir asistencia en salud, tras firmar el documento correspondiente, exceptuado los casos recogidos en el literal he expuesto anteriormente.",
     "derecho15": "El usuario tiene derecho a que en MEDICARE IPS, se le brinde una atención con personal profesional calificado.",
-    "derecho16": "En MEDICARE IPS, el usuario tiene derecho a una atención integral en salud, recibiendo educación, información, fomento de la salud, prevención de la enfermedad, diagnóstico y apoyo en los procesos de rehabilitación."
+    "derecho16": "En MEDICARE IPS, el usuario tiene derecho a una atención integral en salud, recibiendo educación, información, fomento de la salud, prevención de la enfermedad, diagnóstico y apoyo en los procesos de rehabilitación.",
 
+
+    "capacidadtitle": "CAPACIDAD INSTALADA",
+
+    "targetimg1": "../recursos_fotos/capacidad instalada/medicinageneral.jpeg",
+    "targettitle1": "Medicina General y Especialidad",
+    "targettext1": "17 consultorios dotados.",
+
+    "targetimg2": "../recursos_fotos/capacidad instalada/odontologia.jpeg",
+    "targettitle2": "Odontología General y Especializada",
+    "targettext2": "3 consultorios odontológicos con 5 unidades odontológicas.",
+
+    "targetimg3": "",
+    "targettitle3": "Laboratorio Clínico",
+    "targettext3": "1 laboratorio clínico con 4 puntos para toma de muestras.",
+
+    "targetimg4": "../recursos_fotos/capacidad instalada/imagenologia.jpeg",
+    "targettitle4": "Imagenología",
+    "targettext4": "1 consultorio equipado.",
+
+    "targetimg5": "",
+    "targettitle5": "Apoyo Terapéutico",
+    "targettext5": "4 consultorios médicos dotados.",
+
+    "targetimg6": "",
+    "targettitle6": "Promoción y Mantenimiento de la Salud",
+    "targettext6": "3 consultorios.",
+
+    "targetimg7": "",
+    "targettitle7": "Programas Especiales",
+    "targettext7": "1 consultorio dotado con 1 oficina para gestión",
+
+    "targetimg8": "",
+    "targettitle8": "Procedimientos Menores",
+    "targettext8": "1 sala de procedimientos equipada y dotada.",
+
+    "targetimg9": "",
+    "targettitle9": "Coordinación de Enfermería y Calidad.",
+    "targettext9": "1 oficina.",
+
+    "targetimg10": "",
+    "targettitle10": "Control y Auditoría Interna.",
+    "targettext10": "1 oficina.",
+
+    "targetimg11": "",
+    "targettitle11": "Vacunación",
+    "targettext11": "1 consultorio con sus respectivos divisores y equipamiento.",
+
+    "targetimg12": "../recursos_fotos/capacidad instalada/rx.jpeg",
+    "targettitle12": "Rayos X",
+    "targettext12": "1 Sala.",
+
+    "targetimg13": "",
+    "targettitle13": "Sala de Juntas",
+    "targettext13": "1 sala de juntas.",
+    
+    "targetimg14": "../recursos_fotos/capacidad instalada/saladeespera.jpeg",
+    "targettitle14": "Salas de Espera",
+    "targettext14": "8 salas de espera.",
+    
+    "targetimg15": "",
+    "targettitle15": "Sistema de Información y Atención al Usuario",
+    "targettext15": "1 oficina.",
+
+    "targetimg16": "",
+    "targettitle16": "Gestión de Citas/Demanda Inducida",
+    "targettext16": "2 barras de servicios.",
+    
+    "targetimg17": "",
+    "targettitle17": "Facturación",
+    "targettext17": "1 barra de servicios.",
+    
+    "targetimg18": "../recursos_fotos/capacidad instalada/gine.jpeg",
+    "targettitle18": "Ginecologia",
+    "targettext18": "1 consultorio"
 }
