@@ -1,10 +1,10 @@
 {
     "fotos" : [
+        "./recursos_fotos/medicarevideo.mp4",
         "./recursos_fotos/inasistencia.jpg",
         "./recursos_fotos/numerodario.jpg",
         "./recursos_fotos/taller.jpg",
-        "./recursos_fotos/info2.jpeg",
-        "./recursos_fotos/medicarevideo.mp4"
+        "./recursos_fotos/info2.jpeg"
     ],
  
     "card1title": "CITAS MEDICAS",
