@@ -196,9 +196,6 @@ document.querySelectorAll('.otroslink3').forEach(el => {el.href = datos.otroslin
 document.querySelectorAll('.otrostitle3').forEach(el => {el.textContent = datos.otrostitle3;});
 document.querySelectorAll('.otroslink4').forEach(el => {el.href = datos.otroslink4;});
 document.querySelectorAll('.otrostitle4').forEach(el => {el.textContent = datos.otrostitle4;});
-document.querySelectorAll('.otroslink5').forEach(el => {el.href = datos.otroslink5;});
-document.querySelectorAll('.otrostitle5').forEach(el => {el.textContent = datos.otrostitle5;});
-
 
 
 document.querySelectorAll('.hrefdireccion').forEach(el => {el.href = datos.hrefdireccion;});
@@ -227,8 +224,6 @@ document.querySelectorAll('.otroslink3').forEach(el => {el.href = datos.otroslin
 document.querySelectorAll('.otrostitle3').forEach(el => {el.textContent = datos.otrostitle3;});
 document.querySelectorAll('.otroslink4').forEach(el => {el.href = datos.otroslink4;});
 document.querySelectorAll('.otrostitle4').forEach(el => {el.textContent = datos.otrostitle4;});
-document.querySelectorAll('.otroslink5').forEach(el => {el.href = datos.otroslink5;});
-document.querySelectorAll('.otrostitle5').forEach(el => {el.textContent = datos.otrostitle5;});
 
 document.querySelectorAll('.hrefdireccion').forEach(el => {el.href = datos.hrefdireccion;});
 document.querySelectorAll('.direccion').forEach(el => {el.textContent = datos.direccion;});

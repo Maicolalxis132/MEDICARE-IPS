@@ -34,7 +34,7 @@ btninfo.addEventListener('click', (e) => {
     menuinfo.classList.remove('hidden');
     setTimeout(() => {
       menuinfo.classList.remove('max-h-0', 'opacity-0');
-      menuinfo.classList.add('max-h-[300px]', 'opacity-100');
+      menuinfo.classList.add('max-h-[350px]', 'opacity-100');
       btninfo.classList.add('bg-primary', 'rounded-full', 'text-white', 'py-1');
     }, 100);
   } else {
