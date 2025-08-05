@@ -362,3 +362,30 @@ document.addEventListener("DOMContentLoaded", () => {
   startCarousel(document.getElementById("carousel3"), 0.5, true);
   startCarousel(document.getElementById("carousel4"), 0.5, false);
 });
+
+document.querySelectorAll('[data-dropdown1]').forEach(dropdown => {
+  const button1 = dropdown.querySelector('.btn-dropdown1');
+  const menu1 = dropdown.querySelector('.dropdown-menu1');
+  const title1 = dropdown.querySelector('.titlepreguntas');
+  const icon1 = dropdown.querySelector('.svgvalores');
+
+  let isOpen = false;
+
+  button1.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    icon1.classList.toggle('rotate-90');
+    icon1.classList.toggle('text-primary');
+    title1.classList.toggle('text-primary');
+    button1.classList.toggle('border-primary');
+
+    if (!isOpen) {
+      menu1.style.maxHeight = menu1.scrollHeight + "px";
+    } else {
+      menu1.style.maxHeight = "0px";
+    }
+
+    isOpen = !isOpen;
+  });
+});
+

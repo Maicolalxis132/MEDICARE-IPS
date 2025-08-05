@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREGUNTAS</title>
+    <link rel="icon" href="../recursos_fotos/favicon.ico" >
+    <link rel="stylesheet" href="../src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/33c4c4bf99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header id="main-header" class="w-full  shadow-lg z-[9999] sticky top-0 left-0 transition-all duration-400 ease-in-out">
+  <nav class="h-20 bg-white flex justify-between">
+  <div class="flex justify-between items-center w-full mx-10 tmx:mx-auto tmx:w-[1100px] ">
+    <a href="../index.html"><img class="logo not-xs:w-40 xs:w-50 mr-5 hover:scale-105 transition-all" src="../recursos_fotos/Logo1.png" alt=""></a>
+
+    <!-- menú móvil con transición -->
+    <ul id="menu-movil" class="gap-4 absolute end-0 top-[80px] py-3 w-50 bg-white/90 text-primary flex flex-col items-center max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90 rounded-b-lg">
+      <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="../html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Nosotros</p></a>
+      <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href=""><p class="group-hover:text-secondary transition-all duration-100 font-medium">Especialidades</p></a>
+      <a class="relative enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center transition-all" href=""><p class="transition-all duration-100 font-medium group-hover:text-secondary">Pagos
+        <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-secondary group-hover:border-secondary">
+          <use xlink:href="../assets/iconos/icons8-menú.svg#dolar"></use>
+        </svg>
+      </p></a>
+      <a class="relative enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center transition-all" href=""><p class="transition-all duration-100 font-medium group-hover:text-secondary">Intranet
+        <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-secondary group-hover:border-secondary">
+          <use xlink:href="../assets/iconos/icons8-menú.svg#intranet"></use>
+        </svg>
+      </p></a>
+    </ul>
+
+    <!-- menú de PC -->
+    <ul class="nav-list lg:gap-6 gap-2 flex-row justify-center items-center hidden xs:flex text-neutral-800 text-[20px]">
+
+      <div class="rounded-full relative flex justify-center">
+        <button id="btn-info"><p class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full cursor-pointer font-semibold">Nosotros</p></button>
+        <div id="menu-info" class="absolute bg-primary/98 top-[65px] text-white transition-all duration-300 max-h-0 opacity-0 hidden rounded-b-lg flex flex-col items-center">
+          <a class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all w-full h-full" href="../html/info.html#Quienessomos">Quienes Somos</a>
+          <a class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all w-full h-full" href="../html/info.html#vision-mision">Mision y Vision</a>
+          <a class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 transition-all w-full h-full" href="../html/info.html#valoresdemedicare">Valores</a>
+          <a class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all w-full h-full" href="../html/info.html#valor7parrafo">Deberes</a>
+          <a class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white hover:bg-primary-light px-10 py-1.5 transition-all w-full h-full" href="../html/info.html#derechosx">Derechos</a>
+          <a class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 pb-3 transition-all w-full h-full" href="../html/info.html#capacidad">Capacidad Instalada</a>
+        </div>
+      </div>
+
+      <li><a class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full font-semibold" href="#especialidad">Especialidades</a></li>
+      <li class="relative z-10 group"><a class="py-1.5 px-3 transition-all duration-200 border-2 hover:text-white hover:bg-primary rounded-full border-primary font-semibold" href="#pagos">Pagos</a>
+        <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-primary">
+          <use xlink:href="../assets/iconos/icons8-menú.svg#dolar"></use>
+        </svg>
+      </li>
+      <li class="relative z-10 group"><a class="py-1.5 px-3 transition-all duration-200 border-2 hover:text-white hover:bg-primary rounded-full border-primary font-semibold" href="#pagos">Intranet</a>
+        <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-primary">
+          <use xlink:href="../assets/iconos/icons8-menú.svg#intranet"></use>
+        </svg>
+      </li>
+    </ul>
+
+    <!-- botón menú móvil -->
+    <button id="boton-movil" class="menu-btn w-9 cursor-pointer block xs:hidden">
+      <svg class="svgMenu w-10 h-10 text-primary transition-all duration-300 ease">
+        <use xlink:href="../assets/iconos/icons8-menú.svg#icon-menu"></use>
+      </svg>
+      <svg class="svgCerrar w-10 h-10 text-primary transition-all duration-300 ease hidden">
+        <use xlink:href="../assets/iconos/cerrar.svg"></use>
+      </svg>
+    </button>
+    </div>
+  </nav>
+</header>
+
+<section id="section-preguntas" class="w-full min-h-[85vh] bg-stone-200">
+    <div class="max-w-[1100px] tmx:m-auto h-full py-16 flex justify-center items-center flex-col gap-10 mx-2"> 
+      <h2 id="preguntastitle" class="text-title text-3xl font-medium text-center">PREGUNTAS FRECUENTES</h2>
+      <p class="text-color-text text-[16px] font-normal text-center">En este apartado podras visualizar las preguntas frecuentes que tiene los usuarios de MEDICARE, <strong>busca tu pregunta y clickea</strong> en esta para desplegar la respuesta.</p>
+
+      <div class="w-full flex flex-row justify-around gap-8">
+        <ul data-aos="zoom-out" data-aos-duration="500" class="px-4 xs:px-2 w-full h-full flex flex-col justify-center">
+
+          <li class="cuadros" data-dropdown1>
+            <button class="btn-dropdown1 h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-3 border-color-title transition-all duration-300 ease">
+              <p id="" class="titlepreguntas font-semibold sm:text-2xl text-xl text-color-title transition-all duration-700 ease-in-out text-start ">¿Horarios del taller de Inasistencia?</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6 min-h-6 min-w-6  text-color-title  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu1 w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out px-5 flex flex-wrap  items-center">
+              <div class="w-3/5 pr-7 py-7 gap-6 flex flex-col ">
+                <p id="" class="text-sm sm:text-lg text-text text-color-text font-medium ">
+                  Los horarios del taller de Inasistencia son <strong>distintos dependiendo del dia</strong>, los dias Lunes, Miercoles y Sabado el taller es a las 10:00 am, los dias Martes, Jueves y Viernes es a las 4:30 pm.</p> 
+                <p class="text-xs sm:text-[16px] text-text text-color-text font-medium ">
+                  <strong>Posdata:</strong> El taller se realiza en sala de juntas, primer piso, estar 10 minutos antes para garantizar su asistencia, ya que la puerta se cierra muy puntual.
+                </p>
+              </div>
+              <img src="../recursos_fotos/horariotaller.jpeg" alt="" class="w-2/5 h-auto rounded-lg shadow-md my-7">
+            </div>
+          </li>
+
+          <li class="cuadros" data-dropdown1>
+            <button class="btn-dropdown1 h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-3 border-color-title transition-all duration-300 ease">
+              <p id="" class="titlepreguntas font-semibold sm:text-2xl text-xl text-color-title transition-all duration-700 ease-in-out text-start ">Documento de Identidad</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6 min-h-6 min-w-6  text-color-title  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu1 w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out px-5 flex flex-wrap  items-center">
+              <div class="w-3/5 pr-7 py-7 gap-6 flex flex-col ">
+                <p id="" class="text-sm sm:text-lg text-text text-color-text font-medium ">
+                  Los <strong>documentos de identidad (Registro civil, Tarjeta de Identidad, Cedula de Ciudadania, ETC)</strong> son muy importantes en medicare ips, toda persona la cual vaya a <strong>ingresar</strong> a la institucion debe de traer su documento, <strong>(Asi sea acompañante)</strong> de lo contrario no se le permitira el ingreso.</p> 
+                <p id="" class="text-sm sm:text-lg text-text text-color-text font-medium ">
+                  Si viene hacer cualquier tramite <strong>(Cita Medica, Vacunacion, Examenes, Reclamar Resultados, Etc)</strong> debe de <strong>traer su documento</strong> para que se le acepter el procedimiento, de lo contrario <strong>no</strong> se le atenderá.</p>
+                <p class="text-xs sm:text-[16px] text-text text-color-text font-medium ">
+                  <strong>Importante:</strong> No se aceptan fotocopias, ni licencias de conducir, ni copia laminada, ni carnets de identidad, etc. Si <strong>perdio</strong> su documento de identidad, debe traer su contraseña que demuestre que su identificacion esta en tramite, o en caso de robo debe poner el denuncio, o traer cualquier otro papel admitido por la registraduria.
+                </p>
+              </div>
+              <img src="../recursos_fotos/registro2.jpeg" alt="" class="w-2/5 h-auto rounded-lg shadow-md my-7">
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+</section>
+
+
+
+<script src="../Archivos/script.js"></script>
+<script src="../Archivos/scriptjson.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init({once: true});</script>
+
+</body>
+</html>

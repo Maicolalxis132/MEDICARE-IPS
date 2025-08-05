@@ -89,7 +89,7 @@
     "targettitle2": "Odontología General y Especializada",
     "targettext2": "3 consultorios odontológicos con 7 unidades odontológicas.",
 
-    "targetimg3": "",
+    "targetimg3": "../recursos_fotos/capacidad instalada/laboratorio.jpeg",
     "targettitle3": "Laboratorio Clínico",
     "targettext3": "1 laboratorio clínico con elementos de alta tecnología.",
 
@@ -102,18 +102,18 @@
     "targettext5": "4 consultorios médicos dotados.",
 
     "targetimg6": "",
-    "targettitle6": "Promoción y Mantenimiento de la Salud",
-    "targettext6": "3 consultorios.",
+    "targettitle6": "Sala de Toma de Muestras",
+    "targettext6": "4 unidades de toma.",
 
     "targetimg7": "",
     "targettitle7": "Programas Especiales",
     "targettext7": "1 consultorio dotado con 1 oficina para gestión",
 
-    "targetimg8": "",
+    "targetimg8": "../recursos_fotos/capacidad instalada/procedimientosmenores.jpeg",
     "targettitle8": "Procedimientos Menores",
     "targettext8": "1 sala de procedimientos equipada y dotada.",
 
-    "targetimg9": "",
+    "targetimg9": "../recursos_fotos/capacidad instalada/coordinacion.jpeg",
     "targettitle9": "Coordinación de Enfermería y Calidad.",
     "targettext9": "1 oficina.",
 
@@ -137,15 +137,15 @@
     "targettitle14": "Salas de Espera",
     "targettext14": "8 salas de espera.",
     
-    "targetimg15": "",
+    "targetimg15": "../recursos_fotos/capacidad instalada/atencionalusuario.jpeg",
     "targettitle15": "Sistema de Información y Atención al Usuario",
     "targettext15": "1 oficina.",
 
-    "targetimg16": "",
+    "targetimg16": "../recursos_fotos/capacidad instalada/demandainducida.jpeg",
     "targettitle16": "Gestión de Citas/Demanda Inducida",
     "targettext16": "2 barras de servicios.",
     
-    "targetimg17": "",
+    "targetimg17": "../recursos_fotos/capacidad instalada/barra1.jpeg",
     "targettitle17": "Facturación",
     "targettext17": "1 barra de servicios.",
     
