@@ -375,9 +375,13 @@ document.querySelectorAll('[data-dropdown1]').forEach(dropdown => {
     e.stopPropagation();
 
     icon1.classList.toggle('rotate-90');
-    icon1.classList.toggle('text-primary');
-    title1.classList.toggle('text-primary');
-    button1.classList.toggle('border-primary');
+    icon1.classList.toggle('text-secondary-heavy');
+    title1.classList.toggle('text-secondary-heavy');
+    button1.classList.toggle('border-secondary-heavy');
+    setTimeout(() => {
+      menu1.classList.toggle('overflow-hidden');
+      menu1.classList.toggle('overflow-visible');
+    }, 200);
 
     if (!isOpen) {
       menu1.style.maxHeight = menu1.scrollHeight + "px";
