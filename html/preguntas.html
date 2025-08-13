@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/33c4c4bf99.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-stone-200">
 
 <header id="main-header" class="w-full  shadow-lg z-[9999] sticky top-0 left-0 transition-all duration-400 ease-in-out">
   <nav class="h-20 bg-white flex justify-between">
@@ -73,7 +73,7 @@
   </nav>
 </header>
 
-<section id="section-preguntas" class="w-full min-h-[85vh] bg-stone-200">
+<section id="section-preguntas" class="w-full h-full bg-stone-200">
     <div class="max-w-[1100px] tmx:m-auto h-full py-16 flex justify-center items-center flex-col gap-10 mx-2"> 
       <h2 id="preguntastitle" class="text-title text-3xl font-medium text-center">PREGUNTAS FRECUENTES</h2>
       <p class="text-color-text text-[16px] font-normal text-center">En este apartado podras visualizar las preguntas frecuentes que tiene los usuarios de MEDICARE, <strong>busca tu pregunta y clickea</strong> en esta para desplegar la respuesta.</p>
@@ -92,7 +92,7 @@
             <div class="dropdown-menu1 w-full max-h-0 overflow-hidden transition-all duration-700 ease-in-out px-5 flex flex-wrap  items-center">
               <div class="w-full e01:w-3/5 pr-7 py-7 gap-6 flex flex-col ">
                 <p id="" class="text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
-                  Los horarios del taller de Inasistencia son <strong>distintos dependiendo del dia</strong>, los dias Lunes, Miercoles y Sabado el taller es a las 10:00 am, los dias Martes, Jueves y Viernes es a las 4:30 pm.</p> 
+                  Los horarios del taller de Inasistencia son <strong>distintos dependiendo del dia</strong>, los dias Lunes, Miercoles y Sabado el taller es a las 10:00 am, los dias Martes, Jueves y Viernes es a las 3:30 pm.</p> 
                 <p class="text-xs sm:text-[16px] text-text text-color-text font-medium text-center e01:text-left">
                   <strong>Posdata:</strong> El taller se realiza en sala de juntas, primer piso, estar 10 minutos antes para garantizar su asistencia, ya que la puerta se cierra muy puntual.
                 </p>
@@ -155,8 +155,157 @@
             </div>
           </li>
 
+          <li class="cuadros" data-dropdown1>
+            <button class="btn-dropdown1 h-full w-full sm:p-7 p-4  flex flex-row justify-between items-center cursor-pointer border-b-3 border-primary transition-all duration-300 ease">
+              <p id="" class="titlepreguntas font-semibold sm:text-2xl text-xl text-primary transition-all duration-700 ease-in-out text-start ">¿Como Pido Citas por Whatsapp?</p>
+              <svg class="svgvalores sm:w-10 sm:h-10 h-6 w-6 min-h-6 min-w-6  text-primary  transition-all duration-300 ease">
+                <!-- añadir rotate-90 -->
+                <use xlink:href="../assets/iconos/abrir.svg"></use>
+              </svg>
+            </button>
+            <div class="dropdown-menu1 w-full max-h-0 transition-all duration-700 ease-in-out px-5 flex flex-wrap items-center overflow-hidden">
+              <div class="w-full e01:w-3/5 pr-7 py-7 gap-6 flex flex-col ">
+                <p id="" class="text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                  En este apartado te explicaremos como pedir citas por whatsapp, primero que todo debes de escribir a este numero <strong>321 2701208</strong>
+                </p> 
+                <p id="" class="text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                  <strong>Importante:</strong> Las citas que se dan por whatsapp son: <strong>Medicina general, Odontologia, Psicologia, Citologia, Higiene Oral, Toma de Laboratorios</strong> y tambien esta el apartado para <strong>ver sus citas programadas.</strong> 
+                </p>
+
+                <p id="" class="text-xs sm:text-[16px] text-text text-color-text font-medium text-center e01:text-left">
+                  <strong>Posdata:</strong> Si usted escribe y el <strong>bot no le responte</strong> el chat puede ser porque esta escribiendo al <strong>antiguo numero</strong>, verifique que tenga el nuevo; Tambien debe tener en cuenta que en este numero <strong>solo se puede escribir por whatsapp</strong>, no se llama por telefono. Si usted no pertenece a la institucion y quiere <strong>pedir cita por particular</strong> puede escribir a este numero <strong>317 6572911.</strong>
+                </p>
+            
+              </div>
+              <img src="../recursos_fotos/DARIO.jpeg" alt="" class="w-10/12 e01:w-2/5 h-auto rounded-lg shadow-md my-7">
+
+              <h2 id="" class="w-full text-sm sm:text-lg text-text text-white font-medium text-center e01:text-left bg-primary-heavy rounded-lg pl-2">
+                <strong class="w-full">PASO 1#</strong>
+              </h2>
+              <div class="w-full flex justify-center items-center">
+                <div class="w-full e01:w-4/5 pr-7 py-7 gap-6 flex flex-col ">
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    En este apartado te explicaremos como pedir citas por whatsapp, primero que todo debes de escribir a este numero <strong>321 2701208</strong>
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Empezaremos enviando un "<strong>Hola</strong>", para que el chatbot inicie la conversacion, despues de haber enviado el mensaje espera un momento a que el chat se active y despues le respondera.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Recuerde que esta hablando con un <strong>bot (robot)</strong>, no una persona, por lo que respondera las opciones predeterminadas que tiene programadas, entonces si no le responde lo que usted quiere es porque no esta programado para eso.
+                  </p>
+                </div>
+                <img src="../recursos_fotos/pasos/paso1.jpeg" alt="" class="w-10/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+              </div>
+
+              <h2 id="" class="w-full text-sm sm:text-lg text-text text-white font-medium text-center e01:text-left bg-primary-heavy rounded-lg pl-2">
+                <strong class="w-full">PASO 2#</strong>
+              </h2>
+              <div class="w-full flex justify-center items-center">
+                <div class="w-full e01:w-4/5 pr-7 py-7 gap-6 flex flex-col ">
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Despues de haber leido lo que nos escribio el bot, <strong>tocaremos</strong> el boton de <strong class="p-1 pl-1.5 pr-2.5 bg-primary-light rounded-2xl text-white font-normal font-sans">📝 Menu Principal</strong>
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                  Se desplegara un menu donde aparecen 3 opcionas las cuales son: 📆Citas, 🏥Información, 🔄Ver Recordatorio.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    La opcion de <strong>🔄Ver Recordatorio</strong> sirve para ver las citas que se han sacado desde el numero de telefono en el que escribe; <strong>🏥Información</strong> nos permite ver informacion de medicare; Y finalmente la opcion de <strong>📆Citas</strong> es la que usamos cuando queremos <strong>pedir citas medicas</strong> o cuando queremos <strong>cancelar alguna cita.</strong>
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                  Como en este caso queremos pedir una cita medica, tocaremos la opcion de <strong>📆Citas</strong>.
+                  </p>
+                </div>
+                <img src="../recursos_fotos/pasos/paso2.jpeg" alt="" class="w-10/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+              </div>
+
+              <h2 id="" class="w-full text-sm sm:text-lg text-text text-white font-medium text-center e01:text-left bg-primary-heavy rounded-lg pl-2">
+                <strong class="w-full">PASO 3#</strong>
+              </h2>
+              <div class="w-full flex justify-center items-center">
+                <div class="w-full e01:w-4/5 pr-7 py-7 gap-6 flex flex-col ">
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    <strong>Leeremos con atencion</strong> lo que nos dice el bot.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Nos pedira que escribamos nuestro <strong>numero de documento</strong>, <strong>SOLO el numero</strong>, sin puntos, sin espacios o cualquer otra cosa.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    El link que aparece en el mensaje, es el que nos dirige al documento en el cual esta toda la <strong>politica de tratamiento de datos</strong>, esto no afecta el proceso para pedir cita <strong>(No es Necesario Presionarlo)</strong>
+                  </p>
+                </div>
+                <img src="../recursos_fotos/pasos/paso3.jpeg" alt="" class="w-10/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+              </div>
+
+              <h2 id="" class="w-full text-sm sm:text-lg text-text text-white font-medium text-center e01:text-left bg-primary-heavy rounded-lg pl-2">
+                <strong class="w-full">PASO 4#</strong>
+              </h2>
+              <div class="w-full flex justify-center items-center gap-2">
+                <div class="w-full e01:w-3/5 pr-7 py-7 gap-6 flex flex-col ">
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Cuando coloquemos el numero de documento, aparecera un mensaje el cual mostrara las citas que se pueden asignar. Revisamos que este la especialidad que necesitamos <strong>(Si no esta la cita que necesitamos, tendremos que pedir la cita de manera presencial).</strong>
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Para que podamos verificar si le estamos <strong>pidiendo la cita a la persona correcta</strong>, se puede verificar en el mensaje, ya que el mensaje que envia <strong>coloca su nombre</strong>, asi se puede verificar.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Vamos a pedir Laboratorios, entonces tocaremos el boton de <strong>👉 Tomar Cita 👈</strong> y escogeremos la opcion de <strong>TOMA DE LABORATORIOS</strong>, finalmente tocaremos <strong>Enviar</strong> para confirmar la opcion.
+                  </p>
+                </div> 
+                <img src="../recursos_fotos/pasos/paso4.jpeg" alt="" class="w-5/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+                <img src="../recursos_fotos/pasos/paso5.jpeg" alt="" class="w-5/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+              </div>
+
+              <h2 id="" class="w-full text-sm sm:text-lg text-text text-white font-medium text-center e01:text-left bg-primary-heavy rounded-lg pl-2">
+                <strong class="w-full">PASO 5#</strong>
+              </h2>
+              <div class="w-full flex justify-center items-center gap-2">
+                <div class="w-full e01:w-3/5 pr-7 py-7 gap-6 flex flex-col ">
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    A continuacion nos dara <strong>5 minutos</strong> para poder <strong>solicitar la cita</strong>, si <strong>no</strong> lo hacemos en ese <strong>tiempo</strong> se <strong>cerrara la sesion</strong> y tendremos que volver hacer todos lo pasos anteriores.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    El bot nos dara <strong>3 opciones</strong> de cita que puedes escoger, debes de <strong>revisar</strong> muy bien el <strong>dia, hora</strong> y si gustas el <strong>medico</strong>, para que despues no hayan inconvenientes. 
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Tocaremos el boton de <strong>👉 Seleccionar 👈</strong> y se mostrara un menu en el cual apareceran las tres citas que ya vimos, si queremos <strong>pedir una cita de estas tocaremos sobre esta</strong> y le daremos al <strong>boton de enviar</strong>.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Si llegado el caso <strong>queremos otros horarios</strong> o simplemente <strong>no nos interesan esas opciones</strong> podemos <strong>seleccionar la opcion</strong> de <strong>🔃Ver mas</strong> para buscar mas citas.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Finalmente presionaremos <strong>Enviar.</strong>
+                  </p>
+                </div>
+                <img src="../recursos_fotos/pasos/paso6.jpeg" alt="" class="w-5/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+                <img src="../recursos_fotos/pasos/paso7.jpeg" alt="" class="w-5/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+              </div>
+
+              <h2 id="" class="w-full text-sm sm:text-lg text-text text-white font-medium text-center e01:text-left bg-primary-heavy rounded-lg pl-2">
+                <strong class="w-full">PASO 3#</strong>
+              </h2>
+              <div class="w-full flex justify-center items-center">
+                <div class="w-full e01:w-4/5 pr-7 py-7 gap-6 flex flex-col ">
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Nos llegara un mensaje diciendonos que finalmente la <strong>cita fue agendada</strong>, y ya no tendremos quer hacer nada mas, recuerde llegar con <strong>20 minutos</strong> de anticipacion para que facture.
+                  </p>
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Si quiere <strong>pedir otra cita</strong> puede presionar el boton de <strong> ↩️ regresar</strong>, si quiere salir puede dejar el mensaje o presionar el mismo <strong>boton de 🔙 salir</strong>
+                  </p>
+
+                  <p id="" class="pl-4 text-sm sm:text-lg text-text text-color-text font-medium text-center e01:text-left">
+                    Si quiere saber por que razon en ciertas ocaciones le <strong>muestra otros mensajes</strong> o porque no lo <strong>deja pedir cita</strong>, en otro apartado se mostrara esto
+                  </p>
+                  
+                </div>
+                <img src="../recursos_fotos/pasos/paso8.jpeg" alt="" class="w-10/12 e01:w-1/5 h-auto rounded-lg shadow-md my-7 m-auto">
+              </div>
+
+            </div>
+          </li>
+
         </ul>
       </div>
+
     </div>
 </section>
 

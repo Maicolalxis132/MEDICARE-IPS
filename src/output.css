@@ -39,6 +39,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
+    --font-weight-extralight: 200;
+    --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -57,7 +59,6 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-color-title: #111827;
     --color-color-text: #374151;
     --color-primary: #004977;
     --color-primary-heavy: #0a3856;
@@ -528,6 +529,9 @@
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
+  .w-5\/12 {
+    width: calc(5/12 * 100%);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -539,6 +543,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-10\/12 {
+    width: calc(10/12 * 100%);
   }
   .w-11\/12 {
     width: calc(11/12 * 100%);
@@ -842,6 +849,9 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-primary-heavy {
+    background-color: var(--color-primary-heavy);
+  }
   .bg-primary-light {
     background-color: var(--color-primary-light);
   }
@@ -923,6 +933,9 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
   .px-2\.5 {
     padding-inline: calc(var(--spacing) * 2.5);
   }
@@ -977,6 +990,9 @@
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
   }
+  .pr-2\.5 {
+    padding-right: calc(var(--spacing) * 2.5);
+  }
   .pr-4 {
     padding-right: calc(var(--spacing) * 4);
   }
@@ -1001,8 +1017,14 @@
   .pb-13 {
     padding-bottom: calc(var(--spacing) * 13);
   }
+  .pl-1\.5 {
+    padding-left: calc(var(--spacing) * 1.5);
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
+  }
+  .pl-4 {
+    padding-left: calc(var(--spacing) * 4);
   }
   .text-center {
     text-align: center;
@@ -1012,6 +1034,9 @@
   }
   .text-start {
     text-align: start;
+  }
+  .font-sans {
+    font-family: var(--font-sans);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -1069,6 +1094,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -1626,6 +1655,11 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .e01\:w-1\/5 {
+    @media (width >= 420px) {
+      width: calc(1/5 * 100%);
+    }
+  }
   .e01\:w-2\/5 {
     @media (width >= 420px) {
       width: calc(2/5 * 100%);
@@ -1634,6 +1668,11 @@
   .e01\:w-3\/5 {
     @media (width >= 420px) {
       width: calc(3/5 * 100%);
+    }
+  }
+  .e01\:w-4\/5 {
+    @media (width >= 420px) {
+      width: calc(4/5 * 100%);
     }
   }
   .e01\:text-left {
