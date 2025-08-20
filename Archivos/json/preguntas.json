@@ -1,0 +1,70 @@
+{
+    "preguntastitle": "PREGUNTAS FRECUENTES",
+    "preguntasparrafo": "En este apartado podras visualizar las preguntas frecuentes que tiene los usuarios de MEDICARE, <strong>busca tu pregunta y clickea</strong> en esta para desplegar la respuesta.",
+
+    "pregun1title": "¿Horarios del taller de Inasistencia?",
+    "pregun1parra1": "Los horarios del taller de Inasistencia son <strong>distintos dependiendo del dia</strong>, los dias Lunes, Miercoles y Sabado el taller es a las 10:00 am, los dias Martes, Jueves y Viernes es a las 3:30 pm.",
+    "pregun1parra2": "<strong>Posdata:</strong> El taller se realiza en sala de juntas, primer piso, estar 10 minutos antes para garantizar su asistencia, ya que la puerta se cierra muy puntual.",
+
+    "pregun2title": "El Documento de Identidad",
+    "pregun2parra1": "Los <strong>documentos de identidad (Registro civil, Tarjeta de Identidad, Cedula de Ciudadania, ETC)</strong> son muy importantes en medicare ips, toda persona la cual vaya a <strong>ingresar</strong> a la institucion debe de traer su documento, <strong>(Asi sea acompañante)</strong> de lo contrario no se le permitira el ingreso.",
+    "pregun2parra2": "Si viene hacer cualquier tramite <strong>(Cita Medica, Vacunacion, Examenes, Reclamar Resultados, Etc)</strong> debe de <strong>traer su documento</strong> para que se le acepter el procedimiento, de lo contrario <strong>no</strong> se le atenderá.",
+    "pregun2parra3": " <strong>Importante:</strong> No se aceptan fotocopias, ni licencias de conducir, ni copia laminada, ni carnets de identidad, ni foto, etc.",
+    "pregun2parra4": "Si <strong>perdio</strong> su documento de identidad, debe traer su contraseña que demuestre que su identificacion esta en tramite, o en caso de robo debe poner el denuncio, o traer cualquier otro papel admitido por la registraduria.",
+    "pregun2foto1":"../recursos_fotos/registro2.jpeg",
+
+    "pregun3title": "Cancelacion de Citas",
+    "pregun3parra1":"Si llegado al caso tiene una cita medica, y <strong>no puede asistir</strong> a esta, debe <strong>cancelarla</strong> para que no le genere una inasistencia, si tiene una inasistencia <strong>no podra sacar citas</strong> hasta que <strong>asista al taller de inasistencia</strong>, o si perdio cita de odontologia le corresponde <strong>pagar una multa.</strong>",
+    "pregun3parra2":" Para que pueda <strong>cancelar una cita medica</strong>, lo debe de hacer con anticipacion; en caso de querer <strong>cancelar por whatsapp</strong>, se hara <strong>minimo con 24 horas de anticipacion</strong>, si no lo hace con 24 horas antes <strong>no podra cancelarla</strong> (A pesar de que aparezca en el whatsapp que si se puede cancelar).",
+    "pregun3parra3":"Y en caso de hacerlo de <strong>manera presencial</strong> se debe hacer <strong>minimo con 6 horas de anticipacion</strong>, si no viene a cancelar la cita en ese horario no se podra cancelar y le quedara la inasistencia.",
+    "pregun3parra4":"<strong>Posdata:</strong> Recuerde traer su <strong>documento</strong>, o si viene <strong>otra persona</strong> a cancelar la cita debe <strong>cargar el documento</strong> y el de la persona a la cual <strong>le cancelara la cita</strong>, de lo contrario <strong>NO</strong> se realizara el tramite.</p>",
+    "pregun3foto1":"../recursos_fotos/puesto.jpeg",
+
+    "pregun4title": "¿Como Pido Citas por Whatsapp?",
+    "pregun4parra1":"En este apartado te explicaremos como pedir citas por whatsapp, primero que todo debes de escribir a este numero <strong>321 2701208</strong>",
+    "pregun4parra2":"<strong>Importante:</strong> Las citas que se dan por whatsapp son: <strong>Medicina general, Odontologia, Psicologia, Citologia, Higiene Oral, Toma de Laboratorios</strong> y tambien esta el apartado para <strong>ver sus citas programadas.</strong> ",
+    "pregun4parra3":"<strong>Posdata:</strong> Si usted escribe y el <strong>bot no le responte</strong> el chat puede ser porque esta escribiendo al <strong>antiguo numero</strong>, verifique que tenga el nuevo; Tambien debe tener en cuenta que en este numero <strong>solo se puede escribir por whatsapp</strong>, no se llama por telefono. Si usted no pertenece a la institucion y quiere <strong>pedir cita por particular</strong> puede escribir a este numero <strong>317 6572911.</strong>",
+    "pregun4foto1":"../recursos_fotos/DARIO.jpeg",
+
+    "pregun4parra4": "En este apartado te explicaremos como pedir citas por whatsapp, primero que todo debes de escribir a este numero <strong>321 2701208</strong>",
+    "pregun4parra5": "Empezaremos enviando un \"<strong>Hola</strong>\", para que el chatbot inicie la conversacion, despues de haber enviado el mensaje espera un momento a que el chat se active y despues le respondera.",
+    "pregun4parra6": "Recuerde que esta hablando con un <strong>bot (robot)</strong>, no una persona, por lo que respondera las opciones predeterminadas que tiene programadas, entonces si no le responde lo que usted quiere es porque no esta programado para eso.",
+    "pregun4foto2":"../recursos_fotos/pasos/paso1.jpeg",
+
+    "pregun4parra7": "Despues de haber leido lo que nos escribio el bot, <strong>tocaremos</strong> el boton de <strong class=\"p-1 pl-1.5 pr-2.5 bg-primary-light rounded-2xl text-white font-normal font-sans\">📝 Menu Principal</strong>",
+    "pregun4parra8": "Se desplegara un menu donde aparecen 3 opcionas las cuales son: 📆Citas, 🏥Información, 🔄Ver Recordatorio.",
+    "pregun4parra9": "La opcion de <strong>🔄Ver Recordatorio</strong> sirve para ver las citas que se han sacado desde el numero de telefono en el que escribe; <strong>🏥Información</strong> nos permite ver informacion de medicare; Y finalmente la opcion de <strong>📆Citas</strong> es la que usamos cuando queremos <strong>pedir citas medicas</strong> o cuando queremos <strong>cancelar alguna cita.</strong>",
+    "pregun4parra10": "Como en este caso queremos pedir una cita medica, tocaremos la opcion de <strong>📆Citas</strong>.",
+    "pregun4foto3":"../recursos_fotos/pasos/paso2.jpeg",
+
+    "pregun4parra11": "<strong>Leeremos con atencion</strong> lo que nos dice el bot.",
+    "pregun4parra12": "Nos pedira que escribamos nuestro <strong>numero de documento</strong>, <strong>SOLO el numero</strong>, sin puntos, sin espacios o cualquer otra cosa.",
+    "pregun4parra13": "El link que aparece en el mensaje, es el que nos dirige al documento en el cual esta toda la <strong>politica de tratamiento de datos</strong>, esto no afecta el proceso para pedir cita <strong>(No es Necesario Presionarlo)</strong>",
+    "pregun4foto4":"../recursos_fotos/pasos/paso3.jpeg",
+
+    "pregun4parra14": "Cuando coloquemos el numero de documento, aparecera un mensaje el cual mostrara las citas que se pueden asignar. Revisamos que este la especialidad que necesitamos <strong>(Si no esta la cita que necesitamos, tendremos que pedir la cita de manera presencial).</strong>",
+    "pregun4parra15": "Para que podamos verificar si le estamos <strong>pidiendo la cita a la persona correcta</strong>, se puede verificar en el mensaje, ya que el mensaje que envia <strong>coloca su nombre</strong>, asi se puede verificar.",
+    "pregun4parra16": "Vamos a pedir Laboratorios, entonces tocaremos el boton de <strong>👉 Tomar Cita 👈</strong> y escogeremos la opcion de <strong>TOMA DE LABORATORIOS</strong>, finalmente tocaremos <strong>Enviar</strong> para confirmar la opcion.",
+    "pregun4foto5":"../recursos_fotos/pasos/paso4.jpeg",
+    "pregun4foto6":"../recursos_fotos/pasos/paso5.jpeg",
+
+    "pregun4parra17": "A continuacion nos dara <strong>5 minutos</strong> para poder <strong>solicitar la cita</strong>, si <strong>no</strong> lo hacemos en ese <strong>tiempo</strong> se <strong>cerrara la sesion</strong> y tendremos que volver hacer todos lo pasos anteriores.",
+    "pregun4parra18": "El bot nos dara <strong>3 opciones</strong> de cita que puedes escoger, debes de <strong>revisar</strong> muy bien el <strong>dia, hora</strong> y si gustas el <strong>medico</strong>, para que despues no hayan inconvenientes.",
+    "pregun4parra19": "Tocaremos el boton de <strong>👉 Seleccionar 👈</strong> y se mostrara un menu en el cual apareceran las tres citas que ya vimos, si queremos <strong>pedir una cita de estas tocaremos sobre esta</strong> y le daremos al <strong>boton de enviar</strong>.",
+    "pregun4parra20": "Si llegado el caso <strong>queremos otros horarios</strong> o simplemente <strong>no nos interesan esas opciones</strong> podemos <strong>seleccionar la opcion</strong> de <strong>🔃Ver mas</strong> para buscar mas citas.",
+    "pregun4parra21": "Finalmente presionaremos <strong>Enviar.</strong>",
+    "pregun4foto7":"../recursos_fotos/pasos/paso6.jpeg",
+    "pregun4foto8":"../recursos_fotos/pasos/paso7.jpeg",
+
+    "pregun4parra22": "Nos llegara un mensaje diciendonos que finalmente la <strong>cita fue agendada</strong>, y ya no tendremos quer hacer nada mas, recuerde llegar con <strong>20 minutos</strong> de anticipacion para que facture.",
+    "pregun4parra23": "Si quiere <strong>pedir otra cita</strong> puede presionar el boton de <strong> ↩️ regresar</strong>, si quiere salir puede dejar el mensaje o presionar el mismo <strong>boton de 🔙 salir</strong>",
+    "pregun4parra24": "Si quiere saber por que razon en ciertas ocaciones le <strong>muestra otros mensajes</strong> o porque no lo <strong>deja pedir cita</strong>, en otro apartado se mostrara esto:",
+    "pregun4foto9":"../recursos_fotos/pasos/paso8.jpeg"
+
+
+
+
+    
+
+
+}

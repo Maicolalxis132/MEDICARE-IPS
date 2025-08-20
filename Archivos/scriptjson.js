@@ -175,13 +175,6 @@ fetch('../Archivos/json/info.json')
     document.getElementById('targettitle18').textContent = datos.targettitle18;
     document.getElementById('targettext18').textContent = datos.targettext18;
 
-
-    
-
-
-    
-
-
 })
 
 fetch('./Archivos/json/footer.json')
@@ -235,4 +228,70 @@ document.querySelectorAll('.facebook').forEach(el => {el.textContent = datos.fac
 
 document.querySelectorAll('.botondario').forEach(el => {el.href = datos.botondario;});
     
+})
+
+
+fetch('../Archivos/json/preguntas.json')
+.then(doc => doc.json())
+.then(datos => {
+
+    document.getElementById('preguntastitle').textContent = datos.preguntastitle;
+    document.getElementById('preguntasparrafo').innerHTML = datos.preguntasparrafo;
+
+
+    document.getElementById('pregun1title').textContent = datos.pregun1title;
+    document.getElementById('pregun1parra1').innerHTML = datos.pregun1parra1;
+    document.getElementById('pregun1parra2').innerHTML = datos.pregun1parra2;
+
+    document.getElementById('pregun2title').textContent = datos.pregun2title;
+    document.getElementById('pregun2parra1').innerHTML = datos.pregun2parra1;
+    document.getElementById('pregun2parra2').innerHTML = datos.pregun2parra2;
+    document.getElementById('pregun2parra3').innerHTML = datos.pregun2parra3;
+    document.getElementById('pregun2parra4').innerHTML = datos.pregun2parra4;
+    document.getElementById('pregun2foto1').src = datos.pregun2foto1;
+
+    document.getElementById('pregun3title').textContent = datos.pregun3title;
+    document.getElementById('pregun3parra1').innerHTML = datos.pregun3parra1;
+    document.getElementById('pregun3parra2').innerHTML = datos.pregun3parra2;
+    document.getElementById('pregun3parra3').innerHTML = datos.pregun3parra3;
+    document.getElementById('pregun3parra4').innerHTML = datos.pregun3parra4;
+    document.getElementById('pregun3foto1').src = datos.pregun3foto1;
+
+    document.getElementById('pregun4title').textContent = datos.pregun4title;
+    document.getElementById('pregun4parra1').innerHTML = datos.pregun4parra1;
+    document.getElementById('pregun4parra2').innerHTML = datos.pregun4parra2;
+    document.getElementById('pregun4parra3').innerHTML = datos.pregun4parra3;
+    document.getElementById('pregun4foto1').src = datos.pregun4foto1;
+    document.getElementById('pregun4parra4').innerHTML = datos.pregun4parra4;
+    document.getElementById('pregun4parra5').innerHTML = datos.pregun4parra5;
+    document.getElementById('pregun4parra6').innerHTML = datos.pregun4parra6;
+    document.getElementById('pregun4foto2').src = datos.pregun4foto2;
+    document.getElementById('pregun4parra7').innerHTML = datos.pregun4parra7;
+    document.getElementById('pregun4parra8').innerHTML = datos.pregun4parra8;
+    document.getElementById('pregun4parra9').innerHTML = datos.pregun4parra9;
+    document.getElementById('pregun4parra10').innerHTML = datos.pregun4parra10;
+    document.getElementById('pregun4foto3').src = datos.pregun4foto3;
+    document.getElementById('pregun4parra11').innerHTML = datos.pregun4parra11;
+    document.getElementById('pregun4parra12').innerHTML = datos.pregun4parra12;
+    document.getElementById('pregun4parra13').innerHTML = datos.pregun4parra13;
+    document.getElementById('pregun4foto4').src = datos.pregun4foto4;
+    document.getElementById('pregun4parra14').innerHTML = datos.pregun4parra14;
+    document.getElementById('pregun4parra15').innerHTML = datos.pregun4parra15;
+    document.getElementById('pregun4parra16').innerHTML = datos.pregun4parra16;
+    document.getElementById('pregun4foto6').src = datos.pregun4foto6;
+    document.getElementById('pregun4foto5').src = datos.pregun4foto5;
+    document.getElementById('pregun4parra17').innerHTML = datos.pregun4parra17;
+    document.getElementById('pregun4parra18').innerHTML = datos.pregun4parra18;
+    document.getElementById('pregun4parra19').innerHTML = datos.pregun4parra19;
+    document.getElementById('pregun4parra20').innerHTML = datos.pregun4parra20;
+    document.getElementById('pregun4parra21').innerHTML = datos.pregun4parra21;
+    document.getElementById('pregun4foto7').src = datos.pregun4foto7;
+    document.getElementById('pregun4foto8').src = datos.pregun4foto8;
+    document.getElementById('pregun4parra22').innerHTML = datos.pregun4parra22;
+    document.getElementById('pregun4parra23').innerHTML = datos.pregun4parra23;
+    document.getElementById('pregun4parra24').innerHTML = datos.pregun4parra24;
+    document.getElementById('pregun4foto9').src = datos.pregun4foto9;
+
+
+
 })
