@@ -19,9 +19,10 @@
     <a href="./index.html"><img class="logo not-xs:w-40 xs:w-50 mr-5 hover:scale-105 transition-all" src="./recursos_fotos/Logo1.png" alt="" url="../index.html"></a>
 
     <!-- menú móvil con transición -->
-    <ul id="menu-movil" class="gap-4 absolute end-0 top-[80px] py-3 w-50 bg-white/90 text-primary flex flex-col items-center max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out xs:hidden shadow-lg border-y-1 border-gray-400 z-90 rounded-b-lg">
+    <ul id="menu-movil" class="gap-4 absolute end-0 top-[80px] py-3 w-50 bg-white/90 text-primary flex flex-col items-center max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out lg:hidden shadow-lg border-y-1 border-gray-400 z-90 rounded-b-lg">
+      <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="./html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Inasistencia</p></a>
       <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="./html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Nosotros</p></a>
-      <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="./html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Especialidades</p></a>
+      <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="./html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Citas</p></a>
       <a class="relative enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center transition-all" href="./html/info.html"><p class="transition-all duration-100 font-medium group-hover:text-secondary">Pagos
         <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-secondary group-hover:border-secondary">
           <use xlink:href="./assets/iconos/icons8-menú.svg#dolar"></use>
@@ -29,14 +30,15 @@
       </p></a>
       <a class="relative enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center transition-all" href="./html/info.html"><p class="transition-all duration-100 font-medium group-hover:text-secondary">Intranet
         <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5 transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-secondary group-hover:border-secondary">
-          <use xlink:href="./assets/iconos/icons8-menú.svg#intranet"></use>
+          <use xlink:href="./assets/iconos/zicons8-menú.svg#intranet"></use>
         </svg>
       </p></a>
     </ul>
 
     <!-- menú de PC -->
-    <ul class="nav-list lg:gap-6 gap-2 flex-row justify-center items-center hidden xs:flex text-neutral-800 text-[20px]">
+    <ul class="nav-list lg:gap-6 gap-2 flex-row justify-center items-center hidden lg:flex text-neutral-800 text-[20px]">
 
+      <li><a class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full font-semibold text-center" href="#especialidad">Inasistencias</a></li>
       <div class="rounded-full relative flex justify-center">
         <button id="btn-info"><p class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full cursor-pointer font-semibold">Nosotros</p></button>
         <div id="menu-info" class="absolute bg-primary/98 top-[65px] text-white transition-all duration-300 max-h-0 opacity-0 hidden rounded-b-lg flex flex-col items-center">
@@ -48,8 +50,7 @@
           <a class="text-center cursor-pointer hover:text-shadow-xs hover:text-shadow-white leading-tight hover:bg-primary-light px-10 py-1.5 pb-3 transition-all w-full h-full" href="./html/info.html#capacidad">Capacidad Instalada</a>
         </div>
       </div>
-
-      <li><a class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full font-semibold" href="#especialidad">Especialidades</a></li>
+      <li><a class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full font-semibold" href="#especialidad">Citas</a></li>
       <li class="relative z-10 group"><a class="py-1.5 px-3 transition-all duration-200 border-2 hover:text-white hover:bg-primary rounded-full border-primary font-semibold" href="#pagos">Pagos</a>
         <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-primary">
           <use xlink:href="./assets/iconos/icons8-menú.svg#dolar"></use>
@@ -63,7 +64,7 @@
     </ul>
 
     <!-- botón menú móvil -->
-    <button id="boton-movil" class="menu-btn w-9 cursor-pointer block xs:hidden">
+    <button id="boton-movil" class="menu-btn w-9 cursor-pointer block lg:hidden">
       <svg class="svgMenu w-10 h-10 text-primary transition-all duration-300 ease">
         <use xlink:href="./assets/iconos/icons8-menú.svg#icon-menu"></use>
       </svg>
@@ -113,7 +114,7 @@
       <div class="w-full h-full flex justify-center items-center max-w-[1100px] gap-70 mt-50 xs:mt-5 xs:gap-8 xs:flex-row flex-col z-20">
 
 
-          <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 min-h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
+          <!-- <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 min-h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
             <div class="w-full flex justify-center items-center absolute -top-10">
               <button class="boton1 transition-all" onclick="animar(this)">
               <svg class="z-50 w-13 h-13 group-hover:transition-all hidden xs:block xs:group-hover:hidden duration-400 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 bg-white --animate-shadow">
@@ -150,7 +151,7 @@
                 </div>
               </a>
             </div>
-        </div>
+        </div> -->
 
 
         <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 min-h-45 pb-2 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
@@ -193,8 +194,7 @@
         </div>
 
 
-
-        <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
+        <!-- <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
             <div class="w-full flex justify-center items-center absolute -top-10">
               <button class="boton1 transition-all" onclick="animar(this)">
               <svg class="z-50 w-13 h-13 group-hover:transition-all hidden xs:block xs:group-hover:hidden duration-400 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 bg-white --animate-shadow">
@@ -231,7 +231,7 @@
                 </div>
               </a>
             </div>
-        </div>
+        </div> -->
       </div>
     </div>
 </section>
@@ -337,17 +337,21 @@
     <div class="flex flex-row flex-wrap text-white max-w-[1100px] mx-5 xs:mx-auto justify-center items-center">
       <div class="w-full e02:w-1/2 lg:w-1/3 min-h-[325px] p-4">
         <p class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500 mb-7">OTRAS HERRAMIENTAS</p>
-        <div class="flex flex-col justify-center items-center gap-3 my-3">
+        <div class="flex flex-col justify-center items-center my-1">
 
-          <a href="https://forms.gle/c32qLD7SGjonWs7F6" class="otroslink1 w-full flex justify-between items-center hover:text-[16px] hover:bg-black/10 cursor-pointer transition-all text-[16px] p-2 rounded-2xl group">
+          <a href="" class="otroslink1 w-full flex justify-between items-center hover:text-[16px] hover:bg-black/10 cursor-pointer transition-all text-[16px] p-1.5 rounded-2xl group">
               <p class="otrostitle1 flex justify-between items-center w-full text-primary-light font-bold tracking-wider group-hover:text-secondary-light">...</p>
               <i class="fa-solid fa-newspaper fa-lg text-primary-light group-hover:text-secondary-light p-2.5 py-5 group-hover:bg-white rounded-full transition-all duration-300 "></i>
           </a>
-          <a href="" class="otroslink3 w-full flex justify-between items-center hover:text-[16px] hover:bg-black/10 cursor-pointer transition-all text-[16px] p-2 rounded-2xl group">
+          <a href="" class="otroslink2 w-full flex justify-between items-center hover:text-[16px] hover:bg-black/10 cursor-pointer transition-all text-[16px] p-1.5 rounded-2xl group">
+            <p class="otrostitle2 flex justify-between items-center w-full text-primary-light font-bold tracking-wider group-hover:text-secondary-light">...</p>
+            <i class="fa-solid fa-database fa-lg text-primary-light group-hover:text-secondary-light p-3 py-5 group-hover:bg-white rounded-full transition-all duration-300 "></i>
+          </a>
+          <a href="" class="otroslink3 w-full flex justify-between items-center hover:text-[16px] hover:bg-black/10 cursor-pointer transition-all text-[16px] p-1.5 rounded-2xl group">
             <p class="otrostitle3 flex justify-between items-center w-full text-primary-light font-bold tracking-wider group-hover:text-secondary-light">...</p>
             <i class="fa-solid fa-person fa-lg text-primary-light group-hover:text-secondary-light p-3.5 py-5 group-hover:bg-white rounded-full transition-all duration-300 "></i>
           </a>
-          <a href="./html/preguntas.html" class="w-full flex justify-between items-center hover:text-[16px] hover:bg-black/10 cursor-pointer transition-all text-[16px] p-2 rounded-2xl group">
+          <a href="" class="otroslink4 w-full flex justify-between items-center hover:text-[16px] hover:bg-black/10 cursor-pointer transition-all text-[16px] p-1.5 rounded-2xl group">
             <p class="otrostitle4 flex justify-between items-center w-full text-primary-light font-bold tracking-wider group-hover:text-secondary-light">...</p>
             <i class="fa-solid fa-question fa-lg text-primary-light group-hover:text-secondary-light p-3.5 py-5 group-hover:bg-white rounded-full transition-all duration-300 "></i>
           </a>
@@ -411,7 +415,7 @@
 
 
       <div class="w-full e02:w-1/2 lg:w-1/3 min-h-[325px] min-w-[314px] p-4 flex flex-col justify-start">
-        <h2 class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500 mb-3">OPINIONES</h2>
+        <h2 class="text-[20px] font-bold hover:text-shadow-lg  hover:text-shadow-gray-500 mb-3">COMENTARIOS</h2>
         <form id="formularioContacto" class="space-y-4 max-w-md mx-auto" action="https://formspree.io/f/xgvyrdeb" method="POST">
 
           <input type="text" name="nombre" placeholder="NOMBRE" class="border-2 border-primary-light hover:border-secondary-light shadow shadow-white p-1 w-[31.5%] text-[14px]" required>

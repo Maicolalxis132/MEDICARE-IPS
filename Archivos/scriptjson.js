@@ -2,14 +2,14 @@ fetch('./Archivos/json/index.json')
 .then(doc => doc.json())
 .then(datos => {
 
-    document.getElementById('card1title').textContent = datos.card1title;
-    document.getElementById('card1parrafo').textContent = datos.card1parrafo;
+    // document.getElementById('card1title').textContent = datos.card1title;
+    // document.getElementById('card1parrafo').textContent = datos.card1parrafo;
 
     document.getElementById('card2title').textContent = datos.card2title;
     document.getElementById('card2parrafo').textContent = datos.card2parrafo;
 
-    document.getElementById('card3title').textContent = datos.card3title;
-    document.getElementById('card3parrafo').textContent = datos.card3parrafo;
+    // document.getElementById('card3title').textContent = datos.card3title;
+    // document.getElementById('card3parrafo').textContent = datos.card3parrafo;
 
 
     document.getElementById('titlegrid').textContent = datos.titlegrid;
@@ -187,6 +187,7 @@ document.querySelectorAll('.otroslink2').forEach(el => {el.href = datos.otroslin
 document.querySelectorAll('.otrostitle2').forEach(el => {el.textContent = datos.otrostitle2;});
 document.querySelectorAll('.otroslink3').forEach(el => {el.href = datos.otroslink3;});
 document.querySelectorAll('.otrostitle3').forEach(el => {el.textContent = datos.otrostitle3;});
+document.querySelectorAll('.otroslink4').forEach(el => {el.href = datos.otroslink4;});
 document.querySelectorAll('.otrostitle4').forEach(el => {el.textContent = datos.otrostitle4;});
 
 
@@ -214,6 +215,7 @@ document.querySelectorAll('.otroslink2').forEach(el => {el.href = datos.otroslin
 document.querySelectorAll('.otrostitle2').forEach(el => {el.textContent = datos.otrostitle2;});
 document.querySelectorAll('.otroslink3').forEach(el => {el.href = datos.otroslink3;});
 document.querySelectorAll('.otrostitle3').forEach(el => {el.textContent = datos.otrostitle3;});
+document.querySelectorAll('.otroslink4').forEach(el => {el.href = datos.otroslink4;});
 document.querySelectorAll('.otrostitle4').forEach(el => {el.textContent = datos.otrostitle4;});
 
 document.querySelectorAll('.hrefdireccion').forEach(el => {el.href = datos.hrefdireccion;});
@@ -248,6 +250,10 @@ fetch('../Archivos/json/preguntas.json')
     document.getElementById('pregun2parra2').innerHTML = datos.pregun2parra2;
     document.getElementById('pregun2parra3').innerHTML = datos.pregun2parra3;
     document.getElementById('pregun2parra4').innerHTML = datos.pregun2parra4;
+    document.getElementById('pregun2parra5').innerHTML = datos.pregun2parra5;
+    document.getElementById('pregun2parra6').innerHTML = datos.pregun2parra6;
+    document.getElementById('pregun2parra7').innerHTML = datos.pregun2parra7;
+    document.getElementById('pregun2parra8').innerHTML = datos.pregun2parra8;
     document.getElementById('pregun2foto1').src = datos.pregun2foto1;
 
     document.getElementById('pregun3title').textContent = datos.pregun3title;
