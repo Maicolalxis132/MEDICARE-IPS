@@ -30,13 +30,13 @@
     "pregun4parra3":"<strong>Posdata:</strong> Si usted escribe y el <strong>bot no le responte</strong> el chat puede ser porque esta escribiendo al <strong>antiguo numero</strong>, verifique que tenga el nuevo; Tambien debe tener en cuenta que en este numero <strong>solo se puede escribir por whatsapp</strong>, no se llama por telefono. Si usted no pertenece a la institucion y quiere <strong>pedir cita por particular</strong> puede escribir a este numero <strong>317 6572911.</strong>",
     "pregun4foto1":"../recursos_fotos/DARIO.jpeg",
 
-    "pregun4parra4": "En este apartado te explicaremos como pedir citas por whatsapp, primero que todo debes de escribir a este numero <strong>321 2701208</strong>",
+    "pregun4parra4": "Te explicaremos como pedir citas por whatsapp, primero que todo debes de escribir a este numero <strong>321 2701208</strong>",
     "pregun4parra5": "Empezaremos enviando un \"<strong>Hola</strong>\", para que el chatbot inicie la conversacion, despues de haber enviado el mensaje espera un momento a que el chat se active y despues le respondera.",
     "pregun4parra6": "Recuerde que esta hablando con un <strong>bot (robot)</strong>, no una persona, por lo que respondera las opciones predeterminadas que tiene programadas, entonces si no le responde lo que usted quiere es porque no esta programado para eso.",
     "pregun4foto2":"../recursos_fotos/pasos/paso1.jpeg",
 
-    "pregun4parra7": "Despues de haber leido lo que nos escribio el bot, <strong>tocaremos</strong> el boton de <strong class=\"p-1 pl-1.5 pr-2.5 bg-primary-light rounded-2xl text-white font-normal font-sans\">📝 Menu Principal</strong>",
-    "pregun4parra8": "Se desplegara un menu donde aparecen 3 opcionas las cuales son: 📆Citas, 🏥Información, 🔄Ver Recordatorio.",
+    "pregun4parra7": "Despues de haber leido lo que nos escribio el bot, <strong>tocaremos</strong> el boton de <strong class=\"\">📝 Menu Principal</strong>",
+    "pregun4parra8": "Se desplegara un menu donde aparecen 3 opcionas las cuales son: <strong>📆Citas, 🏥Información, 🔄Ver Recordatorio.</strong>",
     "pregun4parra9": "La opcion de <strong>🔄Ver Recordatorio</strong> sirve para ver las citas que se han sacado desde el numero de telefono en el que escribe; <strong>🏥Información</strong> nos permite ver informacion de medicare; Y finalmente la opcion de <strong>📆Citas</strong> es la que usamos cuando queremos <strong>pedir citas medicas</strong> o cuando queremos <strong>cancelar alguna cita.</strong>",
     "pregun4parra10": "Como en este caso queremos pedir una cita medica, tocaremos la opcion de <strong>📆Citas</strong>.",
     "pregun4foto3":"../recursos_fotos/pasos/paso2.jpeg",
