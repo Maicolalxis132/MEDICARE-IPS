@@ -7,14 +7,14 @@
         "./recursos_fotos/info2.jpeg"
     ],
  
-    "card1title": "CITAS MEDICAS",
-    "card1parrafo":"Solicita tus cita medica por este medio, de forma rapida y sencilla.",
+    "card1title": "MEDICINA LABORAL",
+    "card1parrafo":"Solicita tus cita medica relacionada con medicina laboral aqui.",
 
     "card2title": "LABORATORIOS CLINICOS",
     "card2parrafo":"Ingresa aqui para descargar todos tus resultados de examenes.",
 
-    "card3title": "TALLER INASISTENCIA",
-    "card3parrafo":"Paga aqui tus multas por faltar a citas medicas.",
+    "card3title": "SERVICIOS PARTICULARES",
+    "card3parrafo":"Por este medio podra pedir de nuestros servicios de forma particular",
     
 
     "titlegrid": "Bienvenido a MEDICARE IPS",

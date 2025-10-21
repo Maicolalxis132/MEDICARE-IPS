@@ -22,21 +22,20 @@
     <ul id="menu-movil" class="gap-4 absolute end-0 top-[80px] py-3 w-50 bg-white/90 text-primary flex flex-col items-center max-h-0 overflow-hidden opacity-0 transition-all duration-300 ease-in-out lg:hidden shadow-lg border-y-1 border-gray-400 z-90 rounded-b-lg">
       <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="./html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Inasistencia</p></a>
       <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="./html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Nosotros</p></a>
-      <a class="enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center" href="./html/info.html"><p class="group-hover:text-secondary transition-all duration-100 font-medium">Citas</p></a>
-      <a class="relative enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center transition-all" href="./html/info.html"><p class="transition-all duration-100 font-medium group-hover:text-secondary">Pagos
+      <!-- <a class="relative enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center transition-all" href="./html/info.html"><p class="transition-all duration-100 font-medium group-hover:text-secondary">Pagos
         <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-secondary group-hover:border-secondary">
           <use xlink:href="./assets/iconos/icons8-menú.svg#dolar"></use>
         </svg>
-      </p></a>
+      </p></a> -->
       <a class="relative enlace1 group w-30 border-primary border-2 hover:border-secondary p-1.5 hover:text-[16px] cursor-pointer rounded-full flex items-center justify-center transition-all" href="./html/info.html"><p class="transition-all duration-100 font-medium group-hover:text-secondary">Intranet
         <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5 transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-secondary group-hover:border-secondary">
-          <use xlink:href="./assets/iconos/zicons8-menú.svg#intranet"></use>
+          <use xlink:href="./assets/iconos/icons8-menú.svg#intranet"></use>
         </svg>
       </p></a>
     </ul>
 
     <!-- menú de PC -->
-    <ul class="nav-list lg:gap-6 gap-2 flex-row justify-center items-center hidden lg:flex text-neutral-800 text-[20px]">
+    <ul class="nav-list lg:gap-6 gap-2 flex-row justify-center items-center hidden xs:flex text-neutral-800 text-[20px]">
       <div class="rounded-full relative flex justify-center">
         <button id="btn-info"><p class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full cursor-pointer font-semibold">Nosotros</p></button>
         <div id="menu-info" class="absolute bg-primary/98 top-[65px] text-white transition-all duration-300 max-h-0 opacity-0 hidden rounded-b-lg flex flex-col items-center">
@@ -49,12 +48,11 @@
         </div>
       </div>
       <li><a class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full font-semibold text-center" href="#especialidad">Inasistencias</a></li>
-      <li><a class="py-1.5 px-3 transition-all duration-200 hover:text-white hover:bg-primary hover:rounded-full font-semibold" href="#especialidad">Citas</a></li>
-      <li class="relative z-10 group"><a class="py-1.5 px-3 transition-all duration-200 border-2 hover:text-white hover:bg-primary rounded-full border-primary font-semibold" href="#pagos">Pagos</a>
+      <!-- <li class="relative z-10 group"><a class="py-1.5 px-3 transition-all duration-200 border-2 hover:text-white hover:bg-primary rounded-full border-primary font-semibold" href="#pagos">Pagos</a>
         <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-primary">
           <use xlink:href="./assets/iconos/icons8-menú.svg#dolar"></use>
         </svg>
-      </li>
+      </li> -->
       <li class="relative z-10 group"><a class="py-1.5 px-3 transition-all duration-200 border-2 hover:text-white hover:bg-primary rounded-full border-primary font-semibold" href="#pagos">Intranet</a>
         <svg class="z-20 -top-3.5 right-0 w-6 h-6 p-0.5   transition-all absolute text-primary bg-white border-primary border-2 rounded-full group-hover:text-white group-hover:bg-primary">
           <use xlink:href="./assets/iconos/icons8-menú.svg#intranet"></use>
@@ -63,7 +61,7 @@
     </ul>
 
     <!-- botón menú móvil -->
-    <button id="boton-movil" class="menu-btn w-9 cursor-pointer block lg:hidden">
+    <button id="boton-movil" class="menu-btn w-9 cursor-pointer block xs:hidden">
       <svg class="svgMenu w-10 h-10 text-primary transition-all duration-300 ease">
         <use xlink:href="./assets/iconos/icons8-menú.svg#icon-menu"></use>
       </svg>
@@ -113,7 +111,7 @@
       <div class="w-full h-full flex justify-center items-center max-w-[1100px] gap-70 mt-50 xs:mt-5 xs:gap-8 xs:flex-row flex-col z-20">
 
 
-          <!-- <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 min-h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
+          <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 min-h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
             <div class="w-full flex justify-center items-center absolute -top-10">
               <button class="boton1 transition-all" onclick="animar(this)">
               <svg class="z-50 w-13 h-13 group-hover:transition-all hidden xs:block xs:group-hover:hidden duration-400 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 bg-white --animate-shadow">
@@ -150,7 +148,7 @@
                 </div>
               </a>
             </div>
-        </div> -->
+        </div>
 
 
         <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 min-h-45 pb-2 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
@@ -180,8 +178,7 @@
               </button>
               </div>
               <img class="mt-6 w-" src="./recursos_fotos/examenes.jpg" alt="">
-              <a class="enlace p-2 border-2 rounded-xl text-[13px] border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200 relative" href="#">
-                Acceso
+              <a class="enlace p-2 border-2 rounded-xl text-[13px] border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200 relative" href="#">En Construccion
                 <div class="absolute -top-2 -right-1 ">
                   <span class="relative flex h-4 w-4">
                     <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-secondary opacity-75"></span>
@@ -193,7 +190,7 @@
         </div>
 
 
-        <!-- <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
+        <div data-aos="fade-down" data-aos-duration="500" class="relative group card xs:w-1/3 w-11/12 max-w-[340px] xs:min-h-52 h-45 border-t-primary border-t-4 hover:border-0 shadow-[0_10px_30px_rgba(0,0,0,0.25)] xs:shadow-lg transition-all duration-300 bg-white rounded-b-2xl">
             <div class="w-full flex justify-center items-center absolute -top-10">
               <button class="boton1 transition-all" onclick="animar(this)">
               <svg class="z-50 w-13 h-13 group-hover:transition-all hidden xs:block xs:group-hover:hidden duration-400 p-2 rounded-full border-4 text-neutral-900 border-primary xs:w-18 xs:h-18 xs:p-3 bg-white --animate-shadow">
@@ -219,8 +216,8 @@
               </svg>
               </button>
               </div>
-              <img class="mt-6" src="./recursos_fotos/intranet.jpg" alt="">
-              <a class="enlace p-2 border-2 rounded-xl text-[13px] border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200 relative" href="#">
+              <img class="mt-6 mb-10 " src="./recursos_fotos/Logo1.png" alt="">
+              <a class="enlace p-2 border-2 rounded-xl text-[13px] border-secondary text-secondary hover:bg-secondary hover:text-white transition-all duration-200 relative" href="https://walink.co/c3d789">
                 Acceso
                 <div class="absolute -top-2 -right-1 ">
                   <span class="relative flex h-4 w-4">
@@ -230,7 +227,7 @@
                 </div>
               </a>
             </div>
-        </div> -->
+        </div>
       </div>
     </div>
 </section>
